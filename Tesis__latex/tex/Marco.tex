@@ -1,0 +1,265 @@
+\chapter{Marco Te\'orico}\label{cha:Marco}
+
+En este capítulo introducimos algunos de los conceptos teóricos clave para entender el desarrollo de nuestro modelo de \jet con estructura. En primera instancia, realizamos una descripción básica de los agujeros negros, así como los mecanismos de lanzamiento de \jets, para continuar con una explicación detallada de las propiedades de los \jets típicos de las radiogalaxias. Seguidamente, describimos brevemente la fenomenología, el descubrimiento y la clasificaci\'on detrás de los núcleos galácticos activos (AGN, del inglés \textit{Active Galactic Nuclei}) y en particular del subgrupo de las radiogalaxias. Hacia el final del capítulo, describimos brevemente las propiedades de Centaurus A, la radiogalaxia más cercana a la Vía Láctea y cuya emisión modelamos en el desarrollo de este trabajo.
+%=====================================================
+%
+
+
+\section{Agujeros Negros}
+
+\subsection{Descripci\'on básica}
+
+En el contexto de la teoría de la relatividad general formulada por Einstein, la gravedad resulta de la manifestación geométrica de un espaciotiempo curvado. A su vez, dicha curvatura del espaciotiempo queda determinada por el contenido de energía e impulso de la materia en el mismo a través de la relación dada por las ecuaciones de campo de Einstein. Formalmente, un agujero negro es una región del espaciotiempo causalmente desconectada del resto. Esta región está encerrada por una hipersuperficie nula llamada horizonte de eventos; cualquier partícula que cruce el horizonte en dirección al agujero negro no puede volver a cruzarlo hacia el exterior.
+
+\subsection{Soluciones de agujero negro.}\label{ssec:AN}
+
+\subsubsection*{Solución de Schwarzschild.}
+La solución de Schwarzschild \citep{Schwarzschild1916} es una solución de las ecuaciones de campo de Einstein que representa un espaciotiempo vacío, esféricamente simétrico, estacionario y estático alrededor de un cuerpo de masa M. Dicha métrica se expresa como
+\[
+ds^2 = -\left(1-\frac{2GM}{c^2r}\right)c^2 dt^2 + \left(1-\frac{2GM}{c^2r}\right)^{-1} dr^2 + r^2 d\Omega^2,
+\]
+donde $r_s = 2GM/c^2$ define el \textit{radio de Schwarzschild}, correspondiente al horizonte de eventos. En este radio, la componente temporal de la métrica se anula, lo que implica que ningún observador o señal puede escapar al infinito una vez que cruza dicha superficie. Adicionalmente, espaciotiempo de Schwarzschild posee una singularidad física en $r=0$, donde las cantidades de curvatura divergen. 
+Esta solución describe la curvatura del espaciotiempo en la región externa a un agujero negro no rotante y sin carga eléctrica. La solución de Schwarzschild es la solución de agujero negro más simple posible, ya que está caracterizada por un único parámetro, la masa $M$ del objeto central (e.g., \citealt{Carroll2004}).
+
+\subsubsection*{Soluci\'on de Kerr.}
+
+La solución de Kerr \citep{Kerr1963} constituye la generalización de la métrica de Schwarzschild para el caso de un agujero negro en rotación. Fue hallada por Roy P. Kerr en 1963 y describe un espaciotiempo estacionario, axisimétrico y asintóticamente plano en torno a un cuerpo con momento angular distinto de cero. En este caso el elemento de linea en coordenadas de Boyer–Lindquist se escribe como
+\begin{equation*}
+	ds^2 = -\left(1-\frac{2GMr}{\Sigma c^2}\right)c^2dt^2 - \frac{4GMar\sin^2\theta}{\Sigma c^3}c\,dt\,d\phi + \frac{\Sigma}{\Delta}dr^2 
+\end{equation*}
+\begin{equation*}
+	+ \Sigma d\theta^2 + \left(r^2 + a^2 + \frac{2GMa^2r\sin^2\theta}{\Sigma c^2}\right)\sin^2\theta\,d\phi^2,
+\end{equation*}
+donde $a = J/Mc$ es el parámetro de rotación, $\Sigma = r^2 + a^2\cos^2\theta$ y $\Delta = r^2 - 2GMr/c^2 + a^2$. 
+
+Esta solución presenta dos horizontes (exterior e interior) definidos por $\Delta=0$, y una {ergósfera}, región comprendida entre el horizonte exterior y el {límite estático}, en la cual ningún observador puede permanecer en reposo respecto al infinito debido al arrastre del espacio-tiempo (\textit{frame dragging}) inducido por la rotación del agujero negro. La singularidad en este caso no es puntual sino en forma de anillo, localizada en $r=0$ y $\theta=\pi/2$.
+
+Los agujeros negros descritos por esta solución se consideran el modelo más general de agujero negro astrofísico, ya que poseen masa y momento angular. No se espera que los agujeros negros reales presenten carga eléctrica significativa, por lo que la métrica de Kerr representa una descripción adecuada para la mayoría de los agujeros negros observados en el Universo (e.g., \citealt{Carroll2004}). Los agujeros negros rotantes son parte clave del proceso de lanzamiento de \jets relativistas, como presentaremos m\'as adelante.
+
+\textcolor{red}{agregar algun diagrama.}
+
+\section{Jets} \label{sec:Jets}
+
+Los \jets son flujos altamente colimados de partículas y campos electromagnéticos. Suelen presentarse en una gran variedad de fuentes astrofísicas y caracterizarse por su gran extensión, la cual suele exceder el tamaño de las fuentes compactas que las producen por varios órdenes de magnitud. A su vez, su emisión puede cubrir un gran rango del espectro electromagnético.
+
+En los AGNs, los \jets son impulsados por el SMBH central, poseen ángulos de apertura de unos pocos grados y, dependiendo de su potencia así como de las propiedades del medio que atraviesan, pueden propagarse hasta escalas de kiloparsecs o incluso megaparsecs \citep{Boccardi2017}. El plasma que conforma el \jet a su vez arrastra campos magnéticosen su interior, así como partículas cargadas relativistas. La interacción entre estas partículas y los campos magnéticos da lugar a la emisión sincrotrón observada principalmente en radio. 
+
+\begin{comment}
+\subsection{Mecanismo de Blandford-Znajek \textcolor{red}{Tipo al final de jets? Despues de aceleracion?}}\label{ssec:MecBZ}
+
+Para un agujero negro rotante (AN de Kerr) de masa $M$ y parámetro de spin $a$ puede extraerse una cantidad de energía 
+
+\begin{equation}
+    E=Mc^2\left\{1-\sqrt{\frac{1}{2}[1+(1-a^2)^{1/2}]}\right\}
+\end{equation}
+
+De estar inmerso en una magnetosfera, como aquella sostenida por el flujo de acreción en las cercanías de un agujero negro, puede transferirse energía rotacional al campo magnético, generando una estructura helicoidal que se expande verticalmente produciendo un flujo de Poynting . Este mecanismo se denomina mecanismo de Blandford-Znajek (Blandford \& Znajek 1977).
+La rotaci\'on  de las l\'ines de campo determina el cilindro de luz, donde la velocidad de rotaci\'on alcanza la velocidad de la luz y los efectos relativistas se vuelven significativos, a una distancia $R_{\text{LC}} \sim c/\Omega_L \sim c/(0.5\Omega_H)$ en estado estacionario, con $\Omega_L$ la velocidad angular de rotación de las lineas de campo magnético y $\Omega_H$ la velocidad angular de rotaci\'on en el horizonte. Luego, para valores del espín del agujero negro $a\le 0.95$, la potencia liberada resulta (Tchekhovskoy et al., 2010)
+\begin{equation}
+   P_{\text{BZ}}=\frac{\kappa}{4\pi c}\Phi_{\text{AN}}^2\Omega_{H}^2f(\Omega_H),
+\end{equation}
+donde $\kappa\approx 0.05$ y 
+
+\begin{equation}
+     f(\Omega_H) = 1 + 1.38 \left( \frac{\Omega_H R_g}{c} \right)^2 - 9.2 \left( \frac{\Omega_H R_g}{c} \right)^4.
+\end{equation}
+\end{comment}
+
+%
+%
+%=====================================================%
+\subsection{Estructura del \jet} \textcolor{red}{Mejor espero los resultados}\label{ssec:estructura}%(Boccardi et al. 2017)
+
+Como mencionamos anteriormente, el mecanismo de lanzamiento y colimación de los \jets se considera de origen electromagnético. El campo magnético necesario para mantener la colimación y acelerar partículas se genera en las cercanías del horizonte de eventos, alimentado por el proceso de acreción. Los \jets de AGN más poderosos pueden permanecer colimados hasta escalas de cientos de pársecs, terminando en regiones de alta emisión denominadas \textit{hot spots}, mientras que los menos energéticos tienden a disiparse más rápidamente, adoptando morfologías difusas o en forma de ``plumas''.  
+
+La geometría de los \textit{jets} puede describirse, en promedio, como autosimilar: una región inicial parabólica que transiciona a una expansión cónica en grandes escalas. No obstante, debido a efectos locales, los \jets presentan una gran diversidad de subestructuras, incluyendo choques internos, curvaturas, turbulencia e inestabilidades originadas por la interacción con el medio circundante.  
+
+En cuanto a los efectos relativistas, consideremos un fotón emitido por un \jets que se desplaza con velocidad relativista hacia afuera desde un AGN. Si en el marco del \jet el fotón es emitido en dirección perpendicular al movimiento ($\theta' = 90^\circ$), en el marco del observador se detecta viajando con un ángulo
+
+\begin{equation}\label{eq:marco-1}
+    \sin\theta = \frac{1}{\Gamma},
+\end{equation}
+donde $\Gamma$ es el factor de Lorentz asociado al movimiento relativista del \jet. Este efecto, conocido como \textit{beaming}, concentra la radiación en la dirección de avance del flujo (ver \ref{sec:Beaming}). En el modelo estándar, los AGN dominados por el núcleo (\textit{core-dominated AGN}) muestran una emisión fuertemente \textit{beameada}, lo que indica que sus \jet están orientados cerca de nuestra línea de visión. Por otro lado, la alta velocidad del plasma implica que la radiación emitida está sujeta a un corrimiento Doppler, modificando las frecuencias observadas respecto a las emitidas.
+
+El flujo observado difiere del flujo intrínseco por un factor proporcional a $\delta^3$, donde $\delta$ es el factor Doppler. Este fenómeno explica por qué resulta difícil detectar los contrajets en AGN dominados por la emisión nuclear: la emisión proveniente de la componente viajando en dirección opuesta al observador se ve fuertemente atenuada por efectos relativistas.
+
+
+En el caso de algunos AGN cercanos se ha detectado que sus \textit{jets} presentan bordes brillantes (\textit{limb brightening}); es decir, se observa un aumento del brillo hacia las regiones periféricas del flujo. Este fenómeno ha sido reportado en diversos estudios, por ejemplo en M87 (\citealt{Mertens2016,Walker2016}), 3C 87 \citep{Nagai2019} y Cygnus A \citep{Boccardi2015} y suele interpretarse como evidencia de una diferencia de velocidades entre el \textit{spine} central y la envoltura, lo que refuerza los modelos de \textit{jets} estratificados tanto en velocidad como en estructura magnética. Sin embargo, se han propuesto varias explicaciones para el fenómeno de bordes brillantes, incluyendo la mencionada diferencia de velocidad entre la región central del \jet (\textit{spine}) y una envoltura más lenta que lo rodea (\citealt[e.g.][]{Mertens2016,Walker2016,Nagai2019}), cuya emisión estaría preferencialmente \textit{beameada} hacia el observador (ver Sec. \ref{sec:Beaming}); la carga de masa en los bordes del \textit{jet} \citep[ver ][]{Bruni2021}; reconexión magnética y aceleración de partículas en las regiones periféricas del \jet \citep[e.g.][]{Yang2024}; y un campo helicoidal o toroidal transportado por el \jet (este \'ultimo basado en que la emisividad sincrotrón es máxima cuando el campo magnético proyectado se encuentra en el plano del cielo, lo cual ocurre en los bordes del \textit{jet}) \citep[ver ][]{Nakamura2018}.
+
+
+\subsection{Lanzamiento de \jets: Mecanismos Blandford-Znajek y Blandford-Payne.}
+
+La física de los \jets se relaciona con la extracción de energía tanto del agujero negro rotante (ver Sec.\ref{ssec:AN}), a través del mecanismo de Blandford-Znajek (BZ, \citealt{Blandford1977}) como del disco de acreción, mediante el mecanismo de Blandford-Payne (BP, \citealt{Blandford1982}). El campo magn\'etico juega un rol esencial: no solo canaliza la energ\'ia extra\'ida en forma de \jets, sino que tambi\'en contribuye a su colimaci\'on junto con la presi\'on externa del medio circundante. Existen dos modelos fundamentales que explican este fenómeno, según el origen de la rotación de las líneas de campo magnético:
+
+\begin{itemize}
+\item {Mecanismo de Blandford–Znajek (BZ, \citealt{Blandford1977}):} en este caso, la rotación de las líneas de campo magnético no es impuesta por el disco, sino que surge del arrastre de marcos de referencia en la vecindad de un agujero negro en rotación. El campo magnético, sostenido por el disco de acreción, penetra el horizonte de eventos y, al interactuar con el espacio-tiempo en rotación, induce un flujo de energía electromagnética que permite extraer energía directamente de la rotación del agujero negro.
+\item {Mecanismo de Blandford–Payne (BP, \citealt{Blandford1982}):} aquí, el campo magnético está “congelado” en el plasma del disco de acreción. A medida que el disco rota, las líneas de campo magnético también lo hacen. El plasma puede ser acelerado centrifugamente hacia el exterior, escapando y dando lugar al \textit{jet}. Este proceso se caracteriza por generar \jets menos colimados, con velocidades moderadamente relativistas y potencias menores que en el caso BZ.
+\end{itemize}
+
+En la práctica, ambos procesos pueden coexistir: mientras que el mecanismo BP facilita la eyección inicial de material desde el disco, el mecanismo BZ suele dominar en la producción de los \jets más energéticos. Así, el disco de acreción aporta el campo magnético necesario, mientras que la rotación del agujero negro suministra gran parte de la energía del \jet.
+\begin{comment}
+\textcolor{blue}{En algun lado hay que mencionar cualitativamente como se aceleran y coliman los jets y por que se espera que haya una diferencia entre el sheath y el spine}
+\end{comment}
+%La estructura de la emisión en radio de un AGN por observaciones VLBI resulta generalmente en un núcleo brillante y, generalmente, no resuelto, junto con una estructura de \jet que emana de dicho núcleo. Esta morfología se interpreta como consecuencia de efectos de selección asociados tanto a la naturaleza relativista del \jet como a la sensibilidad del arreglo interferométrico.
+%Dada la velocidad relativista del fluido que compone el jet, su radiación está sujeta a un corrimiento Doppler. En consecuencia, el flujo observado y el flujo emitido del \jet difieren por un factor $\delta^3$ con $\alpha$ el indice espectral, $n$ un parámetro de ajuste y $\delta$ es el factor de Doppler \textcolor{red}{Un efecto es el corrimiento doppler que me corre las frecuencias y otro es el beaming que me arruina la isotropia de la radiacion original >:c}
+
+%\begin{equation}
+%    \delta=\frac{1}{\Gamma(1-\beta\cos(\theta))},
+%\end{equation}
+%donde $\beta=v/c$ es la velocidad del flujo normalizada respecto de la velocidad de la luz, $\Gamma=1/\sqrt{1-\beta^2}$ el factor de Lorentz y $\theta$ el \'angulo  entre la direcci\'on de propagaci\'on y la linea de la visi\'on %(Boccardi et al. 2017)
+
+%----------------------------------------------------------
+%
+\section{Emisi\'on en el \jet}
+
+El modelo estándar del espectro de energía de un \jet relativista presenta típicamente dos componentes con forma de ``doble joroba''. El primer pico, a bajas energías (radio–óptico–rayos X blandos), se asocia a la radiación sincrotrón producida por electrones relativistas que se mueven en el campo magnético del \jet. El segundo pico, ubicado a energías más altas (rayos X duros–gamma), se interpreta como resultado de procesos de dispersión Compton inversa (IC, por sus siglas en inglés), en los cuales los mismos electrones relativistas transfieren energía a fotones de menor energía (e.g., \citealt{1995PASP..107..803U, Ulrich1997}). Estos ``fotones semilla”  pueden provenir de la propia emisión sincrotrón, que interactúa con los electrones por un proceso conocido como \textit{Synchrotron Self Compton} (SSC). También puede ocurrir interacción IC con fotones provenientes del flujo de acreción, la región de líneas anchas u otras regiones emisoras del AGN.
+
+Además de los modelos {leptónicos}, en los cuales la radiación observada a lo largo del espectro electromagnético es producida principalmente por electrones y positrones relativistas (a la vez que los protones del flujo no alcanzan energías suficientes como para contribuir de manera significativa), existen también modelos {lepto-hadrónicos} que buscan reproducir la distribución espectral de energía observada en los \textit{jets}. En estos modelos, tanto los electrones primarios como los protones son acelerados hasta energías ultrarrelativistas. Los protones, en particular, pueden alcanzar el umbral energético necesario para la producción de fotopiones mediante interacciones con el campo de fotones suaves. En este marco, la emisión sincrotrón de los electrones primarios domina el espectro en las bajas frecuencias, mientras que en las altas frecuencias la emisión está gobernada por una combinación de procesos: sincrotrón de protones, decaimiento de piones neutros, emisión Compton y sincrotrón de los productos secundarios del decaimiento de piones cargados. Adicionalmente, los fotones de alta energía generados pueden ser absorbidos por interacciones fotón-fotón, dando origen a cascadas electromagnéticas que contribuyen de manera compleja al espectro total observado \citep{Böttcher2013}.
+
+
+\begin{comment}
+    
+Dada una partícula cargada moviéndose en una regi\'on donde se encuentra un campo electromagnético, esta experimenta una fuerza de Lorentz
+
+\begin{equation}
+    \frac{d\Vec{p}}{dt}=q\left(\Vec{E}+\frac{\Vec{v}\times\Vec{B}}{c}\right),
+\end{equation}
+donde $q$ es la carga de la partícula, $\Vec{v}$ su velocidad y $\Vec{E},~\Vec{B}$ son los campos eléctrico y magnético en la región.
+
+Debido a que la componente de la fuerza debido al campo magnético es perpendicular a la velocidad esta no modifica su modulo y en consecuencia la variación de la energía resulta
+
+\begin{equation}
+    \frac{d\Vec{E}}{dt}=q\frac{d\Vec{r}}{dt}\Vec{\nabla}V,
+\end{equation}
+con $V$ el potencial escalar. Luego, la forma más sencilla de acelerar una partícula cargada resulta someterla a una diferencia de potencial.
+\end{comment}
+
+\textcolor{blue}{Existen múltiples modelos para la aceleración de partículas en un \textit{jet}. Un ejemplo es la aceleración difusiva por shocks: en distintas regiones del \jet pueden desarrollarse inestabilidades hidrodinámicas y magnetohidrodinámicas que generan choques internos. En estos choques, las partículas relativistas pueden ser aceleradas mediante procesos de aceleración Fermi tipo I (\textit{Diffusive Shock Acceleration} o DSA), al cruzar repetidamente la discontinuidad de choque \citep[e.g. ]{Drury1983}. En un modelo magnetizado el plasma tiende a ser menos compresible, lo que reduce la eficiencia de la aceleración por choques \citep{Romero2018}. 
+
+Alternativamente, puede considerarse la reconexión  magnética, donde lineas de campo en apuntando en direcciones opuestas pueden ser forzadas a unirse producto de inestabilidades (e.g., \citealt{Begelman1998}, \citealt{Barniol2017}), dando lugar a reconfiguraciones de las líneas de campo magnético liberan energía que puede transferirse a las partículas.}\textcolor{red}{expandir}
+
+
+\begin{comment}
+
+\textcolor{red}{Una pequeña introducción de que voy a tratar y nada muuuy profundo, algo de reconexi\'on magnética pero tampoco es una hipótesis necesaria del modelo, simplemente asumimos que se aceleran partículas. Lo puedo incluir en otra parte.}
+
+\textcolor{blue}{En distintas partes del pueden tener inestabilidades, generar shocks y las partículas pueden acelerarse en estos shocks cruzando de un lado al otro. Para nuestro modelo magnetizado el plasma se hace mas incompresible por lo cual nada muy efectivo. Reconexi\'on magnética tampoco muy en detalle}
+    
+\end{comment}
+
+\section{Beaming relativista}\label{sec:Beaming}
+
+En sistemas astrofísicos donde las partículas emisoras se desplazan a velocidades relativistas ($v \sim c$), la radiación producida no es isotrópica en el marco del observador. Este fenómeno, conocido como \textit{beaming relativista} o \textit{Doppler boosting}, resulta de la transformación relativista de la intensidad y frecuencia del campo de radiación debido al movimiento del emisor.
+
+Bajo estas correcciones, la frecuencia observada $\nu_{\text{obs}}$ y la intensidad $I_{\nu,\text{obs}}$ se relacionan con sus valores en el sistema de reposo del plasma ($\nu'$ e $I'_{\nu'}$) mediante el factor Doppler:
+
+\begin{equation}\label{eq:marco-9}
+\delta = \frac{1}{\Gamma(1 - \beta \cos\theta)}.
+\end{equation}
+donde $\Gamma = (1 - \beta^2)^{-1/2}$ el factor de Lorentz del flujo, con $\beta = v/c$, y $\theta$ el ángulo entre la dirección de movimiento y la línea de visión del observador
+
+Bajo esta transformación, la frecuencia y la intensidad observadas son:
+
+\begin{equation}\label{eq:marco-10}
+\nu_{\text{obs}} = \delta\,\nu',
+\end{equation}
+
+\begin{equation}\label{eq:marco-11}
+I_{\nu,\text{obs}} = \delta^3 I'_{\nu'}.
+\end{equation}
+
+La potencia observada de una fuente móvil, integrada en frecuencia, se ve modificada en un factor $\delta^4$ respecto a la potencia emitida en el marco del plasma. Este efecto puede producir una amplificación significativa del flujo aparente cuando la línea de visión se encuentra dentro del cono de apertura del haz relativista ($\theta \lesssim 1/\Gamma$).
+%----------------------------------------------------------
+
+%===========================================================================================================================
+\section{Núcleos galácticos activos}\label{sec:AGNs}
+%=====================================================
+
+Los AGN son fenómenos asociados a agujeros negros supermasivos (SMBH, del inglés \textit{Supermassive Black Holes}) contenidos en el núcleo de ciertas galaxias. Estos agujeros negros, con masas del orden de $10^6$–$10^{10}  M_\odot$, pueden acretar gas de su entorno por medio de un flujo de acreción. Durante este proceso, la energía gravitatoria del material en caída se convierte progresivamente en energía cinética y posteriormente en radiación, lo que permite que el sistema libere enormes cantidades de energía, a menudo superando la luminosidad total de la galaxia huésped. 
+En un flujo de acreción, el esfuerzo viscoso (producto de turbulencias de origen magnetohidrodinámico) permite transferir momento angular hacia las regiones externas, causando que el material caiga en una trayectoria espiral hacia el SMBH. La pérdida de energía gravitatoria al acercarse al agujero negro se traduce en un aumento de la energía cinética orbital del gas ($E_\mathrm{grav} \to E_\mathrm{kin}$), que luego se disipa en forma de energía interna del fluido por efecto de la viscosidad turbulenta ($E_\mathrm{kin} \to E_\mathrm{th}$), calentando el plasma. Finalmente, el gas caliente emite radiación electromagnética (principalmente en los rangos óptico, ultravioleta y de rayos X), liberando eficientemente la energía acumulada ($E_\mathrm{th} \to E_\mathrm{rad}$). 
+De este modo, el disco de acreción actúa como un mecanismo disipativo extremadamente eficiente, capaz de convertir hasta $\sim 10\%$ de la energía en reposo de la materia en radiación observable.
+
+
+Si bien la primera observación de núcleos galácticos con espectros inusuales se atribuye a \cite{Fath1909}, la idea de un “motor central” fue anticipada por Carl Seyfert (\citeyear{Seyfert1943}), quien identificó un conjunto de galaxias con núcleos que presentaban líneas de emisión muy anchas, interpretadas como gas ionizado orbitando a gran velocidad en la vecindad del pozo gravitatorio central. 
+Otro de los hallazgos clave fue la detección de \jets relativistas: chorros colimados de plasma que se extienden a escalas de kiloparsecs o incluso megaparsecs. Una de las primeras observaciones de \jets corresponde a la galaxia M87, una galaxia elíptica gigante que se encuentra en la zona norte del cúmulo de Virgo, a una distancia de $\sim16.1$ Mpc de la Vía Láctea; dicha observación fue realizada por \cite{Curtis1918}. Un ejemplo histórico es Cygnus A, una de las primeras radiogalaxias identificadas, cuya intensa emisión en radio reveló una estructura de doble lóbulo asociada a la eyección de plasma desde el núcleo \citep{Jennison1953}. Más tarde, el descubrimiento del cuásar 3C 273 (\citealt{Hazard1963}; \citealt{Schmidt1963}) daría lugar a otro gran avance, al mostrar un espectro con líneas de emisión anchas que más tarde se descubrirían que correspondían a líneas del hidrógeno fuertemente desplazadas al rojo, confirmando la naturaleza extragaláctica de estos objetos extremadamente luminosos.
+
+La clasificación de los AGN puede abordarse desde distintos criterios (ej. ver \citealt{1995PASP..107..803U}):
+
+\begin{itemize}
+    \item Según la tasa de acreción y la luminosidad nuclear: los cuásares ópticos y radiocuásares se asocian con tasas de acreción altas (cercanas o superiores al límite de Eddington), mientras que radiogalaxias y LINER (\textit{Low-ionization nuclear emission-line region}) corresponden a tasas de acreción subcríticas.
+
+\item Según la presencia de \jets: distinguimos AGN luminosos o débiles en radio (\textit{radio-loud/quiet}). Los primeros presentan \jets prominentes, mientras que los segundos no poseen \jets desarrollados.
+
+\item Según la orientación: cuando el \jet apunta hacia la línea de visión del observador, se observa un blazar, caracterizado por variabilidad rápida, fuerte emisión no térmica y \jets aparentemente unilaterales debido a efectos relativistas que discutiremos mas adelante. Por el contrario, vistas en ángulos mayores, las mismas fuentes pueden clasificarse como radiogalaxias o cuásares.
+\end{itemize}
+
+Posteriormente, con el desarrollo del modelo unificado de AGN, se comprendió que estos objetos presentan una estructura mucho más compleja: un SMBH rodeado por un disco de acreción, a su vez rodeado por un toro de polvo y gas molecular. En las cercanías del disco se localiza la región de líneas anchas (\textit{Broad Line Region}, BLR), compuesta por nubes de gas ionizado que orbitan a velocidades de varios miles de kilómetros por segundo. A escalas mayores, más allá del toro, se encuentra la región de líneas estrechas (\textit{Narrow Line Region}, NLR), formada por gas menos denso y más frío, con velocidades de unos pocos cientos de kilómetros por segundo \citep{1995PASP..107..803U}. 
+
+La geometría del sistema, junto con la tasa de acreción, determina gran parte de las diferencias observacionales entre las diversas clases de AGN. En conjunto, los AGN representan laboratorios naturales para estudiar la acreción, la dinámica de plasmas relativistas y la interacción entre los SMBH y las galaxias que los contienen, constituyendo algunos de los objetos más energéticos y complejos del universo.
+
+
+\subsection{Radiogalaxias}
+Las radiogalaxias son un tipo de AGN que presentan una morfología bi-lobular en radio. En muchos casos, también presentan un núcleo compacto que puede resolverse en el óptico o en otras bandas. Los lóbulos de radio son alimentados continuamente por los \textit{jets} relativistas que emergen desde el núcleo activo y que transportan plasma a grandes distancias (e.g., \citealt{Fanaroff1974, begelman1984theory, Blandford2019}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{graphics/Marco/cenA_w22.jpg}
+    \caption{Imagen en Rayos X de la radiogalaxia Centaurus A, Chandra: NASA/CXC/SAO}
+    \label{fig:mod-1.5}
+\end{figure}
+
+La emisión en radio se debe al proceso de {radiación sincrotrón}, producido cuando electrones relativistas (acelerados en el entorno del agujero negro y a lo largo del \jet) se mueven en trayectorias helicoidales alrededor de las líneas de campo magnético. Este mecanismo no térmico genera un espectro continuo con fuerte polarización, característico de las fuentes de radio extendidas.
+
+Este tipo de fuentes se clasifican en dos categorías principales, conocidas como Fanaroff–Riley tipo I (FR~I) y tipo II (FR~II) \citep{Fanaroff1974}. Las galaxias FR~I presentan una morfología en la que las regiones de mayor brillo se localizan en las cercanías del núcleo y decaen hacia los extremos de los lóbulos. Los \jets en este tipo de fuentes tienden a ser más anchos, menos colimados y a perder energía de manera significativa en escalas relativamente cortas debido a su interacción con el medio circundante. Como consecuencia, la emisión es predominantemente difusa en los lóbulos externos.
+En contraste, las galaxias FR~II presentan una morfología de borde brillante, caracterizada por la presencia de regiones de emisión intensa en los extremos de los lóbulos, asociadas a choques de terminación (\textit{hotspots}) producidos cuando los \jets relativistas, altamente colimados, impactan contra el medio intergaláctico. Estos \jets se mantienen estables y energéticamente dominantes hasta distancias muy grandes respecto al núcleo, dando lugar a estructuras extensas y bien definidas. Las FR~II corresponden a galaxias de radio de alta potencia.
+
+
+En el caso de las galaxias FR I, estudios de emisión en rayos X \citep{Laing2007} sugieren que la aceleración de partículas no está confinada únicamente a regiones localizadas, sino que se encuentra distribuida a lo largo de todo el volumen del \jet. Esto refuerza la idea de que los \jets son sitios de aceleración eficiente de partículas relativistas a gran escala.
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{graphics/Marco/3C31-crop.pdf}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{graphics/Marco/3C98-crop.pdf}
+\end{subfigure}
+\caption[Imagen comparativa de galaxias FR~I y tipo II]{Imagenes de las galaxias 3C31 (izquierda), clasificada como FR tipo I, y 3C98 (derecha) clasificada como FR~II \citep{Hardcastle2020}}
+\label{fig:galaxias_FR}
+\end{figure}
+
+%------------------------------------------
+
+\section{Centaurus A}\label{ssec:CenA}
+
+Centaurus A (PKS 1322-428, NGC 5128) es una galaxia elíptica ubicada en la constelación de Centaurus, en el hemisferio sur celeste, a una distancia de $\sim 3.8$ Mpc de la Vía Láctea \citep{Harris2010}. Se trata de la radiogalaxia más cercana y, por lo tanto, un laboratorio excepcional para estudiar en detalle los procesos físicos que ocurren en núcleos activos de galaxias.
+
+Centaurus A alberga en su centro un SMBH con una masa estimada de $M = (5.5 \pm 3.0) \times 10^7 \ M_\odot$ (\citealt{Israel1998}; \citealt{Neumayer2010}). Desde el núcleo emergen \jets relativistas que se observan en radio y rayos X, extendiéndose desde escalas subparsec hasta cientos de kiloparsecs (\citealt{Clarke1992}; \citealt{Hardcastle2003}; \cite{Feain2011}). Su morfología general es consistente con una radiogalaxia de tipo FR I \citep{Fanaroff1974}, con un \jet bidireccional colimado hasta escalas de kiloparsec, que finalmente termina en lóbulos de radio brillantes. Estos lóbulos gigantes, que se extienden varios grados en el cielo (correspondientes a $\sim 600$ kpc en proyección), dominan la emisión en radio de la fuente y constituyen una de las estructuras más grandes observables asociadas a un AGN cercano.
+
+Gracias a su cercanía, Centaurus A ha sido estudiada a lo largo de todo el espectro electromagnético. En particular, observaciones con técnicas de interferometría de muy larga base (VLBI) revelan la estructura interna del \jet en escalas de decenas de milisegundos de arco ($\sim 0.018$ pc en proyección). El programa TANAMI \citep{Mueller2011} ha monitoreado la fuente en frecuencias $8.4~\mathrm{GHz}$ y $22.3~\mathrm{GHz}$ correspondientes a la banda de radio, mostrando un \jet altamente colimado a distancias de pocos días luz del SMBH (Fig. \ref{fig:marco-1}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{graphics/Marco/TANAMI_CEN_A.png}
+    \caption[Mapas de contorno de Cen A obtenido por el programa de monitoreo TANAMI]{Mapas de contorno de Cen A obtenido por el programa de monitoreo TANAMI en frecuencias de $8.4~\mathrm{GHz}$ y $22.3~\mathrm{GHz}$ \citep{Mueller2011}}
+    \label{fig:marco-1}
+\end{figure}
+
+Recientemente, observaciones del Telescopio Horizonte de Eventos (EHT, por sus siglas en inglés) han permitido obtener imágenes de Centaurus A con resolución nominal de 25 microarcosegundos ($\mu$as) a longitudes de onda de 1.3 mm. Dicha resolución permite discriminar estructuras a escalas por debajo de 200 radios gravitacionales \textcolor{red}{Referencia}. 
+
+Con este nivel de detalle se revela una estructura asimétrica altamente colimada, consistente con un \jet de borde brillante. Además, se detecta la presencia de un contra\jet más débil, lo que constituye un objetivo fundamental para el modelo desarrollado en este trabajo (\citealt{2021NatAs...5.1017J}; ver Fig.~\ref{fig:marco-2}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{graphics/Marco/EHT_CEN_A.png}
+    \caption[Estructura del \jet de Cen A. ]{Estructura del \jet de Cen A. \textbf{Izq.} Imagen obtenida del monitoreo TANAMI a una frecuencia de $8.4~\mathrm{GHz}$. Se muestra la temperatura de brillo en escala logarítmica (Noviembre 2011). \textbf{Der.} Imagen obtenida por el EHT a una frecuencia de $228~\mathrm{GHz}$ que revela estructuras a una escala mucho más pequeña. La escala de colores corresponde a la raíz cuadrada de la temperatura de brillo (Abril 2017).}
+    \label{fig:marco-2}
+\end{figure}
+
+
+Por estas características, Centaurus A es un caso de estudio clave para comprender cómo los \jets extraen energía del SMBH y se propagan a través del medio intergaláctico. En este trabajo, utilizamos observaciones de alta resolución (VLBI) obtenidas por el EHT para estudiar la morfología del \jet en escalas muy próximas al núcleo. Estos datos proporcionan una base sólida para contrastar modelos de emisión que dan lugar a la estructura \text{espina-vaina} (\textit{spine–sheath}) observada.
+
+\endinput

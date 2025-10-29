@@ -1,0 +1,304 @@
+\begin{thebibliography}{44}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aharonian} et~al.(2010){Aharonian}, {Kelner}, and
+  {Prosekin}]{Aharonian2010}
+F.~A. {Aharonian}, S.~R. {Kelner}, and A.~Y. {Prosekin}.
+\newblock {Angular, spectral, and time distributions of highest energy protons
+  and associated secondary gamma rays and neutrinos propagating through
+  extragalactic magnetic and radiation fields}.
+\newblock \emph{\prd}, 82\penalty0 (4):\penalty0 043002, Aug. 2010.
+\newblock \doi{10.1103/PhysRevD.82.043002}.
+
+\bibitem[Barniol~Duran et~al.(2017)Barniol~Duran, Tchekhovskoy, and
+  Giannios]{Barniol2017}
+R.~Barniol~Duran, A.~Tchekhovskoy, and D.~Giannios.
+\newblock Simulations of radiative magnetic reconnection in relativistic jets.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  469:\penalty0 4957--4978, 2017.
+
+\bibitem[Begelman(1998)]{Begelman1998}
+M.~C. Begelman.
+\newblock Instability of toroidal magnetic field in jets and plerions.
+\newblock \emph{The Astrophysical Journal}, 493:\penalty0 291--300, 1998.
+
+\bibitem[Begelman et~al.(1984)Begelman, Blandford, and
+  Rees]{begelman1984theory}
+M.~C. Begelman, R.~D. Blandford, and M.~J. Rees.
+\newblock Theory of extragalactic radio sources.
+\newblock \emph{Reviews of Modern Physics}, 56\penalty0 (2):\penalty0 255,
+  1984.
+
+\bibitem[Blandford and Payne(1982)]{Blandford1982}
+R.~D. Blandford and D.~G. Payne.
+\newblock Hydromagnetic flows from accretion disks and the production of radio
+  jets.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  199:\penalty0 883--903, 1982.
+
+\bibitem[Blandford and Znajek(1977)]{Blandford1977}
+R.~D. Blandford and R.~L. Znajek.
+\newblock Electromagnetic extraction of energy from kerr black holes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  179:\penalty0 433--456, 1977.
+
+\bibitem[Blandford et~al.(2019)Blandford, Meier, and Readhead]{Blandford2019}
+R.~D. Blandford, D.~Meier, and A.~Readhead.
+\newblock Relativistic jets from active galactic nuclei.
+\newblock \emph{Annual Review of Astronomy and Astrophysics}, 57:\penalty0
+  467--509, 2019.
+
+\bibitem[Blumenthal and Gould(1970)]{Blumenthal1970}
+G.~R. Blumenthal and R.~J. Gould.
+\newblock Bremsstrahlung, synchrotron radiation, and compton scattering of
+  high-energy electrons traversing dilute gases.
+\newblock \emph{Reviews of Modern Physics}, 42:\penalty0 237--270, 1970.
+
+\bibitem[Boccardi et~al.(2015)Boccardi, Krichbaum, Bach, Mertens, Ros, Ros,
+  Alef, and Zensus]{Boccardi2015}
+B.~Boccardi, T.~P. Krichbaum, U.~Bach, F.~Mertens, E.~Ros, E.~Ros, W.~Alef, and
+  J.~A. Zensus.
+\newblock The stratified two-sided jet of cygnus a. acceleration and
+  collimation.
+\newblock \emph{arXiv: High Energy Astrophysical Phenomena}, 2015.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:118551934}.
+
+\bibitem[Boccardi et~al.(2017)Boccardi, Krichbaum, Ros, and
+  Zensus]{Boccardi2017}
+B.~Boccardi, T.~P. Krichbaum, E.~Ros, and J.~A. Zensus.
+\newblock Radio observations of active galactic nuclei with mm-vlbi.
+\newblock \emph{The Astronomy and Astrophysics Review}, 25:\penalty0 4, 2017.
+
+\bibitem[{B{\"o}ttcher} et~al.(2013){B{\"o}ttcher}, {Reimer}, {Sweeney}, and
+  {Prakash}]{Böttcher2013}
+M.~{B{\"o}ttcher}, A.~{Reimer}, K.~{Sweeney}, and A.~{Prakash}.
+\newblock {Leptonic and Hadronic Modeling of Fermi-detected Blazars}.
+\newblock \emph{\apj}, 768\penalty0 (1):\penalty0 54, May 2013.
+\newblock \doi{10.1088/0004-637X/768/1/54}.
+
+\bibitem[{Bruni, G.} et~al.(2021){Bruni, G.}, {Gómez, J. L.}, {Vega-García,
+  L.}, {Lobanov, A. P.}, {Fuentes, A.}, {Savolainen, T.}, {Kovalev, Y. Y.},
+  {Perucho, M.}, {Martí, J.-M.}, {Anderson, J. M.}, {Edwards, P. G.},
+  {Gurvits, L. I.}, {Lisakov, M. M.}, {Pushkarev, A. B.}, {Sokolovsky, K. V.},
+  and {Zensus, J. A.}]{Bruni2021}
+{Bruni, G.}, {Gómez, J. L.}, {Vega-García, L.}, {Lobanov, A. P.}, {Fuentes,
+  A.}, {Savolainen, T.}, {Kovalev, Y. Y.}, {Perucho, M.}, {Martí, J.-M.},
+  {Anderson, J. M.}, {Edwards, P. G.}, {Gurvits, L. I.}, {Lisakov, M. M.},
+  {Pushkarev, A. B.}, {Sokolovsky, K. V.}, and {Zensus, J. A.}
+\newblock Radioastron reveals a spine-sheath jet structure in 3c 273.
+\newblock \emph{A&A}, 654:\penalty0 A27, 2021.
+\newblock \doi{10.1051/0004-6361/202039423}.
+\newblock URL \url{https://doi.org/10.1051/0004-6361/202039423}.
+
+\bibitem[Carroll(2004)]{Carroll2004}
+S.~M. Carroll.
+\newblock \emph{Spacetime and Geometry: An Introduction to General Relativity}.
+\newblock Addison Wesley, 2004.
+
+\bibitem[Clarke et~al.(1992)Clarke, Burns, and Norman]{Clarke1992}
+D.~A. Clarke, J.~O. Burns, and M.~L. Norman.
+\newblock Radio galaxy jets in cooling flows.
+\newblock \emph{The Astrophysical Journal}, 395:\penalty0 444--456, 1992.
+
+\bibitem[Curtis(1918)]{Curtis1918}
+H.~D. Curtis.
+\newblock Descriptions of 762 nebulae and clusters photographed with the
+  crossley reflector.
+\newblock \emph{Publications of the Lick Observatory}, 13:\penalty0 9--42,
+  1918.
+
+\bibitem[Fanaroff and Riley(1974)]{Fanaroff1974}
+B.~L. Fanaroff and J.~M. Riley.
+\newblock The morphology of extragalactic radio sources of high and low
+  luminosity.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  167:\penalty0 31P--36P, 1974.
+
+\bibitem[Fath(1909)]{Fath1909}
+E.~A. Fath.
+\newblock The spectra of some spiral nebulae and globular star clusters.
+\newblock \emph{Lick Observatory Bulletin}, 5:\penalty0 71--74, 1909.
+
+\bibitem[Feain et~al.(2011)]{Feain2011}
+I.~J. Feain et~al.
+\newblock The giant radio lobes of centaurus a: morphology, polarization, and
+  spectral index.
+\newblock \emph{The Astrophysical Journal}, 740:\penalty0 17, 2011.
+
+\bibitem[Hardcastle and Croston(2020)]{Hardcastle2020}
+M.~J. Hardcastle and J.~H. Croston.
+\newblock Radio galaxies and feedback from agn jets.
+\newblock \emph{New Astronomy Reviews}, 88:\penalty0 101539, 2020.
+
+\bibitem[Hardcastle et~al.(2003)Hardcastle, Worrall, Kraft, Forman, Jones, and
+  Murray]{Hardcastle2003}
+M.~J. Hardcastle, D.~M. Worrall, R.~P. Kraft, W.~R. Forman, C.~Jones, and S.~S.
+  Murray.
+\newblock Chandra and vla observations of the jet in centaurus a.
+\newblock \emph{The Astrophysical Journal}, 593:\penalty0 169--183, 2003.
+
+\bibitem[Harris et~al.(2010)Harris, Rejkuba, and Harris]{Harris2010}
+G.~L.~H. Harris, M.~Rejkuba, and W.~E. Harris.
+\newblock The distance to ngc 5128 (centaurus a).
+\newblock \emph{Publications of the Astronomical Society of Australia},
+  27:\penalty0 457--462, 2010.
+
+\bibitem[Hazard et~al.(1963)Hazard, Mackey, and Shimmins]{Hazard1963}
+C.~Hazard, M.~B. Mackey, and A.~J. Shimmins.
+\newblock Investigation of the radio source 3c 273 by the method of lunar
+  occultations.
+\newblock \emph{Nature}, 197:\penalty0 1037--1039, 1963.
+
+\bibitem[Israel(1998)]{Israel1998}
+F.~P. Israel.
+\newblock Centaurus a - ngc 5128.
+\newblock \emph{Astronomy and Astrophysics Review}, 8:\penalty0 237--278, 1998.
+
+\bibitem[{Janssen} et~al.(2021)]{2021NatAs...5.1017J}
+M.~{Janssen} et~al.
+\newblock {Event Horizon Telescope observations of the jet launching and
+  collimation in Centaurus A}.
+\newblock \emph{Nature Astronomy}, 5:\penalty0 1017--1028, July 2021.
+\newblock \doi{10.1038/s41550-021-01417-w}.
+
+\bibitem[Jennison and Das~Gupta(1953)]{Jennison1953}
+R.~C. Jennison and M.~K. Das~Gupta.
+\newblock Fine structure of the extra-terrestrial radio source cygnus i.
+\newblock \emph{Nature}, 172:\penalty0 996--997, 1953.
+
+\bibitem[Kerr(1963)]{Kerr1963}
+R.~P. Kerr.
+\newblock Gravitational field of a spinning mass as an example of algebraically
+  special metrics.
+\newblock \emph{Physical Review Letters}, 11:\penalty0 237--238, 1963.
+
+\bibitem[Laing et~al.(2007)]{Laing2007}
+R.~A. Laing et~al.
+\newblock A chandra survey of x-ray emission from 3crr radio galaxies and
+  quasars.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  378:\penalty0 541--566, 2007.
+
+\bibitem[Meier(2001)]{Meier2001}
+D.~L. Meier.
+\newblock The association of jet production with accretion disk magnetic fields
+  and black hole spin.
+\newblock \emph{ApJ}, 548:\penalty0 L9--L12, 2001.
+
+\bibitem[{Mertens} et~al.(2016){Mertens}, {Lobanov}, {Walker}, and
+  {Hardee}]{Mertens2016}
+F.~{Mertens}, A.~P. {Lobanov}, R.~C. {Walker}, and P.~E. {Hardee}.
+\newblock {Kinematics of the jet in M 87 on scales of 100-1000 Schwarzschild
+  radii}.
+\newblock \emph{\aap}, 595:\penalty0 A54, Oct. 2016.
+\newblock \doi{10.1051/0004-6361/201628829}.
+
+\bibitem[Müller et~al.(2011)]{Mueller2011}
+C.~Müller et~al.
+\newblock Cen a monitoring with tanami: parsec-scale radio jets and
+  multiwavelength correlations.
+\newblock \emph{Astronomy and Astrophysics}, 530:\penalty0 L11, 2011.
+
+\bibitem[Nagai(2019)]{Nagai2019}
+H.~e.~a. Nagai.
+\newblock Subparsec-scale limb-brightened jet of 3c 84 revealed by 43 ghz vlba
+  monitoring.
+\newblock \emph{ApJ}, 883:\penalty0 193, 2019.
+
+\bibitem[Nakamura et~al.(2018)Nakamura, Asada, Hada, Pu, Noble, Tseng, Toma,
+  Kino, Nagai, Takahashi, Algaba, Orienti, Akiyama, Doi, Giovannini, Giroletti,
+  Honma, Koyama, Lico, Niinuma, and Tazaki]{Nakamura2018}
+M.~Nakamura, K.~Asada, K.~Hada, H.-Y. Pu, S.~Noble, C.~Tseng, K.~Toma, M.~Kino,
+  H.~Nagai, K.~Takahashi, J.~C. Algaba, M.~Orienti, K.~Akiyama, A.~Doi,
+  G.~Giovannini, M.~Giroletti, M.~Honma, S.~Koyama, R.~Lico, K.~Niinuma, and
+  F.~Tazaki.
+\newblock Parabolic jets from the spinning black hole in m87.
+\newblock \emph{Astrophysical Journal}, 868\penalty0 (2):\penalty0 146, Dec.
+  2018.
+\newblock \doi{10.3847/1538-4357/aaeb2d}.
+
+\bibitem[Neumayer(2010)]{Neumayer2010}
+N.~Neumayer.
+\newblock Supermassive black hole mass measurements in centaurus a.
+\newblock \emph{Publications of the Astronomical Society of Australia},
+  27:\penalty0 449--456, 2010.
+
+\bibitem[{Park} and {Petrosian}(1996)]{Park1996}
+B.~T. {Park} and V.~{Petrosian}.
+\newblock {Fokker-Planck Equations of Stochastic Acceleration: A Study of
+  Numerical Methods}.
+\newblock \emph{\apjs}, 103:\penalty0 255, Mar. 1996.
+\newblock \doi{10.1086/192278}.
+
+\bibitem[{Romero} et~al.(2017){Romero}, {Boettcher}, {Markoff}, and
+  {Tavecchio}]{Romero2017}
+G.~E. {Romero}, M.~{Boettcher}, S.~{Markoff}, and F.~{Tavecchio}.
+\newblock {Relativistic Jets in Active Galactic Nuclei and Microquasars}.
+\newblock \emph{\ssr}, 207\penalty0 (1-4):\penalty0 5--61, July 2017.
+\newblock \doi{10.1007/s11214-016-0328-2}.
+
+\bibitem[{Rybicki} and {Lightman}(1979)]{Rybicki1979}
+G.~B. {Rybicki} and A.~P. {Lightman}.
+\newblock \emph{{Radiative processes in astrophysics}}.
+\newblock 1979.
+
+\bibitem[Schmidt(1963)]{Schmidt1963}
+M.~Schmidt.
+\newblock 3c 273: A star-like object with large red-shift.
+\newblock \emph{Nature}, 197:\penalty0 1040, 1963.
+
+\bibitem[Schwarzschild(1916)]{Schwarzschild1916}
+K.~Schwarzschild.
+\newblock Über das gravitationsfeld eines massenpunktes nach der einsteinschen
+  theorie.
+\newblock \emph{Sitzungsberichte der Königlich Preussischen Akademie der
+  Wissenschaften}, pages 189--196, 1916.
+
+\bibitem[Seyfert(1943)]{Seyfert1943}
+C.~K. Seyfert.
+\newblock Nuclear emission in spiral nebulae.
+\newblock \emph{The Astrophysical Journal}, 97:\penalty0 28--40, 1943.
+
+\bibitem[{Ulrich} et~al.(1997){Ulrich}, {Maraschi}, and {Urry}]{Ulrich1997}
+M.-H. {Ulrich}, L.~{Maraschi}, and C.~M. {Urry}.
+\newblock {Variability of Active Galactic Nuclei}.
+\newblock \emph{\araa}, 35:\penalty0 445--502, Jan. 1997.
+\newblock \doi{10.1146/annurev.astro.35.1.445}.
+
+\bibitem[{Urry} and {Padovani}(1995)]{1995PASP..107..803U}
+C.~M. {Urry} and P.~{Padovani}.
+\newblock {Unified Schemes for Radio-Loud Active Galactic Nuclei}.
+\newblock \emph{\pasp}, 107:\penalty0 803, Sept. 1995.
+\newblock \doi{10.1086/133630}.
+
+\bibitem[Walker et~al.(2016)Walker, Hardee, Davies, Ly, Junor, Mertens, and
+  Lobanov]{Walker2016}
+R.~C. Walker, P.~E. Hardee, F.~Davies, C.~Ly, W.~Junor, F.~Mertens, and
+  A.~Lobanov.
+\newblock Observations of the structure and dynamics of the inner m87 jet.
+\newblock \emph{Galaxies}, 4\penalty0 (4), 2016.
+\newblock ISSN 2075-4434.
+\newblock \doi{10.3390/galaxies4040046}.
+\newblock URL \url{https://www.mdpi.com/2075-4434/4/4/46}.
+
+\bibitem[Yang et~al.(2024)Yang, Yuan, Li, Mizuno, Guo, Lu, Ho, Lin, Zdziarski,
+  and Wang]{Yang2024}
+H.~Yang, F.~Yuan, H.~Li, Y.~Mizuno, F.~Guo, R.~Lu, L.~C. Ho, X.~Lin, A.~A.
+  Zdziarski, and J.~Wang.
+\newblock Modeling the inner part of the jet in m87: Confronting jet morphology
+  with theory.
+\newblock \emph{Science Advances}, 10\penalty0 (12):\penalty0 eadn3544, 2024.
+\newblock \doi{10.1126/sciadv.adn3544}.
+
+\bibitem[{Zdziarski} et~al.(2014){Zdziarski}, {Stawarz}, {Pjanka}, and
+  {Sikora}]{Zdziarski2014}
+A.~A. {Zdziarski}, {\L}.~{Stawarz}, P.~{Pjanka}, and M.~{Sikora}.
+\newblock {Jet models for black hole binaries in the hard spectral state}.
+\newblock \emph{\mnras}, 440\penalty0 (3):\penalty0 2238--2254, May 2014.
+\newblock \doi{10.1093/mnras/stu420}.
+
+\end{thebibliography}

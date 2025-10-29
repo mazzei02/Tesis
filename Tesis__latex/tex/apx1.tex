@@ -1,0 +1,91 @@
+\chapter{Radiaci\'on sincrotrón}\label{cha:apx1}
+
+Una partícula cargada inmersa en un campo magnético uniforme \textbf{B} emitirá radiación linealmente polarizada denominada radiación sincrotrón. En ambientes astrofísicos, la radiación sincrotrón puede contribuir al flujo de energía
+en radio, en el óptico o incluso rayos X blandos. 
+
+En el l\'imite clásico, la potencia por unidad de energía emitida por una partícula de energía $E=\gamma mc^2$ y carga $e$ en un campo magnético $B$, es 
+\begin{equation}\label{eq:marco-2}
+    P_{\text{syn}}=\frac{\sqrt{3}e^3B}{4\pi mc^2h}\frac{E_\gamma}{E_c}\int_{{E_\gamma}/{E_c}}^\infty K_{5/3}(\xi)d\xi, \\
+\end{equation}
+donde
+\begin{equation}\label{eq:marco-3}
+    E_c=\frac{3heB\sin(\alpha)}{4\pi mc}\gamma^2,
+\end{equation}
+aquí $\alpha$ es el ángulo formado entre la velocidad de la partícula y el campo magnético, $E_\gamma$ es la energía del fotón radiado y $K_{5/3}$ es la función modificada de Bessel \citep{Blumenthal1970}. El espectro de la radiación sincrotrón alcanza un máximo agudo para $E_\gamma\approx0.29E_c$.
+
+\cite{Aharonian2010} presenta una aproximacion para el valor de esta integral. Para ello proponemos $x={E_\gamma}/{E_c}$, luego redefinimos la integral anterior como
+
+\begin{equation}\label{eq:mod-28}
+    F(x)=x\int_x^\infty K_{5/3}(\tau)d\tau.
+\end{equation}
+
+Si tomamos la componente del campo magnético perpendicular a la velocidad del electrón $B_\perp=B\sin(\theta)$ con $\theta$ el \'angulo entre $\textbf{v}$ y $\textbf{B}$ definimos
+
+\begin{equation}\label{eq:mod-29}
+    G(x)=\int\sin(\theta)F\left(\frac{x}{\sin(\theta)}\right)\frac{d\Omega}{4\pi}=\frac{1}{2}\int_0^\pi F\left(\frac{x}{\sin(\theta)}\right)\sin^2(\theta)d\theta.
+\end{equation}
+Luego proponemos la siguiente aproximación para $G(x)$, con una precisión mejor del $0.2\%$ en todo el rango de $x$.
+
+\begin{equation}\label{eq:mod-30}
+    G(x) \approx \frac{1.808x^{1/3}}{\sqrt{1 + 3.4x^{2/3}}}\left(\frac{1 + 2.21x^{2/3}+0.347x^{4/3}}{1 +  1.353x^{2/3}+ 0.217x^{4/3}}\right)e^{-x }.
+\end{equation}
+
+Finalmente, la potencia sincrotrón resulta
+
+\begin{equation}\label{eq:mod-31}
+    P_{\text{syn}}\simeq\frac{\sqrt{3}e^3B}{4\pi mc^2h}G(x), 
+    \qquad x=\frac{E_\gamma}{E_c}.
+\end{equation}
+
+
+La tasa de pérdida de energía para una partícula es
+
+\begin{equation}\label{eq:marco-4}
+    \left(\frac{dE}{dt}\right)_{\text{syn}}=-\frac{4}{3}\left(\frac{m_{e}}{m}\right)^2c\sigma_{Th}\frac{B^2}{8\pi}\gamma^2
+\end{equation}
+donde $m_e$ es la masa en reposo del electrón y $\sigma_{Th}$ es la sección eficaz de Thomson. Una característica clave de la radiación sincrotrón es que se emite naturalmente colimada en un cono de semiapertura $\sim1/\gamma$ respecto a la dirección de movimiento de la partícula.
+
+Para una distribución de partículas $N(E,\alpha)$, la potencia total sincrotrón por unidad de volumen resulta
+
+\begin{equation}\label{eq:marco-5}
+    q_{\text{syn}}(E_\gamma)=\int_{E_{min}}^{E_{max}}\int_{\Omega_{\alpha}} N(E,\alpha)P_{syn}(E_\gamma,E,\alpha)\sin(\alpha)dEd\Omega_{\alpha}.
+\end{equation}
+
+
+En particular, si la distribución de electrones es isotrópica y sigue una ley de potencias con índice $p$ ($N(E)\propto E^{-p}$), la integración en energía conduce a un espectro sincrotrón también en forma de potencia:
+
+\begin{equation}\label{eq:marco-6}
+    q_{\text{syn}}(E_\gamma)\propto E_\gamma^{\frac{p-1}{2}}.
+\end{equation}
+
+Este caso resulta especialmente relevante ya que los principales mecanismos de aceleración de partículas en astrofísica producen de manera natural distribuciones de electrones con índices espectrales cercanos a $p\simeq 2$. En consecuencia, la forma de ley de potencias en la radiación sincrotrón constituye una huella directa de la aceleración no térmica en \jets relativistas y otras fuentes compactas.
+
+\section{Auto-absorci\'on sincrotrón (SSA)}
+
+La emisión sincrotrón suele estar acompañada por procesos de absorción y de emisión inducida. En el primero, los fotones producidos por las partículas relativistas transfieren su energía a otras cargas en presencia del campo magnético, reduciendo la intensidad observable. En el segundo, la emisión estimulada tiende a amplificar la radiación en direcciones y frecuencias donde esta ya es predominante, modificando la distribución angular y espectral de la emisión total.
+
+Para una población de partículas con una distribución de energías en forma de ley de potencias, $N(E) = K E^{-p}$, el coeficiente de absorción puede escribirse como \citep{{Rybicki1979}:
+
+\begin{equation}\label{eq:marco-7}
+\alpha_\nu = \frac{(p+2)c^2}{8\pi\nu^2} \int dE, P(\nu,E)\frac{N(E)}{E} \propto \nu^{-(p+4)/2},
+\end{equation}
+donde $P(\nu, E)$ es la potencia emitida por una partícula de energía $E$ a la frecuencia $\nu$.
+
+Si consideramos una región uniforme en la cual tanto el coeficiente de emisión $j_\nu$ como el de absorción $\alpha_\nu$ son aproximadamente constantes a lo largo de una trayectoria efectiva de longitud $l$, la intensidad emergente puede expresarse como
+
+\begin{equation}\label{eq:marco-8}
+I_\nu = \frac{j_\nu}{\alpha_\nu}\left(1 - e^{-\alpha_\nu l}\right),
+\end{equation}
+En el régimen ópticamente grueso ($\alpha_\nu l \gg 1$) resulta en un espectro con una pendiente característica $I_\nu \propto \nu^{5/2}$, independiente del índice espectral $p$.
+Este comportamiento genera un quiebre en el espectro a bajas frecuencias, que marca la transición entre las regiones ópticamente gruesa y delgada del flujo sincrotrón. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.65\linewidth]{graphics/Marco/Sincrotron_absorcion.png}
+\caption[Espectro típico de emisión sincrotrón]{Espectro esquemático de emisión sincrotrón mostrando las regiones ópticamente gruesa ($I_\nu \propto \nu^{5/2}$) y ópticamente delgada ($I_\nu \propto \nu^{-(p-1)/2}$). Imagen obtenida de \cite{Rybicki1979}}
+\label{fig:synchrotron_break}
+\end{figure}
+
+
+
+\endinput
