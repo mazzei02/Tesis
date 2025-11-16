@@ -1,6 +1,6 @@
 \chapter{Marco Te\'orico}\label{cha:Marco}
 
-En este capítulo introducimos algunos de los conceptos teóricos clave para entender el desarrollo de nuestro modelo de \jet con estructura. En primera instancia, realizamos una descripción básica de los agujeros negros, así como los mecanismos de lanzamiento de \jets, para continuar con una explicación detallada de las propiedades de los \jets típicos de las radiogalaxias. Seguidamente, describimos brevemente la fenomenología, el descubrimiento y la clasificaci\'on detrás de los núcleos galácticos activos (AGN, del inglés \textit{Active Galactic Nuclei}) y en particular del subgrupo de las radiogalaxias. Hacia el final del capítulo, describimos brevemente las propiedades de Centaurus A, la radiogalaxia más cercana a la Vía Láctea y cuya emisión modelamos en el desarrollo de este trabajo.
+En este capítulo introducimos algunos de los conceptos teóricos clave para entender el desarrollo de nuestro modelo de \jet con estructura. En primera instancia, realizamos una descripción básica de los agujeros negros, así como los mecanismos de lanzamiento de \jets, para continuar con una explicación detallada de las propiedades de los \jets típicos de las radiogalaxias. Seguidamente, describimos brevemente la fenomenología, el descubrimiento y la clasificaci\'on detrás de los núcleos galácticos activos (AGN, del inglés \textit{Active Galactic Nuclei}) y en particular del subgrupo de las radiogalaxias. Hacia el final del capítulo, describimos brevemente las propiedades de Centaurus A (abreviado, Cen A), la radiogalaxia más cercana a la Vía Láctea y cuya emisión modelamos en el desarrollo de este trabajo.
 %=====================================================
 %
 
@@ -204,7 +204,7 @@ Las radiogalaxias son un tipo de AGN que presentan una morfología bi-lobular en
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\linewidth]{graphics/Marco/cenA_w22.jpg}
-    \caption{Imagen en Rayos X de la radiogalaxia Centaurus A, Chandra: NASA/CXC/SAO}
+    \caption{Imagen en Rayos X de la radiogalaxia Cen A, Chandra: NASA/CXC/SAO}
     \label{fig:mod-1.5}
 \end{figure}
 
@@ -237,9 +237,9 @@ En el caso de las galaxias FR I, estudios de emisión en rayos X \citep{Laing200
 
 Centaurus A (PKS 1322-428, NGC 5128) es una galaxia elíptica ubicada en la constelación de Centaurus, en el hemisferio sur celeste, a una distancia de $\sim 3.8$ Mpc de la Vía Láctea \citep{Harris2010}. Se trata de la radiogalaxia más cercana y, por lo tanto, un laboratorio excepcional para estudiar en detalle los procesos físicos que ocurren en núcleos activos de galaxias.
 
-Centaurus A alberga en su centro un SMBH con una masa estimada de $M = (5.5 \pm 3.0) \times 10^7 \ M_\odot$ (\citealt{Israel1998}; \citealt{Neumayer2010}). Desde el núcleo emergen \jets relativistas que se observan en radio y rayos X, extendiéndose desde escalas subparsec hasta cientos de kiloparsecs (\citealt{Clarke1992}; \citealt{Hardcastle2003}; \cite{Feain2011}). Su morfología general es consistente con una radiogalaxia de tipo FR I \citep{Fanaroff1974}, con un \jet bidireccional colimado hasta escalas de kiloparsec, que finalmente termina en lóbulos de radio brillantes. Estos lóbulos gigantes, que se extienden varios grados en el cielo (correspondientes a $\sim 600$ kpc en proyección), dominan la emisión en radio de la fuente y constituyen una de las estructuras más grandes observables asociadas a un AGN cercano.
+Cen A alberga en su centro un SMBH con una masa estimada de $M = (5.5 \pm 3.0) \times 10^7 \ M_\odot$ (\citealt{Israel1998}; \citealt{Neumayer2010}). Desde el núcleo emergen \jets relativistas que se observan en radio y rayos X, extendiéndose desde escalas subparsec hasta cientos de kiloparsecs (\citealt{Clarke1992}; \citealt{Hardcastle2003}; \cite{Feain2011}). Su morfología general es consistente con una radiogalaxia de tipo FR I \citep{Fanaroff1974}, con un \jet bidireccional colimado hasta escalas de kiloparsec, que finalmente termina en lóbulos de radio brillantes. Estos lóbulos gigantes, que se extienden varios grados en el cielo (correspondientes a $\sim 600$ kpc en proyección), dominan la emisión en radio de la fuente y constituyen una de las estructuras más grandes observables asociadas a un AGN cercano.
 
-Gracias a su cercanía, Centaurus A ha sido estudiada a lo largo de todo el espectro electromagnético. En particular, observaciones con técnicas de interferometría de muy larga base (VLBI) revelan la estructura interna del \jet en escalas de decenas de milisegundos de arco ($\sim 0.018$ pc en proyección). El programa TANAMI \citep{Mueller2011} ha monitoreado la fuente en frecuencias $8.4~\mathrm{GHz}$ y $22.3~\mathrm{GHz}$ correspondientes a la banda de radio, mostrando un \jet altamente colimado a distancias de pocos días luz del SMBH (Fig. \ref{fig:marco-1}).
+Gracias a su cercanía, Cen A ha sido estudiada a lo largo de todo el espectro electromagnético. En particular, observaciones con técnicas de interferometría de muy larga base (VLBI) revelan la estructura interna del \jet en escalas de decenas de milisegundos de arco ($\sim 0.018$ pc en proyección). El programa TANAMI \citep{Mueller2011} ha monitoreado la fuente en frecuencias $8.4~\mathrm{GHz}$ y $22.3~\mathrm{GHz}$ correspondientes a la banda de radio, mostrando un \jet altamente colimado a distancias de pocos días luz del SMBH (Fig. \ref{fig:marco-1}).
 
 \begin{figure}[h!]
     \centering
@@ -248,18 +248,24 @@ Gracias a su cercanía, Centaurus A ha sido estudiada a lo largo de todo el espe
     \label{fig:marco-1}
 \end{figure}
 
-Recientemente, observaciones del Telescopio Horizonte de Eventos (EHT, por sus siglas en inglés) han permitido obtener imágenes de Centaurus A con resolución nominal de 25 microarcosegundos ($\mu$as) a longitudes de onda de 1.3 mm. Dicha resolución permite discriminar estructuras a escalas por debajo de 200 radios gravitacionales \textcolor{red}{Referencia}. 
+Recientemente, observaciones del Telescopio \textit{Event Horizon} (EHT, por sus siglas en inglés) han permitido obtener imágenes de Cen A con resolución nominal de 25 microarcosegundos ($\mu$as) a longitudes de onda de 1.3 mm. Dicha resolución permite discriminar estructuras a escalas por debajo de 200 radios gravitacionales \citep{2021NatAs...5.1017J}. 
 
 Con este nivel de detalle se revela una estructura asimétrica altamente colimada, consistente con un \jet de borde brillante. Además, se detecta la presencia de un contra\jet más débil, lo que constituye un objetivo fundamental para el modelo desarrollado en este trabajo (\citealt{2021NatAs...5.1017J}; ver Fig.~\ref{fig:marco-2}).
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{graphics/Marco/EHT_CEN_A.png}
-    \caption[Estructura del \jet de Cen A. ]{Estructura del \jet de Cen A. \textbf{Izq.} Imagen obtenida del monitoreo TANAMI a una frecuencia de $8.4~\mathrm{GHz}$. Se muestra la temperatura de brillo en escala logarítmica (Noviembre 2011). \textbf{Der.} Imagen obtenida por el EHT a una frecuencia de $228~\mathrm{GHz}$ que revela estructuras a una escala mucho más pequeña. La escala de colores corresponde a la raíz cuadrada de la temperatura de brillo (Abril 2017).}
+    \caption[Estructura del \jet de Cen A. ]{Estructura del \jet de Cen A. \textbf{Izq.} Imagen obtenida del monitoreo TANAMI a una frecuencia de $8.4~\mathrm{GHz}$. Se muestra la temperatura de brillo en escala logarítmica (Noviembre 2011). \textbf{Der.} Imagen obtenida por el EHT a una frecuencia de $228~\mathrm{GHz}$ que revela estructuras a una escala mucho más pequeña. La escala de colores corresponde a la raíz cuadrada de la temperatura de brillo (Abril 2017). \citep{2021NatAs...5.1017J}}
     \label{fig:marco-2}
 \end{figure}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{graphics/Marco/ajad91a5f1_lr.jpg}
+    \caption[Estructura del \jet de Cen A a diversas escalas espaciales. ]{Estructura del \jet de Cen A a diversas escalas espaciales. Imagen obtenida de \cite{Prabu2025}. Las imagenes que la componen corresponden, de mayor a menor escala espacial, a \cite{McKinley2022} (MWA), \cite{Hardcastle2003} (VLA), \cite{Prabu2025} (VLBA) y \cite{2021NatAs...5.1017J} (EHT).}
+    \label{fig:marco-2}
+\end{figure}
 
-Por estas características, Centaurus A es un caso de estudio clave para comprender cómo los \jets extraen energía del SMBH y se propagan a través del medio intergaláctico. En este trabajo, utilizamos observaciones de alta resolución (VLBI) obtenidas por el EHT para estudiar la morfología del \jet en escalas muy próximas al núcleo. Estos datos proporcionan una base sólida para contrastar modelos de emisión que dan lugar a la estructura \text{espina-vaina} (\textit{spine–sheath}) observada.
+Por estas características, Cen A es un caso de estudio clave para comprender cómo los \jets extraen energía del SMBH y se propagan a través del medio intergaláctico. En este trabajo, utilizamos observaciones de alta resolución (VLBI) obtenidas por el EHT para estudiar la morfología del \jet en escalas muy próximas al núcleo. Estos datos proporcionan una base sólida para contrastar modelos de emisión que dan lugar a la estructura \text{espina-vaina} (\textit{spine–sheath}) observada.
 
 \endinput

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.15)  27 OCT 2025 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.15)  10 NOV 2025 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -577,10 +577,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 \l__pdf_internal_box=\box76
 )
-(./Tesis_Apellido.aux (./tex/portada.aux) (./tex/prefacio.aux)
-(./tex/resumen.aux) (./tex/dedicatoria.aux) (./tex/agradecimientos.aux)
-(./tex/acronimos.aux) (./tex/introduccion.aux) (./tex/Marco.aux)
-(./tex/Modelo.aux) (./tex/Resultados.aux) (./tex/apx1.aux))
+(./Tesis_Apellido.aux (./tex/Resultados.aux))
 \openout1 = `Tesis_Apellido.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
@@ -680,690 +677,201 @@ Package hyperref Info: Link coloring ON on input line 151.
 \@outlinefile=\write4
 \openout4 = `Tesis_Apellido.out'.
 
-\openout2 = `tex/portada.aux'.
+ Excluding 'comment' comment.
+\openout2 = `tex/Resultados.aux'.
 
- (./tex/portada.tex
-<graphics/portada/logo-unlp.png, id=188, 329.23pt x 389.455pt>
-File: graphics/portada/logo-unlp.png Graphic file (type png)
-<use graphics/portada/logo-unlp.png>
-Package pdftex.def Info: graphics/portada/logo-unlp.png  used on input line 5.
-(pdftex.def)             Requested size: 192.42043pt x 227.62204pt.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-.
 
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
+(./tex/Resultados.tex
+\bbl@ensure@spanish {Cap\'\i tulo} 1.
+Excluding 'comment' comment.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+0.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-6.
+20.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-6.
+20.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 6.
+(Font)              <10.95> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 6.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+(Font)              <6> on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+0.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-
-LaTeX Font Warning: Font shape `OT1/lmr/m/scit' undefined
-(Font)              using `OT1/lmr/m/scsl' instead on input line 14.
-
-) [1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc} <./graphic
-s/portada/logo-unlp.png>] [2
-
-
-
-]
-\openout2 = `tex/prefacio.aux'.
-
- (./tex/prefacio.tex
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-13.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) [3
-
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}] [4
-
-
-
-]
-\openout2 = `tex/resumen.aux'.
-
- (./tex/resumen.tex [5
-
-
-] [6
-
-]) [7] [8
-
-
-
-]
-\openout2 = `tex/dedicatoria.aux'.
-
-
-(./tex/dedicatoria.tex) [9
-
-] [10
-
-
-
-]
-\openout2 = `tex/agradecimientos.aux'.
-
- (./tex/agradecimientos.tex) [11
-
-
-] [12
-
-
-
-]
-(./Tesis_Apellido.toc [13
-
-])
-\tf@toc=\write5
-\openout5 = `Tesis_Apellido.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.87001pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.87001pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.87001pt}.
-
-[14]
-\openout2 = `tex/acronimos.aux'.
-
- (./tex/acronimos.tex
-Overfull \hbox (6.85898pt too wide) in paragraph at lines 12--13
-[]\OT1/lmr/m/n/10.95 LINER: Re-giones nu-cle-ar-es emiso-ras de ba-ja ion-izaci
-^^Son (\OT1/lmr/m/it/10.95 Low-ionization nu-cle-ar emission-
+Overfull \hbox (9.90968pt too wide) in paragraph at lines 20--21
+\OT1/lmr/m/n/10.95 ris et al.[][], [][]2010[][]) de la V^^S^^Pa L^^Sactea, el n
+^^Sucleo de la galax-ia con-tiene un SMBH de $\OML/lmm/m/it/10.95 M[] \OT1/lmr/
+m/n/10.95 = 5\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 5 \OMS/lmsy/m/n/10.95 ^^A 
+\OT1/lmr/m/n/10.95 10[] \OML/lmm/m/it/10.95 M[]$
  []
 
-! Undefined control sequence.
-l.23 ...Telescopio \textit{Event Horizont} (\texit
-                                                  {Event Horizont Telescope})
-? 
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.87001pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.87001pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.87001pt}.
-
-[15
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [16
-
-
-
-] (./Tesis_Apellido.lof)
-\tf@lof=\write6
-\openout6 = `Tesis_Apellido.lof'.
-
- [17
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [18
-
-]
-\openout2 = `tex/introduccion.aux'.
-
-
-(./tex/introduccion.tex
-\bbl@ensure@spanish {Cap\'\i tulo} 1.
-
-Package natbib Warning: Citation `Ransom2011' on page 1 undefined on input line
- 44.
-
-
-LaTeX Warning: Reference `cha:radio' on page 1 undefined on input line 52.
-
-
-LaTeX Warning: Reference `cha:ondas' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Reference `cha:conclusiones' on page 1 undefined on input line 5
-5.
-
-) [1
-
-
-
-] [2
-
-
-
-]
-\openout2 = `tex/Marco.aux'.
-
- (./tex/Marco.tex
-\bbl@ensure@spanish {Cap\'\i tulo} 2.
-
-Package natbib Warning: Citation `Schwarzschild1916' on page 3 undefined on inp
-ut line 17.
-
-
-Package natbib Warning: Citation `Carroll2004' on page 3 undefined on input lin
-e 22.
-
-[3
-
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathex.enc}]
-
-Package natbib Warning: Citation `Kerr1963' on page 4 undefined on input line 2
-6.
-
-
-Package natbib Warning: Citation `Carroll2004' on page 4 undefined on input lin
-e 37.
-
-
-Package natbib Warning: Citation `Boccardi2017' on page 4 undefined on input li
-ne 45.
-
-Excluding 'comment' comment. [4]
-
-Package natbib Warning: Citation `Mertens2016' on page 5 undefined on input lin
-e 87.
-
-
-Package natbib Warning: Citation `Walker2016' on page 5 undefined on input line
- 87.
-
-
-Package natbib Warning: Citation `Nagai2019' on page 5 undefined on input line 
-87.
-
-
-Package natbib Warning: Citation `Boccardi2015' on page 5 undefined on input li
-ne 87.
-
-
-Package natbib Warning: Citation `Mertens2016' on page 5 undefined on input lin
-e 87.
-
-
-Package natbib Warning: Citation `Walker2016' on page 5 undefined on input line
- 87.
-
-
-Package natbib Warning: Citation `Nagai2019' on page 5 undefined on input line 
-87.
-
-
-Package natbib Warning: Citation `Bruni2021' on page 5 undefined on input line 
-87.
-
-
-Package natbib Warning: Citation `Yang2024' on page 5 undefined on input line 8
-7.
-
-
-Package natbib Warning: Citation `Nakamura2018' on page 5 undefined on input li
-ne 87.
-
-
-Package natbib Warning: Citation `Blandford1977' on page 5 undefined on input l
-ine 92.
-
-
-Package natbib Warning: Citation `Blandford1982' on page 5 undefined on input l
-ine 92.
-
-[5]
-
-Package natbib Warning: Citation `Blandford1977' on page 6 undefined on input l
-ine 95.
-
-
-Package natbib Warning: Citation `Blandford1982' on page 6 undefined on input l
-ine 96.
-
-Excluding 'comment' comment.
-
-Package natbib Warning: Citation `1995PASP..107..803U' on page 6 undefined on i
-nput line 115.
-
-
-Package natbib Warning: Citation `Ulrich1997' on page 6 undefined on input line
- 115.
-
-
-Package natbib Warning: Citation `Böttcher2013' on page 6 undefined on input l
-ine 117.
-
-Excluding 'comment' comment.
-Runaway argument?
-{Existen múltiples modelos para la aceleración de partículas en un\ETC.
-! Paragraph ended before \@textcolor was complete.
-<to be read again> 
-                   \par 
-l.138 
-      
-? 
-
-Package natbib Warning: Citation `Begelman1998' on page 6 undefined on input li
-ne 139.
-
-
-Package natbib Warning: Citation `Barniol2017' on page 6 undefined on input lin
-e 139.
-
-! Too many }'s.
-l.139 ...ue puede transferirse a las partículas.}
-                                                  \textcolor{red}{expandir}
-? 
-[6] Excluding 'comment' comment.
-
-Package natbib Warning: Citation `Fath1909' on page 7 undefined on input line 1
-83.
-
-
-Package natbib Warning: Citation `Seyfert1943' on page 7 undefined on input lin
-e 183.
-
-
-Package natbib Warning: Citation `Curtis1918' on page 7 undefined on input line
- 184.
-
-
-Package natbib Warning: Citation `Jennison1953' on page 7 undefined on input li
-ne 184.
-
-
-Package natbib Warning: Citation `Hazard1963' on page 7 undefined on input line
- 184.
-
-
-Package natbib Warning: Citation `Schmidt1963' on page 7 undefined on input lin
-e 184.
-
-[7]
-
-Package natbib Warning: Citation `1995PASP..107..803U' on page 8 undefined on i
-nput line 186.
-
-
-Package natbib Warning: Citation `1995PASP..107..803U' on page 8 undefined on i
-nput line 196.
-
-
-Package natbib Warning: Citation `Fanaroff1974' on page 8 undefined on input li
-ne 202.
-
-
-Package natbib Warning: Citation `begelman1984theory' on page 8 undefined on in
-put line 202.
-
-
-Package natbib Warning: Citation `Blandford2019' on page 8 undefined on input l
-ine 202.
-
-<graphics/Marco/cenA_w22.jpg, id=409, 526.96875pt x 526.96875pt>
-File: graphics/Marco/cenA_w22.jpg Graphic file (type jpg)
-<use graphics/Marco/cenA_w22.jpg>
-Package pdftex.def Info: graphics/Marco/cenA_w22.jpg  used on input line 206.
-(pdftex.def)             Requested size: 220.50887pt x 220.51323pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8]
-
-Package natbib Warning: Citation `Fanaroff1974' on page 9 undefined on input li
-ne 213.
-
-
-Overfull \hbox (11.3661pt too wide) in paragraph at lines 213--215
-[]\OT1/lmr/m/n/10.95 Este tipo de fuentes se clasi-f-i-can en dos cat-e-gor^^S^
-^Pas prin-ci-pales, cono-ci-das co-mo Fa-naroff{Riley
- []
-
-
-Package natbib Warning: Citation `Laing2007' on page 9 undefined on input line 
-217.
-
-<graphics/Marco/3C31-crop.pdf, id=414, 503.8825pt x 502.87875pt>
-File: graphics/Marco/3C31-crop.pdf Graphic file (type pdf)
-<use graphics/Marco/3C31-crop.pdf>
-Package pdftex.def Info: graphics/Marco/3C31-crop.pdf  used on input line 223.
-(pdftex.def)             Requested size: 198.45662pt x 198.06326pt.
-<graphics/Marco/3C98-crop.pdf, id=415, 503.8825pt x 502.87875pt>
-File: graphics/Marco/3C98-crop.pdf Graphic file (type pdf)
-<use graphics/Marco/3C98-crop.pdf>
-Package pdftex.def Info: graphics/Marco/3C98-crop.pdf  used on input line 228.
-(pdftex.def)             Requested size: 198.45662pt x 198.06326pt.
-
-Package natbib Warning: Citation `Hardcastle2020' on page 9 undefined on input 
-line 230.
-
-
-Package natbib Warning: Citation `Hardcastle2020' on page 9 undefined on input 
-line 230.
-
+<graphics/Resultados/RvZ.jpg, id=36, 722.7pt x 433.62pt>
+File: graphics/Resultados/RvZ.jpg Graphic file (type jpg)
+<use graphics/Resultados/RvZ.jpg>
+Package pdftex.def Info: graphics/Resultados/RvZ.jpg  used on input line 24.
+(pdftex.def)             Requested size: 220.50887pt x 132.30353pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `Israel1998' on page 9 undefined on input line
- 240.
+LaTeX Warning: Reference `eq:mod-3' on page 1 undefined on input line 29.
 
 
-Package natbib Warning: Citation `Clarke1992' on page 9 undefined on input line
- 240.
+LaTeX Warning: Reference `eq:mod-5' on page 1 undefined on input line 31.
 
 
-Package natbib Warning: Citation `Hardcastle2003' on page 9 undefined on input 
-line 240.
+LaTeX Warning: Reference `sec:Geometria' on page 1 undefined on input line 31.
+
+[1
 
 
-Package natbib Warning: Citation `Feain2011' on page 9 undefined on input line 
-240.
 
 
-Package natbib Warning: Citation `Fanaroff1974' on page 9 undefined on input li
-ne 240.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
+lm-ts1.enc}]
+
+LaTeX Warning: Reference `subsec:flujo' on page 2 undefined on input line 37.
 
 
-Overfull \hbox (22.91241pt too wide) in paragraph at lines 240--241
-[]\OT1/lmr/m/n/10.95 Centaurus A al-ber-ga en su cen-tro un SMBH con una masa e
-s-ti-ma-da de $\OML/lmm/m/it/10.95 M \OT1/lmr/m/n/10.95 = (5\OML/lmm/m/it/10.95
- :\OT1/lmr/m/n/10.95 5 \OMS/lmsy/m/n/10.95 ^^F \OT1/lmr/m/n/10.95 3\OML/lmm/m/i
-t/10.95 :\OT1/lmr/m/n/10.95 0) \OMS/lmsy/m/n/10.95 ^^B \OT1/lmr/m/n/10.95 10[] 
-\OML/lmm/m/it/10.95 M[]$
- []
+LaTeX Warning: Reference `eq:mod-42' on page 2 undefined on input line 37.
 
-[9 <./graphics/Marco/cenA_w22.jpg>]
-<graphics/Marco/TANAMI_CEN_A.png, id=429, 602.25pt x 263.98625pt>
-File: graphics/Marco/TANAMI_CEN_A.png Graphic file (type png)
-<use graphics/Marco/TANAMI_CEN_A.png>
-Package pdftex.def Info: graphics/Marco/TANAMI_CEN_A.png  used on input line 24
-6.
-(pdftex.def)             Requested size: 441.01773pt x 193.32062pt.
+
+LaTeX Warning: Reference `eq:mod-43' on page 2 undefined on input line 37.
+
+
+LaTeX Warning: Reference `eq:mod-44' on page 2 undefined on input line 37.
+
+<graphics/Resultados/SEDs_a_injs.pdf, id=63, 462.52798pt x 346.89601pt>
+File: graphics/Resultados/SEDs_a_injs.pdf Graphic file (type pdf)
+<use graphics/Resultados/SEDs_a_injs.pdf>
+Package pdftex.def Info: graphics/Resultados/SEDs_a_injs.pdf  used on input lin
+e 44.
+(pdftex.def)             Requested size: 176.40439pt x 132.30353pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 247.
+(Font)              <9> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 247.
- [10 <./graphics/Marco/3C31-crop.pdf> <./graphics/Marco/3C98-crop.pdf
+(Font)              <5> on input line 45.
+<graphics/Resultados/SEDs_Ljs.pdf, id=64, 462.52798pt x 346.89601pt>
+File: graphics/Resultados/SEDs_Ljs.pdf Graphic file (type pdf)
+<use graphics/Resultados/SEDs_Ljs.pdf>
+Package pdftex.def Info: graphics/Resultados/SEDs_Ljs.pdf  used on input line 5
+0.
+(pdftex.def)             Requested size: 176.40439pt x 132.30353pt.
+<graphics/Resultados/SEDs_sigma0s.pdf, id=65, 462.52798pt x 346.89601pt>
+File: graphics/Resultados/SEDs_sigma0s.pdf Graphic file (type pdf)
+<use graphics/Resultados/SEDs_sigma0s.pdf>
+Package pdftex.def Info: graphics/Resultados/SEDs_sigma0s.pdf  used on input li
+ne 56.
+(pdftex.def)             Requested size: 176.40439pt x 132.30353pt.
 
-pdfTeX warning: pdflatex (file ./graphics/Marco/3C98-crop.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
-> <./graphics/Marco/TANAMI_CEN_A.png>]
-<graphics/Marco/EHT_CEN_A.png, id=456, 834.11626pt x 544.0325pt>
-File: graphics/Marco/EHT_CEN_A.png Graphic file (type png)
-<use graphics/Marco/EHT_CEN_A.png>
-Package pdftex.def Info: graphics/Marco/EHT_CEN_A.png  used on input line 257.
-(pdftex.def)             Requested size: 352.81552pt x 230.11914pt.
-) [11 <./graphics/Marco/EHT_CEN_A.png>]
-[12
+LaTeX Warning: Reference `eq:mod-15' on page 2 undefined on input line 65.
 
-
-
-]
-\openout2 = `tex/Modelo.aux'.
-
- (./tex/Modelo.tex
-\bbl@ensure@spanish {Cap\'\i tulo} 3.
-Excluding 'comment' comment.
-<graphics/Modelo/conceptual_program_flow.png, id=468, 963.6pt x 813.0375pt>
-File: graphics/Modelo/conceptual_program_flow.png Graphic file (type png)
-<use graphics/Modelo/conceptual_program_flow.png>
-Package pdftex.def Info: graphics/Modelo/conceptual_program_flow.png  used on i
-nput line 11.
-(pdftex.def)             Requested size: 330.76329pt x 279.07156pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13
-
-
- <./graphics/Modelo/conceptual_program_flow.png>]
-
-Package natbib Warning: Citation `Blandford1977' on page 14 undefined on input 
-line 44.
-
-
-Package natbib Warning: Citation `Meier2001' on page 14 undefined on input line
- 44.
-
-
-Package natbib Warning: Citation `Zdziarski2014' on page 14 undefined on input 
-line 44.
-
-[14] Excluding 'comment' comment. [15]
-
-Package natbib Warning: Citation `Romero2017' on page 16 undefined on input lin
-e 122.
-
-[16]
-Overfull \hbox (14.91222pt too wide) in paragraph at lines 141--143
-\OT1/lmr/m/n/10.95 donde $\OML/lmm/m/it/10.95 U[] \OT1/lmr/m/n/10.95 = \OML/lmm
-/m/it/10.95 B[]=\OT1/lmr/m/n/10.95 8\OML/lmm/m/it/10.95 ^^Y$ \OT1/lmr/m/n/10.95
- es la den-si-dad de en-erg^^S^^Pa magn^^Setica y $\OML/lmm/m/it/10.95 p[]$ \OT
-1/lmr/m/n/10.95 la pre-si^^Son magn^^Setica; aprovechamos
- []
-
-<graphics/Modelo/Jet_Power.jpeg, id=502, 701.3402pt x 400.5364pt>
-File: graphics/Modelo/Jet_Power.jpeg Graphic file (type jpg)
-<use graphics/Modelo/Jet_Power.jpeg>
-Package pdftex.def Info: graphics/Modelo/Jet_Power.jpeg  used on input line 150
-.
-(pdftex.def)             Requested size: 211.68661pt x 120.89525pt.
-<graphics/Modelo/sigma_gamma.jpeg, id=503, 513.2776pt x 400.5364pt>
-File: graphics/Modelo/sigma_gamma.jpeg Graphic file (type jpg)
-<use graphics/Modelo/sigma_gamma.jpeg>
-Package pdftex.def Info: graphics/Modelo/sigma_gamma.jpeg  used on input line 1
-55.
-(pdftex.def)             Requested size: 158.76495pt x 123.88997pt.
-[17 <./graphics/Modelo/Jet_power.jpeg> <./graphics/Modelo/sigma_gamma.jpeg>]
-Excluding 'comment' comment.
-
-Package natbib Warning: Citation `Park1996' on page 18 undefined on input line 
-229.
-
-[18]
-<graphics/Modelo/cone.png, id=530, 348.30125pt x 278.03876pt>
-File: graphics/Modelo/cone.png Graphic file (type png)
-<use graphics/Modelo/cone.png>
-Package pdftex.def Info: graphics/Modelo/cone.png  used on input line 275.
-(pdftex.def)             Requested size: 198.45662pt x 158.42009pt.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-280.
-
-<graphics/Modelo/schematic.png, id=531, 361.35pt x 361.35pt>
-File: graphics/Modelo/schematic.png Graphic file (type png)
-<use graphics/Modelo/schematic.png>
-Package pdftex.def Info: graphics/Modelo/schematic.png  used on input line 282.
-
-(pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
-
-Underfull \hbox (badness 2326) in paragraph at lines 279--285
-[]\OT1/lmr/m/n/10.95 En el mod-e-lo adop-ta-do, la dis-tribu-ci^^Son de
- []
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
-5.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
-7.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
-9.
-
-[19 <./graphics/Modelo/cone.png>]
-Overfull \hbox (39.75565pt too wide) detected at line 306
-[][][]\OML/lmm/m/it/10.95 l\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x; z\OT1/lmr
-/m/n/10.95 ) = []
- []
-
-! Double superscript.
-<recently read> ^
-                 
-l.340      I'_\nu'
-                  (x, z) = \frac{j'_{\nu'}(z)}{\alpha'_{\nu'}(z)}\, \delta^3
-? 
-[20 <./graphics/Modelo/schematic.png>] [21]
-Overfull \hbox (74.6682pt too wide) in paragraph at lines 435--436
-\OT1/lmr/m/n/10.95 Para un val-or medio $\OML/lmm/m/it/10.95 x \OT1/lmr/m/n/10.
-95 = (\OML/lmm/m/it/10.95 R[] \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 R[]\OT1/
-lmr/m/n/10.95 )\OML/lmm/m/it/10.95 =\OT1/lmr/m/n/10.95 2$, defin-i-mos una pro-
-fun-di-dad ^^Soptica prome-dio $\OML/lmm/m/it/10.95 ^^\[]\OT1/lmr/m/n/10.95 (\O
-ML/lmm/m/it/10.95 z\OT1/lmr/m/n/10.95 ) = \OML/lmm/m/it/10.95 [] l[]=\OT1/lmr/
-m/n/10.95 (\OML/lmm/m/it/10.95 ^^N [] i\OT1/lmr/m/n/10.95 )$.
- []
-
-
-Overfull \hbox (34.02193pt too wide) in paragraph at lines 468--470
-\OT1/lmr/m/n/10.95 donde $^^A\OML/lmm/m/it/10.95 x$ \OT1/lmr/m/n/10.95 y $^^A\O
-ML/lmm/m/it/10.95 y$ \OT1/lmr/m/n/10.95 rep-re-sen-tan el tama~no de las cel-da
-s. Es-tos val-ores se de-finen co-mo $^^A\OML/lmm/m/it/10.95 x; \OT1/lmr/m/n/10
-.95 ^^A\OML/lmm/m/it/10.95 y \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 f[]; ^^[[
-]$\OT1/lmr/m/n/10.95 ,
- []
-
-[22]
-<graphics/Modelo/Convolucion_a_dos_puntos.png, id=585, 563.706pt x 476.982pt>
-File: graphics/Modelo/Convolucion_a_dos_puntos.png Graphic file (type png)
-<use graphics/Modelo/Convolucion_a_dos_puntos.png>
-Package pdftex.def Info: graphics/Modelo/Convolucion_a_dos_puntos.png  used on 
-input line 497.
-(pdftex.def)             Requested size: 211.68661pt x 179.11525pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 498.
-<graphics/Modelo/Convolucion_a_dos_puntos_Tb.png, id=586, 563.706pt x 476.982pt
->
-File: graphics/Modelo/Convolucion_a_dos_puntos_Tb.png Graphic file (type png)
-<use graphics/Modelo/Convolucion_a_dos_puntos_Tb.png>
-Package pdftex.def Info: graphics/Modelo/Convolucion_a_dos_puntos_Tb.png  used 
-on input line 504.
-(pdftex.def)             Requested size: 211.68661pt x 179.11525pt.
-) [23 <./graphics/Modelo/Convolucion_a_dos_puntos.png> <./graphics/Modelo/Convo
-lucion_a_dos_puntos_Tb.png>] [24
-
-
-
-]
-\openout2 = `tex/Resultados.aux'.
-
- (./tex/Resultados.tex
-\bbl@ensure@spanish {Cap\'\i tulo} 4.
-Excluding 'comment' comment.
-<graphics/Resultados/RvZ.jpg, id=607, 722.7pt x 433.62pt>
-File: graphics/Resultados/RvZ.jpg Graphic file (type jpg)
-<use graphics/Resultados/RvZ.jpg>
-Package pdftex.def Info: graphics/Resultados/RvZ.jpg  used on input line 19.
-(pdftex.def)             Requested size: 264.61333pt x 158.76953pt.
- [25
-
-
- <./graphics/Resultados/RvZ.jpg>]
-<graphics/Resultados/dFdz.png, id=625, 722.7pt x 433.62pt>
+[2 <./graphics/Resultados/RvZ.jpg> <./graphics/Resultados/SEDs_a_injs.pdf> <./g
+raphics/Resultados/SEDs_Ljs.pdf> <./graphics/Resultados/SEDs_sigma0s.pdf>]
+<graphics/Resultados/dFdz.png, id=189, 722.7pt x 433.62pt>
 File: graphics/Resultados/dFdz.png Graphic file (type png)
 <use graphics/Resultados/dFdz.png>
-Package pdftex.def Info: graphics/Resultados/dFdz.png  used on input line 40.
+Package pdftex.def Info: graphics/Resultados/dFdz.png  used on input line 73.
 (pdftex.def)             Requested size: 330.76329pt x 198.45529pt.
-<graphics/Resultados/fluxTot.png, id=626, 722.7pt x 433.62pt>
-File: graphics/Resultados/fluxTot.png Graphic file (type png)
-<use graphics/Resultados/fluxTot.png>
-Package pdftex.def Info: graphics/Resultados/fluxTot.png  used on input line 46
-.
-(pdftex.def)             Requested size: 330.76329pt x 198.45529pt.
+<graphics/Resultados/fluxTot.jpeg, id=191, 867.24pt x 433.62pt>
+File: graphics/Resultados/fluxTot.jpeg Graphic file (type jpg)
+<use graphics/Resultados/fluxTot.jpeg>
+Package pdftex.def Info: graphics/Resultados/fluxTot.jpeg  used on input line 7
+9.
+(pdftex.def)             Requested size: 330.76329pt x 165.37941pt.
+
+[3 <./graphics/Resultados/dFdz.png> <./graphics/Resultados/fluxTot.jpeg>]
+
+LaTeX Warning: Reference `eq:mod-20' on page 4 undefined on input line 86.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `eq:mod-17' on page 4 undefined on input line 86.
 
-[26 <./graphics/Resultados/dFdz.png>]
-<graphics/Resultados/Mapa_Tb_0-135.jpeg, id=639, 867.24pt x 433.62pt>
+<graphics/Resultados/Core_shift.jpeg, id=218, 722.7pt x 361.35pt>
+File: graphics/Resultados/Core_shift.jpeg Graphic file (type jpg)
+<use graphics/Resultados/Core_shift.jpeg>
+Package pdftex.def Info: graphics/Resultados/Core_shift.jpeg  used on input lin
+e 92.
+(pdftex.def)             Requested size: 286.65883pt x 143.32993pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 93.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 93.
+<graphics/Resultados/Mapa_Tb_0-135.jpeg, id=219, 867.24pt x 433.62pt>
 File: graphics/Resultados/Mapa_Tb_0-135.jpeg Graphic file (type jpg)
 <use graphics/Resultados/Mapa_Tb_0-135.jpeg>
 Package pdftex.def Info: graphics/Resultados/Mapa_Tb_0-135.jpeg  used on input 
-line 69.
+line 109.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
 
-Underfull \hbox (badness 1152) in paragraph at lines 70--70
+Underfull \hbox (badness 1152) in paragraph at lines 110--110
 []\OT1/lmr/bx/n/9 (a) |\OT1/lmr/m/n/9 Ma-pa de tem-per-atu-ra de bril-lo en el 
 cielo,
  []
 
-<graphics/Resultados/Mapa_Tb_75-135.jpeg, id=640, 867.24pt x 433.62pt>
+<graphics/Resultados/Mapa_Tb_75-135.jpeg, id=220, 867.24pt x 433.62pt>
 File: graphics/Resultados/Mapa_Tb_75-135.jpeg Graphic file (type jpg)
 <use graphics/Resultados/Mapa_Tb_75-135.jpeg>
 Package pdftex.def Info: graphics/Resultados/Mapa_Tb_75-135.jpeg  used on input
- line 76.
+ line 116.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 77--77
+Underfull \hbox (badness 1062) in paragraph at lines 117--117
 []\OT1/lmr/bx/n/9 (b) |\OT1/lmr/m/n/9 Ma-pa de tem-per-atu-ra de bril-lo en el 
 cielo,
  []
 
-<graphics/Resultados/SQRT_T_brightness_(230GHz).png, id=641, 867.24pt x 433.62p
+<graphics/Resultados/SQRT_T_brightness_(230GHz).png, id=221, 867.24pt x 433.62p
 t>
 File: graphics/Resultados/SQRT_T_brightness_(230GHz).png Graphic file (type png
 )
 <use graphics/Resultados/SQRT_T_brightness_(230GHz).png>
 Package pdftex.def Info: graphics/Resultados/SQRT_T_brightness_(230GHz).png  us
-ed on input line 86.
+ed on input line 126.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
 
-Underfull \hbox (badness 1205) in paragraph at lines 87--87
+Underfull \hbox (badness 1205) in paragraph at lines 127--127
 []\OT1/lmr/bx/n/9 (c) |\OT1/lmr/m/n/9 Ma-pa de tem-per-atu-ra de bril-lo en el 
 cielo,
  []
 
-<graphics/Resultados/Mapa_Tb_130-135.jpeg, id=642, 867.24pt x 433.62pt>
+<graphics/Resultados/Mapa_Tb_130-135.jpeg, id=222, 867.24pt x 433.62pt>
 File: graphics/Resultados/Mapa_Tb_130-135.jpeg Graphic file (type jpg)
 <use graphics/Resultados/Mapa_Tb_130-135.jpeg>
 Package pdftex.def Info: graphics/Resultados/Mapa_Tb_130-135.jpeg  used on inpu
-t line 93.
+t line 133.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
 
-Underfull \hbox (badness 1062) in paragraph at lines 94--94
+Underfull \hbox (badness 1062) in paragraph at lines 134--134
 []\OT1/lmr/bx/n/9 (d) |\OT1/lmr/m/n/9 Ma-pa de tem-per-atu-ra de bril-lo en el 
 cielo,
  []
@@ -1371,186 +879,118 @@ cielo,
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: graphics/Resultados/SQRT_T_brightness_(230GHz).png Graphic file (type png
-)
-<use graphics/Resultados/SQRT_T_brightness_(230GHz).png>
-Package pdftex.def Info: graphics/Resultados/SQRT_T_brightness_(230GHz).png  us
-ed on input line 111.
-(pdftex.def)             Requested size: 308.71106pt x 154.35632pt.
-[27 <./graphics/Resultados/fluxTot.png>]
-<graphics/Resultados/Mapa_Tb_convolucionA.jpeg, id=661, 867.24pt x 433.62pt>
-File: graphics/Resultados/Mapa_Tb_convolucionA.jpeg Graphic file (type jpg)
-<use graphics/Resultados/Mapa_Tb_convolucionA.jpeg>
-Package pdftex.def Info: graphics/Resultados/Mapa_Tb_convolucionA.jpeg  used on
- input line 122.
+[4 <./graphics/Resultados/Core_shift.jpeg>]
+
+LaTeX Warning: Reference `Sec:Convolucion' on page 5 undefined on input line 14
+7.
+
+<graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg, id=242, 867.24pt x 433.62
+pt>
+File: graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg Graphic file (type jp
+g)
+<use graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg>
+Package pdftex.def Info: graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg  u
+sed on input line 151.
+(pdftex.def)             Requested size: 286.65883pt x 143.32661pt.
+File: graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg Graphic file (type jp
+g)
+<use graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg>
+Package pdftex.def Info: graphics/Resultados/SQRT_T_brightness_(230GHz).jpeg  u
+sed on input line 163.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
-<graphics/Resultados/Mapa_Tb_convolucionB.jpeg, id=662, 867.24pt x 433.62pt>
-File: graphics/Resultados/Mapa_Tb_convolucionB.jpeg Graphic file (type jpg)
-<use graphics/Resultados/Mapa_Tb_convolucionB.jpeg>
-Package pdftex.def Info: graphics/Resultados/Mapa_Tb_convolucionB.jpeg  used on
- input line 130.
+<graphics/Resultados/Mapa_Tb_convolucion_B.jpeg, id=243, 867.24pt x 433.62pt>
+File: graphics/Resultados/Mapa_Tb_convolucion_B.jpeg Graphic file (type jpg)
+<use graphics/Resultados/Mapa_Tb_convolucion_B.jpeg>
+Package pdftex.def Info: graphics/Resultados/Mapa_Tb_convolucion_B.jpeg  used o
+n input line 170.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
-<graphics/Resultados/Mapa_Tb_convolucionC.jpeg, id=663, 867.24pt x 433.62pt>
-File: graphics/Resultados/Mapa_Tb_convolucionC.jpeg Graphic file (type jpg)
-<use graphics/Resultados/Mapa_Tb_convolucionC.jpeg>
-Package pdftex.def Info: graphics/Resultados/Mapa_Tb_convolucionC.jpeg  used on
- input line 135.
+<graphics/Resultados/Mapa_Tb_convolucion_C.jpeg, id=244, 867.24pt x 433.62pt>
+File: graphics/Resultados/Mapa_Tb_convolucion_C.jpeg Graphic file (type jpg)
+<use graphics/Resultados/Mapa_Tb_convolucion_C.jpeg>
+Package pdftex.def Info: graphics/Resultados/Mapa_Tb_convolucion_C.jpeg  used o
+n input line 175.
 (pdftex.def)             Requested size: 216.1011pt x 108.04744pt.
+! Undefined control sequence.
+<argument> ...s los de la figura superior. \textb 
+                                                  {Figura derecha:} Se utili...
+l.178 ... FWHM 4 veces los de la figura superior.}
+                                                  
+? 
+! Undefined control sequence.
+<argument> ...s los de la figura superior. \textb 
+                                                  {Figura derecha:} Se utili...
+l.178 ... FWHM 4 veces los de la figura superior.}
+                                                  
+? 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./graphics/Resultados/Mapa_Tb_0-135.jpeg> <./graphics/Resultados/Mapa_Tb_
-75-135.jpeg> <./graphics/Resultados/SQRT_T_brightness_(230GHz).png> <./graphics
-/Resultados/Mapa_Tb_130-135.jpeg>]
-<graphics/Resultados/T_b_vs_Z_(prueba1).jpeg, id=677, 722.7pt x 433.62pt>
+ [5 <./graphics/Resultados/Mapa_Tb_0-135.jpeg> <./graphics/Resultados/Mapa_Tb_7
+5-135.jpeg> <./graphics/Resultados/SQRT_T_brightness_(230GHz).png> <./graphics/
+Resultados/Mapa_Tb_130-135.jpeg> <./graphics/Resultados/SQRT_T_brightness_(230G
+Hz).jpeg>]
+
+LaTeX Warning: Reference `ssec:estructura' on page 6 undefined on input line 18
+2.
+
+
+LaTeX Warning: Reference `eq:mod-15' on page 6 undefined on input line 189.
+
+<graphics/Resultados/T_b_vs_Z_(prueba1).jpeg, id=260, 722.7pt x 433.62pt>
 File: graphics/Resultados/T_b_vs_Z_(prueba1).jpeg Graphic file (type jpg)
 <use graphics/Resultados/T_b_vs_Z_(prueba1).jpeg>
 Package pdftex.def Info: graphics/Resultados/T_b_vs_Z_(prueba1).jpeg  used on i
-nput line 150.
+nput line 195.
 (pdftex.def)             Requested size: 216.1011pt x 129.65692pt.
-<graphics/Resultados/T_b_vs_Z_(prueba2).jpeg, id=678, 722.7pt x 433.62pt>
+<graphics/Resultados/T_b_vs_Z_(prueba2).jpeg, id=261, 722.7pt x 433.62pt>
 File: graphics/Resultados/T_b_vs_Z_(prueba2).jpeg Graphic file (type jpg)
 <use graphics/Resultados/T_b_vs_Z_(prueba2).jpeg>
 Package pdftex.def Info: graphics/Resultados/T_b_vs_Z_(prueba2).jpeg  used on i
-nput line 157.
+nput line 202.
 (pdftex.def)             Requested size: 216.1011pt x 129.65692pt.
-<graphics/Resultados/T_b_vs_Z_(prueba3).jpeg, id=679, 722.7pt x 433.62pt>
+<graphics/Resultados/T_b_vs_Z_(prueba3).jpeg, id=262, 722.7pt x 433.62pt>
 File: graphics/Resultados/T_b_vs_Z_(prueba3).jpeg Graphic file (type jpg)
 <use graphics/Resultados/T_b_vs_Z_(prueba3).jpeg>
 Package pdftex.def Info: graphics/Resultados/T_b_vs_Z_(prueba3).jpeg  used on i
-nput line 167.
+nput line 212.
 (pdftex.def)             Requested size: 216.1011pt x 129.65692pt.
-<graphics/Resultados/T_b_vs_Z_(prueba4).jpeg, id=680, 722.7pt x 433.62pt>
+<graphics/Resultados/T_b_vs_Z_(prueba4).jpeg, id=263, 722.7pt x 433.62pt>
 File: graphics/Resultados/T_b_vs_Z_(prueba4).jpeg Graphic file (type jpg)
 <use graphics/Resultados/T_b_vs_Z_(prueba4).jpeg>
 Package pdftex.def Info: graphics/Resultados/T_b_vs_Z_(prueba4).jpeg  used on i
-nput line 174.
+nput line 219.
 (pdftex.def)             Requested size: 216.1011pt x 129.65692pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <./graphics/Resultados/Mapa_Tb_convolucionA.jpeg> <./graphics/Resultados/Ma
-pa_Tb_convolucionB.jpeg> <./graphics/Resultados/Mapa_Tb_convolucionC.jpeg>]
-[30 <./graphics/Resultados/T_b_vs_Z_(prueba1).jpeg> <./graphics/Resultados/T_b_
-vs_Z_(prueba2).jpeg> <./graphics/Resultados/T_b_vs_Z_(prueba3).jpeg> <./graphic
-s/Resultados/T_b_vs_Z_(prueba4).jpeg>]
-<graphics/Resultados/TvZ.jpeg, id=701, 867.24pt x 433.62pt>
+
+LaTeX Warning: Reference `eq:mod-4' on page 6 undefined on input line 228.
+
+[6 <./graphics/Resultados/Mapa_Tb_convolucion_B.jpeg> <./graphics/Resultados/Ma
+pa_Tb_convolucion_C.jpeg>]
+
+LaTeX Warning: Reference `eq:mod-11' on page 7 undefined on input line 232.
+
+[7 <./graphics/Resultados/T_b_vs_Z_(prueba1).jpeg> <./graphics/Resultados/T_b_v
+s_Z_(prueba2).jpeg> <./graphics/Resultados/T_b_vs_Z_(prueba3).jpeg> <./graphics
+/Resultados/T_b_vs_Z_(prueba4).jpeg>]
+
+LaTeX Warning: Reference `fig:marco-2' on page 8 undefined on input line 235.
+
+<graphics/Resultados/TvZ.jpeg, id=280, 722.7pt x 433.62pt>
 File: graphics/Resultados/TvZ.jpeg Graphic file (type jpg)
 <use graphics/Resultados/TvZ.jpeg>
-Package pdftex.def Info: graphics/Resultados/TvZ.jpeg  used on input line 197.
-(pdftex.def)             Requested size: 330.76329pt x 165.37941pt.
-) [31 <./graphics/Resultados/TvZ.jpeg>]
-[32
+Package pdftex.def Info: graphics/Resultados/TvZ.jpeg  used on input line 238.
+(pdftex.def)             Requested size: 330.76329pt x 198.45529pt.
+) [8 <./graphics/Resultados/TvZ.jpeg>] (./Tesis_Apellido.bbl) [9
+
+
+
 
 
 
 ]
-\openout2 = `tex/apx1.aux'.
-
- (./tex/apx1.tex
-\bbl@ensure@spanish {Ap\'endice} A.
-
-Package natbib Warning: Citation `Blumenthal1970' on page 33 undefined on input
- line 14.
-
-
-Package natbib Warning: Citation `Aharonian2010' on page 33 undefined on input 
-line 16.
-
-
-Overfull \hbox (8.32777pt too wide) in paragraph at lines 16--17
-[]\OT1/lmr/bx/n/10.95 ? \OT1/lmr/m/n/10.95 pre-sen-ta una aprox-i-ma-cion para 
-el val-or de es-ta in-te-gral. Para el-lo pro-ponemos $\OML/lmm/m/it/10.95 x \O
-T1/lmr/m/n/10.95 = []\OML/lmm/m/it/10.95 =[]$\OT1/lmr/m/n/10.95 ,
- []
-
-[33
-
-
-]
-Runaway argument?
-{{Rybicki1979}: 
-! Paragraph ended before \@citex was complete.
-<to be read again> 
-                   \par 
-l.68 
-     
-? 
-<graphics/Marco/Sincrotron_absorcion.png, id=724, 555.07375pt x 383.4325pt>
-File: graphics/Marco/Sincrotron_absorcion.png Graphic file (type png)
-<use graphics/Marco/Sincrotron_absorcion.png>
-Package pdftex.def Info: graphics/Marco/Sincrotron_absorcion.png  used on input
- line 84.
-(pdftex.def)             Requested size: 286.65883pt x 198.01698pt.
-
-Package natbib Warning: Citation `Rybicki1979' on page 34 undefined on input li
-ne 85.
-
-
-Package natbib Warning: Citation `Rybicki1979' on page 34 undefined on input li
-ne 85.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [34] [35 <./graphics/Marco/Sincrotron_absorcion.png>] [36
-
-
-
-]
-(./Tesis_Apellido.bbl
-! Undefined control sequence.
-<argument> \@empty \prd 
-                        \xdef \UL@spfactor {\the \spacefactor }
-l.14 \newblock \emph{\prd}
-                          , 82\penalty0 (4):\penalty0 043002, Aug. 2010.
-? 
-! Misplaced alignment tab character &.
-<argument> \@empty A&
-                     A\xdef \UL@spfactor {\the \spacefactor }
-l.93 \newblock \emph{A&A}
-                         , 654:\penalty0 A27, 2021.
-? 
-[37
-
-
-]
-! Undefined control sequence.
-<argument> \@empty \ssr 
-                        \xdef \UL@spfactor {\the \spacefactor }
-l.241 \newblock \emph{\ssr}
-                           , 207\penalty0 (1-4):\penalty0 5--61, July 2017.
-? 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.87001pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.87001pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.87001pt}.
-
-[38])
-
-Package natbib Warning: There were undefined citations.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.87001pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.87001pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.87001pt}.
-
-[39] (./Tesis_Apellido.aux (./tex/portada.aux) (./tex/prefacio.aux)
-(./tex/resumen.aux) (./tex/dedicatoria.aux) (./tex/agradecimientos.aux)
-(./tex/acronimos.aux) (./tex/introduccion.aux) (./tex/Marco.aux)
-(./tex/Modelo.aux) (./tex/Resultados.aux) (./tex/apx1.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./Tesis_Apellido.aux (./tex/Resultados.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1560,42 +1000,31 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Tesis_Apellido.out' has not changed.
-(rerunfilecheck)             Checksum: E1CF50D3151D1A12D75BFFAFDA830894;7901.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 67 (\begingroup)
-### bottom level 
+(rerunfilecheck)             Checksum: 6069540EAFEA95C793722D8B658A1E27;1198.
+ ) 
 Here is how much of TeX's memory you used:
- 19855 strings out of 476106
- 372204 string characters out of 5793932
- 1952975 words of memory out of 5000000
- 41279 multiletter control sequences out of 15000+600000
- 664579 words of font info for 105 fonts, out of 8000000 for 9000
+ 19002 strings out of 476106
+ 354461 string characters out of 5793932
+ 1939975 words of memory out of 5000000
+ 40713 multiletter control sequences out of 15000+600000
+ 624337 words of font info for 92 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 75i,13n,80p,1539b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcs
-co10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Tesis_Apellido.pdf (57 pages, 7757090 bytes).
+ 75i,13n,80p,1391b,920s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmsy8.pfb>
+Output written on Tesis_Apellido.pdf (9 pages, 6298361 bytes).
 PDF statistics:
- 979 PDF objects out of 1000 (max. 8388607)
- 805 compressed objects within 9 object streams
- 230 named destinations out of 1000 (max. 500000)
- 514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

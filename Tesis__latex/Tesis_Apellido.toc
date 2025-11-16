@@ -3,45 +3,42 @@
 \contentsline {chapter}{Resumen}{v}{chapter*.2}%
 \contentsline {chapter}{Abstract}{vii}{chapter*.3}%
 \contentsline {chapter}{Agradecimientos}{xi}{chapter*.4}%
-\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Contexto}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Metodología}{1}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Marco Te\'orico}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Agujeros Negros}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Descripci\'on básica}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Soluciones de agujero negro.}{3}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Jets}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Estructura del \textit {jet }}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Lanzamiento de \textit {jets }: Mecanismos Blandford-Znajek y Blandford-Payne.}{5}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Emisi\'on en el \textit {jet }}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Beaming relativista}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Núcleos galácticos activos}{7}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Radiogalaxias}{8}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}Centaurus A}{9}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Modelo}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Estructura general del \textit {jet }}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Perdidas radiativas.}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Perdidas adiabaticas}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Geometría y dinámica del \textit {jet }}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Ecuaciones de conservación y magnetizaci\'on}{15}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Potencia del \textit {jet }e inyección de partículas}{16}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Potencia total del \textit {jet }}{16}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Potencia inyectada}{17}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Distribución de partículas relativistas.}{18}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Radiación emitida.}{18}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Flujo observado}{18}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Profundidad óptica}{19}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Coeficientes de emisividad y absorci\'on}{20}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Regimenes opticos.}{21}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Convoluci\'on}{22}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Convolucion discreta.}{22}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Prueba de convolucion sobre dos fuentes puntuales.}{23}{subsection.3.6.2}%
-\contentsline {chapter}{\numberline {4}Resultados}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Parámetros y condiciones iniciales.}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Distribución espectral de energía.}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Mapa de temperatura de brillo en el cielo.}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Perfil de temperatura de brillo.}{29}{section.4.4}%
-\contentsline {chapter}{\numberline {A}Radiaci\'on sincrotrón}{33}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Auto-absorci\'on sincrotrón (SSA)}{34}{section.A.1}%
-\contentsline {chapter}{\bbl@ensure@spanish {Bibliograf\'\i a}}{37}{figure.caption.24}%
+\contentsline {chapter}{\numberline {1}Marco Te\'orico}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Agujeros Negros}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Descripci\'on básica}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Soluciones de agujero negro.}{1}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Jets}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Estructura del \textit {jet }}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Lanzamiento de \textit {jets }: Mecanismos Blandford-Znajek y Blandford-Payne.}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Emisi\'on en el \textit {jet }}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Beaming relativista}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Núcleos galácticos activos}{5}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Radiogalaxias}{7}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Centaurus A}{8}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Modelo}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estructura general del \textit {jet }}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Perdidas radiativas.}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Perdidas adiabaticas}{13}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Geometría y dinámica del \textit {jet }}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Ecuaciones de conservación y magnetizaci\'on}{14}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Potencia del \textit {jet }e inyección de partículas}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Potencia total del \textit {jet }}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Potencia inyectada}{15}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Distribución de partículas relativistas.}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Radiación emitida.}{17}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Flujo observado}{17}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Profundidad óptica}{18}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Coeficientes de emisividad y absorci\'on}{19}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Regimenes opticos.}{19}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Convoluci\'on}{21}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Convolucion discreta.}{21}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Prueba de convolucion sobre dos fuentes puntuales.}{21}{subsection.2.6.2}%
+\contentsline {chapter}{\numberline {3}Resultados}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Parámetros y condiciones iniciales.}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Distribución espectral de energía.}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Mapa de temperatura de brillo en el cielo.}{26}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Perfil de temperatura de brillo.}{28}{section.3.4}%
+\contentsline {chapter}{\numberline {A}Radiaci\'on sincrotrón}{31}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Potencia sincrotr\'on.}{31}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Auto-absorci\'on sincrotrón (SSA)}{32}{section.A.2}%
+\contentsline {chapter}{\bbl@ensure@spanish {Bibliograf\'\i a}}{35}{figure.caption.28}%

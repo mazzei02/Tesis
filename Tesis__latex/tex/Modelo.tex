@@ -14,14 +14,15 @@ Para la comparación con datos observacionales se consideran todas las restricci
 \end{figure}
 
 \section{Estructura general del \jet}
-En nuestro modelo, postulamos un \jet relativista con estructura diferenciada en funci\'on del radio, distinguiendo la espina (\textit{spine}) para $r < R_\mathrm{in}$ \textcolor{red}{consideramos la espina vacia, explicar mejor esto} y la vaina/envoltura (\textit{sheath}) para $R_\mathrm{in} < r < R_\mathrm{out}$ (ver Fig. \ref{fig:mod-1.5}\textcolor{red}{Hacer un grafico, o encontrar alguno lindo}). El \jet se extiende desde una altura base $z_0$ hasta una distancia máxima $z_{\mathrm{max}} \gg z_0$. En las cercanías de la base, el \jet posee un radio externo inicial $R_0^{\mathrm{out}}$ y un radio interno $R_0^{\mathrm{in}}$. La inyección de partículas relativistas se implementa como un mecanismo continuo y coherente, consistente, por ejemplo, con procesos de reconexión magnética, y se lleva a cabo en la región $z_0 < z < z_{\mathrm{max,inj}}$. Para calcular la evolución de los distintos parámetros físicos, incluyendo la inyección de partículas, dividimos el \jet en segmentos sucesivos. En cada segmento se inyectan electrones, que luego son transportados a lo largo del flujo hacia segmentos más lejanos a medida que se enfrían.
 
-%\begin{figure}[h!]
-%    \centering
-%    \includegraphics[width=0.75\linewidth]{graphics/Modelo/conceptual_program_flow.png}
-%    \caption{Diagrama del flujo del código para modelo de \jet con estructura}
-%    \label{fig:mod-1.5}
-%\end{figure}
+En nuestro modelo, postulamos un \jet relativista con estructura diferenciada en funci\'on del radio, distinguiendo dos regiones: la espina interna (\textit{spine}) para $r < R_\mathrm{in}$ de baja densidad o vacı́a y una vaina o envoltura externa (\textit{sheath}) para $R_\mathrm{in} < r < R_\mathrm{out}$, donde se produce la emisión (ver Fig. \ref{fig:mod-1.5}). El \jet se extiende desde una altura base $z_0$ hasta una distancia máxima $z_{\mathrm{max}} \gg z_0$. En las cercanías de la base, el \jet posee un radio externo inicial $R_0^{\mathrm{out}}$ y un radio interno $R_0^{\mathrm{in}}$. La inyección de partículas relativistas se implementa como un mecanismo continuo y coherente, consistente, por ejemplo, con procesos de reconexión magnética, y se lleva a cabo en la región $z_0 < z < z_{\mathrm{max,inj}}$. Para calcular la evolución de los distintos parámetros físicos, incluyendo la inyección de partículas, dividimos el \jet en segmentos sucesivos. En cada segmento se inyectan electrones, que luego son transportados a lo largo del flujo hacia segmentos más lejanos a medida que se enfrían.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{graphics/Modelo/Limbed_jet.png}
+    \caption{Diagrama de la estructura general del \jet con region interna y externa. En azul puede verse la vaina o envoltura externa, donde se produce la emisi\'on.}
+    \label{fig:mod-1.5}
+\end{figure}
 
 \subsection{Perdidas radiativas.}
 Los electrones relativistas pierden energía a través de diferentes procesos, como radiación sincrotrón y pérdidas adiabáticas, asociadas al trabajo realizado por el plasma durante la expansión transversal del \textit{jet}. En el caso de la radiación sincrotrón, la perdida de energía por unidad de tiempo se obtiene directamente a partir de la expresión para la potencia 
@@ -48,21 +49,19 @@ La tasa de perdidas adiabaticas esta dada por
 \begin{equation}\label{eq:mod-3}
  \frac{dE}{dt}\Bigg|_{\mathrm{Ad}}=-\frac{2}{3}\frac{d\ln(R_\mathrm{out}(z))}{dz}\frac{c\Gamma_\mathrm{j}\beta_\mathrm{j}(z)}{z}\left(E-\frac{(mc^2)^2}{E}\right), 
 \end{equation}
-
-Con E la energía en el marco de referencia del fluido.
-
+con E la energía en el marco de referencia del fluido.
 
 
 
 
-\section{Geometría y dinámica del \jet}
+
+\section{Geometría y dinámica del \jet}\label{sec:Geometria}
 
 Presentamos un \jet con geometría cuasi-parabólica multizona, cuya sección transversal está restringida por dos radios definidos como función de la altura $z$:
 
 \begin{equation}\label{eq:mod-4}
     R^{\mathrm{out/in}}(z) = R^{\mathrm{out/in}}_0 \left(\frac{z}{z_0}\right)^w,
 \end{equation}
-
 donde $R^{\mathrm{out/in}}_0$ son los radios en la base del \jet y $w$ es el parámetro de apertura que determina la forma cuasi-parabólica del flujo. 
 \begin{comment}
     En nuestro modelado de Centaurus A utilizamos $w = 0.33$ para ambos radios, en concordancia con las observaciones del EHT.
@@ -133,15 +132,15 @@ Podemos desarrollar las expresiones de estas potencias en función de las variab
 \end{equation}
 para la potencia transportada electrones relativistas $L_e$
 \begin{equation}\label{eq:mod-13}
-    L_e = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_e + p'_e)
+    L_e = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_e + p'_e),
 \end{equation}
 con $U'_e$ la densidad de energía y $p'_e=U'_e/3$ la presi\'on de los electrones relativistas; notamos que podemos escribir la entalpía $h'$ en función de $L_e$ y $L_p$ como $h'=1+L_e/L_p$; finalmente la potencia transportada por el campo magnético $L_B$
 \begin{equation}\label{eq:mod-14}
-    L_B = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_B + p'_B)
+    L_B = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_B + p'_B),
 \end{equation}
-donde $U'_B = B'^2 / 8\pi$ es la densidad de energía magnética y $p'_B$ la presión magnética; aprovechamos para reescribir la magnetizaci\'on como $\sigma'=L_\text{B}/(L_\text{e}+L_\text{p})$
+donde $U'_B = B'^2 / 8\pi$ es la densidad de energía magnética y $p'_B$ la presión magnética; aprovechamos para reescribir la magnetizaci\'on como $\sigma'=L_\text{B}/(L_\text{e}+L_\text{p}).$
 
-Dado que en la base la magnetizaci\'on es alta, tenemos que $L_\text{B}$ domina la distribuci\'on de potencia total cerca de la base y disminuye a medida que $z$ aumenta, convirtiendo gradualmente la energ\'ia magnética en aceleración del flujo y energ\'ia de partículas relativistas, y aumentando $L_\text{e}$ y $L_\text{p}$
+Dado que en la base la magnetizaci\'on es alta, tenemos que $L_\text{B}$ domina la distribuci\'on de potencia total cerca de la base y disminuye a medida que $z$ aumenta, convirtiendo gradualmente la energ\'ia magnética en aceleración del flujo y energ\'ia de partículas relativistas, y aumentando $L_\text{e}$ y $L_\text{p}.$
 
 \begin{figure}[h!]
     \centering
@@ -158,7 +157,7 @@ Dado que en la base la magnetizaci\'on es alta, tenemos que $L_\text{B}$ domina 
     \label{fig:modelo-potencia}
 \end{figure}
 
-\subsection{Potencia inyectada}
+\subsection{Potencia inyectada}\label{ssec:P_iny}
 Para caracterizar la inyección en partículas relativistas suponemos que una fracción fija $\varepsilon_\text{e}$ de la potencia total del \jet se transfiere a electrones no térmicos en el rango comprendido entre $z_0$ y $z_\text{max,iny}$. La potencia disponible para inyección resulta entonces  $L_\text{iny} = \varepsilon_\text{e} L_\text{j}$.
 
 Parametrizamos la dependencia espacial de la tasa de inyección mediante
@@ -223,7 +222,7 @@ Para simplificar la notación, introducimos $\tilde{N}'(\gamma',z) = \pi R^2(z)\
 \begin{equation}\label{eq:mod-21}
     \frac{\partial \tilde{N}'(\gamma',z)}{\partial z} 
 + \frac{\partial}{\partial \gamma'} \left[ \dot{\gamma}'_z(\gamma',z) \tilde{N}'(\gamma',z) \right]
-= \frac{dQ'(\gamma',z)}{dz}
+= \frac{dQ'(\gamma',z)}{dz}.
 \end{equation}
 
 La ecuación de transporte no admite en general una solución analítica cerrada. En este trabajo empleamos un esquema numérico de diferencias finitas siguiendo el método de \cite{Park1996}.
@@ -232,6 +231,7 @@ La ecuación de transporte no admite en general una solución analítica cerrada
 \section{Radiación emitida.}
 
 En este trabajo enfocamos el estudio de la emisión en radio presente en \jets relativistas. Dado que en estas longitudes de onda la emisión se encuentra dominada por radiación sincrotrón, nuestro modelo se enfoca en este tipo de proceso.
+
 
 \subsection{Flujo observado}\label{subsec:flujo}
 
@@ -260,19 +260,20 @@ F_\nu=\frac{\sin(i)}{d^2}\int\int I(x,z)dxdz.
 La intensidad específica $I_\nu$ puede calcularse a partir de la ecuación de transporte radiativo, que describe la variación de la intensidad de la radiación a lo largo de una línea de visión
 
 \begin{equation}\label{eq:mod-25}
-    \frac{dI_\nu}{ds}=-\alpha_\nu I_\nu+j_\nu
+    \frac{dI_\nu}{ds}=-\alpha_\nu I_\nu+j_\nu,
 \end{equation}
 donde $s$ es la distancia a lo largo del rayo de propagación, $\alpha_\nu$ es el coeficiente de absorción, que permite calcular la atenuación en la intensidad, y $j_\nu$ es el coeficiente de emisión, que representa la cantidad de intensidad especifica añadida al haz por unidad de longitud. Bajo el supuesto de que tanto $j_\nu$ como $\alpha_\nu$ permanecen aproximadamente constantes a lo largo de la trayectoria, la integración de la Ec.~\eqref{eq:mod-25} conduce a
 
 \begin{equation}\label{eq:mod-26}
-    I_\nu(x,z)=\frac{j_\nu}{\alpha_\nu}(1-e^{-\tau_\nu(x,z)})
+    I_\nu(x,z)=\frac{j_\nu}{\alpha_\nu}(1-e^{-\tau_\nu(x,z)}),
 \end{equation}
 con $\tau_\nu(x,z)$ la profundidad óptica.
+\vspace{1cm}
 
 \subsection{Profundidad óptica}\label{ssec:tau}
 
 \begin{wrapfigure}{l}{0.45\textwidth}
-    \includegraphics[width=0.45\textwidth]{graphics/Modelo/cone.png}
+    \includegraphics[width=0.45\textwidth]{graphics/Modelo/Cone.png}
     \caption{Diagrama del cruce de un rayo de luz por el espesor del \jet.}
 \end{wrapfigure}
 
@@ -284,6 +285,7 @@ En el modelo adoptado, la distribución de partículas se encuentra confinada en
     \caption{Sección transversal del \jet en el plano del cielo.}
 \end{wrapfigure}
 
+\vspace{0.3cm}
 Asumimos que, dentro de la región comprendida entre los bordes interno y externo, el coeficiente de absorción $\alpha_\nu$ es constante, y que fuera de esta zona la absorción es despreciable. La longitud efectiva recorrida dentro del medio absorbente depende de la posición transversal $x$, ya que algunos rayos atraviesan solo la envoltura externa, mientras que otros cruzan ambas regiones. En este caso,
 
 \begin{equation}\label{eq:mod-39}
@@ -432,7 +434,16 @@ Consideramos que el medio es ópticamente delgado si $\tau_{\nu,\mathrm{max}} < 
 
 \subsubsection*{Caso ópticamente grueso}
 
-Para un valor medio $x = (R_\mathrm{in} + R_\mathrm{out})/2$, definimos una profundidad óptica promedio $\tau_{\nu,\mathrm{av}}(z) = \alpha'_{\nu'}\, l_\mathrm{av}/(\delta \sin i)$. Si $\tau'_{{\nu'},\mathrm{av}}(z) > 10$, el medio se considera ópticamente grueso y $(1 - e^{-\tau_\nu}) \approx 1$. En este régimen, la contribución al flujo es:
+Para un valor medio $x_\mathrm{av} = (R_\mathrm{in} + R_\mathrm{out})/2$, definimos una profundidad óptica promedio
+
+\[
+\tau_{\nu,\mathrm{av}}(z) = \frac{\alpha'_{\nu'}\, l_\mathrm{av}}{\delta \sin i},
+\]
+con
+\[
+l_\mathrm{av}=l(x_\mathrm{av},z)
+\]
+Si $\tau'_{{\nu'},\mathrm{av}}(z) > 10$, el medio se considera ópticamente grueso y $(1 - e^{-\tau_\nu}) \approx 1$. En este régimen, la contribución al flujo es:
 
 \begin{equation}\label{eq:mod-43}
     \frac{dF_\nu}{dz}
