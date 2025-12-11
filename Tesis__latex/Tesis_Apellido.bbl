@@ -1,66 +1,272 @@
-\begin{thebibliography}{6}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
-\bibitem[Harris et~al.(2010)Harris, Rejkuba, and Harris]{Harris2010}
-G.~L.~H. Harris, M.~Rejkuba, and W.~E. Harris.
-\newblock The distance to ngc 5128 (centaurus a).
-\newblock \emph{Publications of the Astronomical Society of Australia},
-  27:\penalty0 457--462, 2010.
+\bibitem[\protect\citeauthoryear{{Aharonian}, {Kelner}  \&
+  {Prosekin}}{{Aharonian} et~al.}{2010}]{Aharonian2010}
+{Aharonian} F.~A.,  {Kelner} S.~R.,   {Prosekin} A.~Y.,  2010, \mn@doi [\prd]
+  {10.1103/PhysRevD.82.043002}, \href
+  {https://ui.adsabs.harvard.edu/abs/2010PhRvD..82d3002A} {82, 043002}
 
-\bibitem[{Janssen} et~al.(2021)]{2021NatAs...5.1017J}
-M.~{Janssen} et~al.
-\newblock {Event Horizon Telescope observations of the jet launching and
-  collimation in Centaurus A}.
-\newblock \emph{Nature Astronomy}, 5:\penalty0 1017--1028, July 2021.
-\newblock \doi{10.1038/s41550-021-01417-w}.
+\bibitem[\protect\citeauthoryear{{Antonucci}}{{Antonucci}}{1993}]{Antonucci1993}
+{Antonucci} R.,  1993, \mn@doi [\araa] {10.1146/annurev.aa.31.090193.002353},
+  \href {https://ui.adsabs.harvard.edu/abs/1993ARA&A..31..473A} {31, 473}
 
-\bibitem[{Kim} et~al.(2018){Kim}, {Marrone}, {Roy}, {Wagner}, {Asada},
-  {Beaudoin}, {Blanchard}, {Carlstrom}, {Chen}, {Crawford}, {Crew}, {Doeleman},
-  {Fish}, {Greer}, {Gurwell}, {Henning}, {Inoue}, {Keisler}, {Krichbaum}, {Lu},
-  {Muders}, {M{\"u}ller}, {Nguyen}, {Ros}, {SooHoo}, {Tilanus}, {Titus},
-  {Vertatschitsch}, {Weintroub}, and {Zensus}]{Kim2018}
-J.~{Kim}, D.~P. {Marrone}, A.~L. {Roy}, J.~{Wagner}, K.~{Asada}, C.~{Beaudoin},
-  J.~{Blanchard}, J.~E. {Carlstrom}, M.-T. {Chen}, T.~M. {Crawford}, G.~B.
-  {Crew}, S.~S. {Doeleman}, V.~L. {Fish}, C.~H. {Greer}, M.~A. {Gurwell}, J.~W.
-  {Henning}, M.~{Inoue}, R.~{Keisler}, T.~P. {Krichbaum}, R.-S. {Lu},
-  D.~{Muders}, C.~{M{\"u}ller}, C.~H. {Nguyen}, E.~{Ros}, J.~{SooHoo}, R.~P.~J.
-  {Tilanus}, M.~{Titus}, L.~{Vertatschitsch}, J.~{Weintroub}, and J.~A.
-  {Zensus}.
-\newblock {The 1.4 mm Core of Centaurus A: First VLBI Results with the South
-  Pole Telescope}.
-\newblock \emph{\apj}, 861\penalty0 (2):\penalty0 129, July 2018.
-\newblock \doi{10.3847/1538-4357/aac7c6}.
+\bibitem[\protect\citeauthoryear{Barniol~Duran, Tchekhovskoy  \&
+  Giannios}{Barniol~Duran et~al.}{2017}]{Barniol2017}
+Barniol~Duran R.,  Tchekhovskoy A.,   Giannios D.,  2017, Monthly Notices of
+  the Royal Astronomical Society, 469, 4957
 
-\bibitem[{Muller} et~al.(2014){Muller}, {Kadler}, {Ojha}, {Perucho},
-  {Grossberger}, {Ros}, {Wilms}, {Blanchard}, {Bock}, {Carpenter}, {Dutka},
-  {Edwards}, {Hase}, {Horiuchi}, {Kreikenbohm}, {Lovell}, {Markowitz},
-  {Phillips}, {Plotz}, {Pursimo}, {Quick}, {Rothschild}, {Schulz},
-  {Steinbring}, {Stevens}, {Trustedt}, and {Tzioumis}]{Muller2014}
-C.~{Muller}, M.~{Kadler}, R.~{Ojha}, M.~{Perucho}, C.~{Grossberger}, E.~{Ros},
-  J.~{Wilms}, J.~{Blanchard}, M.~{Bock}, B.~{Carpenter}, M.~{Dutka}, P.~G.
-  {Edwards}, H.~{Hase}, S.~{Horiuchi}, A.~{Kreikenbohm}, J.~E.~J. {Lovell},
-  A.~{Markowitz}, C.~{Phillips}, C.~{Plotz}, T.~{Pursimo}, J.~{Quick},
-  R.~{Rothschild}, R.~{Schulz}, T.~{Steinbring}, J.~{Stevens}, J.~{Trustedt},
-  and A.~K. {Tzioumis}.
-\newblock {VizieR Online Data Catalog: TANAMI monitoring of Centaurus A.
-  (Muller+, 2014)}.
-\newblock VizieR On-line Data Catalog: J/A+A/569/A115. Originally published in:
-  2014A\&A...569A.115M, July 2014.
+\bibitem[\protect\citeauthoryear{Begelman}{Begelman}{1998}]{Begelman1998}
+Begelman M.~C.,  1998, The Astrophysical Journal, 493, 291
 
-\bibitem[Müller et~al.(2011)]{Mueller2011}
-C.~Müller et~al.
-\newblock Cen a monitoring with tanami: parsec-scale radio jets and
-  multiwavelength correlations.
-\newblock \emph{Astronomy and Astrophysics}, 530:\penalty0 L11, 2011.
+\bibitem[\protect\citeauthoryear{Begelman, Blandford  \& Rees}{Begelman
+  et~al.}{1984}]{begelman1984theory}
+Begelman M.~C.,  Blandford R.~D.,   Rees M.~J.,  1984, Reviews of Modern
+  Physics, 56, 255
 
-\bibitem[Neumayer(2010)]{Neumayer2010}
-N.~Neumayer.
-\newblock Supermassive black hole mass measurements in centaurus a.
-\newblock \emph{Publications of the Astronomical Society of Australia},
-  27:\penalty0 449--456, 2010.
+\bibitem[\protect\citeauthoryear{Blandford \& Payne}{Blandford \&
+  Payne}{1982}]{Blandford1982}
+Blandford R.~D.,  Payne D.~G.,  1982, Monthly Notices of the Royal Astronomical
+  Society, 199, 883
 
+\bibitem[\protect\citeauthoryear{Blandford \& Znajek}{Blandford \&
+  Znajek}{1977}]{Blandford1977}
+Blandford R.~D.,  Znajek R.~L.,  1977, Monthly Notices of the Royal
+  Astronomical Society, 179, 433
+
+\bibitem[\protect\citeauthoryear{Blandford, Meier  \& Readhead}{Blandford
+  et~al.}{2019}]{Blandford2019}
+Blandford R.~D.,  Meier D.,   Readhead A.,  2019, Annual Review of Astronomy
+  and Astrophysics, 57, 467
+
+\bibitem[\protect\citeauthoryear{Blumenthal \& Gould}{Blumenthal \&
+  Gould}{1970}]{Blumenthal1970}
+Blumenthal G.~R.,  Gould R.~J.,  1970, Reviews of Modern Physics, 42, 237
+
+\bibitem[\protect\citeauthoryear{Boccardi et~al.,}{Boccardi
+  et~al.}{2015}]{Boccardi2015}
+Boccardi B.,  et~al., 2015, arXiv: High Energy Astrophysical Phenomena
+
+\bibitem[\protect\citeauthoryear{Boccardi, Krichbaum, Ros  \& Zensus}{Boccardi
+  et~al.}{2017}]{Boccardi2017}
+Boccardi B.,  Krichbaum T.~P.,  Ros E.,   Zensus J.~A.,  2017, The Astronomy
+  and Astrophysics Review, 25, 4
+
+\bibitem[\protect\citeauthoryear{{B{\"o}ttcher}, {Reimer}, {Sweeney}  \&
+  {Prakash}}{{B{\"o}ttcher} et~al.}{2013}]{Böttcher2013}
+{B{\"o}ttcher} M.,  {Reimer} A.,  {Sweeney} K.,   {Prakash} A.,  2013, \mn@doi
+  [\apj] {10.1088/0004-637X/768/1/54}, \href
+  {https://ui.adsabs.harvard.edu/abs/2013ApJ...768...54B} {768, 54}
+
+\bibitem[\protect\citeauthoryear{{Bruni, G.} et~al.,}{{Bruni, G.}
+  et~al.}{2021}]{Bruni2021}
+{Bruni, G.} et~al., 2021, \mn@doi [A&A] {10.1051/0004-6361/202039423}, 654, A27
+
+\bibitem[\protect\citeauthoryear{Carroll}{Carroll}{2004}]{Carroll2004}
+Carroll S.~M.,  2004, Spacetime and Geometry: An Introduction to General
+  Relativity.
+Addison Wesley
+
+\bibitem[\protect\citeauthoryear{Clarke, Burns  \& Norman}{Clarke
+  et~al.}{1992}]{Clarke1992}
+Clarke D.~A.,  Burns J.~O.,   Norman M.~L.,  1992, The Astrophysical Journal,
+  395, 444
+
+\bibitem[\protect\citeauthoryear{{Cui} et~al.,}{{Cui}
+  et~al.}{2023}]{EHT_2023_M87}
+{Cui} Y.,  et~al., 2023, \mn@doi [\nat] {10.1038/s41586-023-06479-6}, \href
+  {https://ui.adsabs.harvard.edu/abs/2023Natur.621..711C} {621, 711}
+
+\bibitem[\protect\citeauthoryear{Curtis}{Curtis}{1918}]{Curtis1918}
+Curtis H.~D.,  1918, Publications of the Lick Observatory, 13, 9
+
+\bibitem[\protect\citeauthoryear{{EHT MWL Science Working Group} et~al.,}{{EHT
+  MWL Science Working Group} et~al.}{2021}]{EHT_MW_2021}
+{EHT MWL Science Working Group} et~al., 2021, \mn@doi [\apjl]
+  {10.3847/2041-8213/abef71}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021ApJ...911L..11E} {911, L11}
+
+\bibitem[\protect\citeauthoryear{{Event Horizon Telescope Collaboration}
+  et~al.,}{{Event Horizon Telescope Collaboration}
+  et~al.}{2019}]{EHT_2019_M87_I}
+{Event Horizon Telescope Collaboration} et~al., 2019, \mn@doi [\apjl]
+  {10.3847/2041-8213/ab0ec7}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019ApJ...875L...1E} {875, L1}
+
+\bibitem[\protect\citeauthoryear{{Fabian}}{{Fabian}}{2012}]{Fabian2012}
+{Fabian} A.~C.,  2012, \mn@doi [\araa] {10.1146/annurev-astro-081811-125521},
+  \href {https://ui.adsabs.harvard.edu/abs/2012ARA&A..50..455F} {50, 455}
+
+\bibitem[\protect\citeauthoryear{Fanaroff \& Riley}{Fanaroff \&
+  Riley}{1974}]{Fanaroff1974}
+Fanaroff B.~L.,  Riley J.~M.,  1974, Monthly Notices of the Royal Astronomical
+  Society, 167, 31P
+
+\bibitem[\protect\citeauthoryear{Fath}{Fath}{1909}]{Fath1909}
+Fath E.~A.,  1909, Lick Observatory Bulletin, 5, 71
+
+\bibitem[\protect\citeauthoryear{Feain et~al.}{Feain et~al.}{2011}]{Feain2011}
+Feain I.~J.,  et~al., 2011, The Astrophysical Journal, 740, 17
+
+\bibitem[\protect\citeauthoryear{Hardcastle \& Croston}{Hardcastle \&
+  Croston}{2020}]{Hardcastle2020}
+Hardcastle M.~J.,  Croston J.~H.,  2020, New Astronomy Reviews, 88, 101539
+
+\bibitem[\protect\citeauthoryear{{Hardcastle}, {Worrall}, {Kraft}, {Forman},
+  {Jones}  \& {Murray}}{{Hardcastle} et~al.}{2003}]{Hardcastle2003}
+{Hardcastle} M.~J.,  {Worrall} D.~M.,  {Kraft} R.~P.,  {Forman} W.~R.,  {Jones}
+  C.,   {Murray} S.~S.,  2003, \mn@doi [\apj] {10.1086/376519}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003ApJ...593..169H} {593, 169}
+
+\bibitem[\protect\citeauthoryear{Harris, Rejkuba  \& Harris}{Harris
+  et~al.}{2010}]{Harris2010}
+Harris G. L.~H.,  Rejkuba M.,   Harris W.~E.,  2010, Publications of the
+  Astronomical Society of Australia, 27, 457
+
+\bibitem[\protect\citeauthoryear{Hazard, Mackey  \& Shimmins}{Hazard
+  et~al.}{1963}]{Hazard1963}
+Hazard C.,  Mackey M.~B.,   Shimmins A.~J.,  1963, Nature, 197, 1037
+
+\bibitem[\protect\citeauthoryear{Israel}{Israel}{1998}]{Israel1998}
+Israel F.~P.,  1998, Astronomy and Astrophysics Review, 8, 237
+
+\bibitem[\protect\citeauthoryear{{Janssen} et~al.}{{Janssen}
+  et~al.}{2021}]{2021NatAs...5.1017J}
+{Janssen} M.,  et~al., 2021, \mn@doi [Nature Astronomy]
+  {10.1038/s41550-021-01417-w}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021NatAs...5.1017J} {5, 1017}
+
+\bibitem[\protect\citeauthoryear{Jennison \& Das~Gupta}{Jennison \&
+  Das~Gupta}{1953}]{Jennison1953}
+Jennison R.~C.,  Das~Gupta M.~K.,  1953, Nature, 172, 996
+
+\bibitem[\protect\citeauthoryear{Kerr}{Kerr}{1963}]{Kerr1963}
+Kerr R.~P.,  1963, Physical Review Letters, 11, 237
+
+\bibitem[\protect\citeauthoryear{{Kim} et~al.,}{{Kim} et~al.}{2018}]{Kim2018}
+{Kim} J.,  et~al., 2018, \mn@doi [\apj] {10.3847/1538-4357/aac7c6}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018ApJ...861..129K} {861, 129}
+
+\bibitem[\protect\citeauthoryear{Laing et~al.}{Laing et~al.}{2007}]{Laing2007}
+Laing R.~A.,  et~al., 2007, Monthly Notices of the Royal Astronomical Society,
+  378, 541
+
+\bibitem[\protect\citeauthoryear{{Lucchini} et~al.,}{{Lucchini}
+  et~al.}{2022}]{Lucchini_etal2022}
+{Lucchini} M.,  et~al., 2022, \mn@doi [\mnras] {10.1093/mnras/stac2904}, \href
+  {https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5853L} {517, 5853}
+
+\bibitem[\protect\citeauthoryear{{McKinley} et~al.,}{{McKinley}
+  et~al.}{2022}]{McKinley2022}
+{McKinley} B.,  et~al., 2022, \mn@doi [Nature Astronomy]
+  {10.1038/s41550-021-01553-3}, \href
+  {https://ui.adsabs.harvard.edu/abs/2022NatAs...6..109M} {6, 109}
+
+\bibitem[\protect\citeauthoryear{Meier}{Meier}{2001}]{Meier2001}
+Meier D.~L.,  2001, ApJ, 548, L9
+
+\bibitem[\protect\citeauthoryear{{Mertens}, {Lobanov}, {Walker}  \&
+  {Hardee}}{{Mertens} et~al.}{2016}]{Mertens2016}
+{Mertens} F.,  {Lobanov} A.~P.,  {Walker} R.~C.,   {Hardee} P.~E.,  2016,
+  \mn@doi [\aap] {10.1051/0004-6361/201628829}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016A&A...595A..54M} {595, A54}
+
+\bibitem[\protect\citeauthoryear{{Muller} et~al.,}{{Muller}
+  et~al.}{2014}]{Muller2014}
+{Muller} C.,  et~al., 2014, {VizieR Online Data Catalog: TANAMI monitoring of
+  Centaurus A. (Muller+, 2014)}, VizieR On-line Data Catalog: J/A+A/569/A115.
+  Originally published in: 2014A\&A...569A.115M,
+  \mn@doi{10.26093/cds/vizier.35690115}
+
+\bibitem[\protect\citeauthoryear{Müller et~al.}{Müller
+  et~al.}{2011}]{Mueller2011}
+Müller C.,  et~al., 2011, Astronomy and Astrophysics, 530, L11
+
+\bibitem[\protect\citeauthoryear{Nagai}{Nagai}{2019}]{Nagai2019}
+Nagai H. e.~a.,  2019, ApJ, 883, 193
+
+\bibitem[\protect\citeauthoryear{Nakamura et~al.,}{Nakamura
+  et~al.}{2018}]{Nakamura2018}
+Nakamura M.,  et~al., 2018, \mn@doi [Astrophysical Journal]
+  {10.3847/1538-4357/aaeb2d}, 868, 146
+
+\bibitem[\protect\citeauthoryear{Neumayer}{Neumayer}{2010}]{Neumayer2010}
+Neumayer N.,  2010, Publications of the Astronomical Society of Australia, 27,
+  449
+
+\bibitem[\protect\citeauthoryear{{Park} \& {Petrosian}}{{Park} \&
+  {Petrosian}}{1996}]{Park1996}
+{Park} B.~T.,  {Petrosian} V.,  1996, \mn@doi [\apjs] {10.1086/192278}, \href
+  {https://ui.adsabs.harvard.edu/abs/1996ApJS..103..255P} {103, 255}
+
+\bibitem[\protect\citeauthoryear{{Prabu}, {Tingay}, {Bahramian},
+  {Miller-Jones}, {Wood}  \& {O'Sullivan}}{{Prabu} et~al.}{2025}]{Prabu2025}
+{Prabu} S.,  {Tingay} S.~J.,  {Bahramian} A.,  {Miller-Jones} J.~C.~A.,  {Wood}
+  C.~M.,   {O'Sullivan} S.~P.,  2025, \mn@doi [\aj] {10.3847/1538-3881/ad91a5},
+  \href {https://ui.adsabs.harvard.edu/abs/2025AJ....169...37P} {169, 37}
+
+\bibitem[\protect\citeauthoryear{{Romero}, {Boettcher}, {Markoff}  \&
+  {Tavecchio}}{{Romero} et~al.}{2017}]{Romero2017}
+{Romero} G.~E.,  {Boettcher} M.,  {Markoff} S.,   {Tavecchio} F.,  2017,
+  \mn@doi [\ssr] {10.1007/s11214-016-0328-2}, \href
+  {https://ui.adsabs.harvard.edu/abs/2017SSRv..207....5R} {207, 5}
+
+\bibitem[\protect\citeauthoryear{{Rybicki} \& {Lightman}}{{Rybicki} \&
+  {Lightman}}{1979}]{Rybicki1979}
+{Rybicki} G.~B.,  {Lightman} A.~P.,  1979, {Radiative processes in
+  astrophysics}
+
+\bibitem[\protect\citeauthoryear{Schmidt}{Schmidt}{1963}]{Schmidt1963}
+Schmidt M.,  1963, Nature, 197, 1040
+
+\bibitem[\protect\citeauthoryear{Schwarzschild}{Schwarzschild}{1916}]{Schwarzschild1916}
+Schwarzschild K.,  1916, Sitzungsberichte der Königlich Preussischen Akademie
+  der Wissenschaften, pp 189--196
+
+\bibitem[\protect\citeauthoryear{Seyfert}{Seyfert}{1943}]{Seyfert1943}
+Seyfert C.~K.,  1943, The Astrophysical Journal, 97, 28
+
+\bibitem[\protect\citeauthoryear{{Ulrich}, {Maraschi}  \& {Urry}}{{Ulrich}
+  et~al.}{1997}]{Ulrich1997}
+{Ulrich} M.-H.,  {Maraschi} L.,   {Urry} C.~M.,  1997, \mn@doi [\araa]
+  {10.1146/annurev.astro.35.1.445}, \href
+  {https://ui.adsabs.harvard.edu/abs/1997ARA&A..35..445U} {35, 445}
+
+\bibitem[\protect\citeauthoryear{{Urry} \& {Padovani}}{{Urry} \&
+  {Padovani}}{1995}]{1995PASP..107..803U}
+{Urry} C.~M.,  {Padovani} P.,  1995, \mn@doi [\pasp] {10.1086/133630}, \href
+  {https://ui.adsabs.harvard.edu/abs/1995PASP..107..803U} {107, 803}
+
+\bibitem[\protect\citeauthoryear{Walker, Hardee, Davies, Ly, Junor, Mertens  \&
+  Lobanov}{Walker et~al.}{2016}]{Walker2016}
+Walker R.~C.,  Hardee P.~E.,  Davies F.,  Ly C.,  Junor W.,  Mertens F.,
+  Lobanov A.,  2016, \mn@doi [Galaxies] {10.3390/galaxies4040046}, 4
+
+\bibitem[\protect\citeauthoryear{Yang et~al.,}{Yang et~al.}{2024}]{Yang2024}
+Yang H.,  et~al., 2024, \mn@doi [Science Advances] {10.1126/sciadv.adn3544},
+  10, eadn3544
+
+\bibitem[\protect\citeauthoryear{{Zdziarski}, {Stawarz}, {Pjanka}  \&
+  {Sikora}}{{Zdziarski} et~al.}{2014}]{Zdziarski2014}
+{Zdziarski} A.~A.,  {Stawarz} {\L}.,  {Pjanka} P.,   {Sikora} M.,  2014,
+  \mn@doi [\mnras] {10.1093/mnras/stu420}, \href
+  {https://ui.adsabs.harvard.edu/abs/2014MNRAS.440.2238Z} {440, 2238}
+
+\makeatother
 \end{thebibliography}

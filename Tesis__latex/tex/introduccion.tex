@@ -1,56 +1,20 @@
 \chapter{Introducción}\label{cha:introduccion}
 
-La presente Tesis se enmarca en trabajo realizado por el grupo... 
-El propósito de este estudio es obtener una caracterización más detallada de...
+Las radiogalaxias constituyen una de las manifestaciones más energéticas de la actividad nuclear galáctica. Se caracterizan por su intensa emisión en radiofrecuencias, que puede extenderse hasta escalas de cientos de kiloparsecs, y que se origina en \textit{jets} relativistas impulsados por un agujero negro supermasivo en el núcleo galáctico. Estos \jets, colimados y movi\'endose a velocidades cercanas a la de la luz, transportan energía y momento desde las regiones centrales hacia el medio circundante, desempeñando un papel clave en la retroalimentación entre el núcleo activo y su galaxia anfitriona \citep{Fabian2012, Blandford2019}.
 
+La emisión observada en radio se produce mayormente por radiación sincrotrón, generada por electrones relativistas que se mueven en campos magnéticos intensos. La morfología y el espectro de esta emisión proporcionan información crucial sobre los procesos físicos que gobiernan la aceleración y el transporte de partículas, así como sobre la estructura interna del \textit{jet} y su interacción con el entorno. Comprender estos mecanismos resulta esencial no solo para explicar la radiación no térmica de las radiogalaxias, sino también para avanzar en la comprensión general de los flujos relativistas en distintos contextos astrofísicos \citep{1995PASP..107..803U, Antonucci1993}.
 
-%=====================================================
-%
-\section{Contexto}
-%
-%=====================================================
+Durante las últimas décadas, el progreso en la observación interferométrica de muy larga base (VLBI) ha permitido resolver la estructura de los \textit{jets} con un detalle sin precedentes. En particular, las observaciones del Event Horizon Telescope (EHT) revelaron la conexión directa entre el flujo de acreción y la base del \textit{jet} en la radiogalaxia M87 \citep{EHT_2019_M87_I, EHT_2023_M87}, mostrando la silueta del agujero negro central y la morfología de la emisión a escalas por debajo del parsec. Resultados más recientes en Centaurus A han puesto de manifiesto la complejidad de los \textit{jets} en esta fuente, donde la emisión parece concentrarse en las regiones de borde, sugiriendo la presencia de procesos de mezcla, choques e inestabilidades en la interfaz con el medio externo \citep{2021NatAs...5.1017J}.
 
-Contexto del trabajo... 
+Estos hallazgos observacionales resaltan la necesidad de modelos teóricos más realistas, capaces de incorporar variaciones espaciales en las propiedades físicas del \textit{jet}. Los modelos unidimensionales o de “una sola zona”, frecuentemente utilizados para interpretar la emisión no térmica en núcleos activos, resultan insuficientes para reproducir la distribución espacial y espectral observada con las técnicas interferométricas modernas \citep{EHT_MW_2021, Lucchini_etal2022}. En particular, las observaciones de alta resolución de M87 y Centaurus A sugieren que la estructura transversal del juega un papel fundamental en la formación del espectro y en la localización de las regiones dominantes de emisión.
 
+En este trabajo presentamos el desarrollo de un modelo numérico para describir la emisión no térmica en \textit{jets} relativistas con estructura transversal. El modelo extiende enfoques previos de una dimensión \citep[e.g.,]{} al incorporar gradientes radiales en las propiedades del plasma y del campo magnético, permitiendo así generar distribuciones espectrales de energía y mapas sintéticos de intensidad comparables con observaciones reales. Esta aproximación busca proporcionar una herramienta útil para interpretar datos interferométricos de próxima generación y contribuir a una mejor comprensión de los procesos físicos que gobiernan la radiación y la dinámica en los \textit{jets} de radiogalaxias.
 
-%=====================================================
-%
-\section{Objetivos}
-%
-%=====================================================
-Este trabajo de tesis tiene por objetivo principal caracterizar... 
+El trabajo se organiza de la siguiente manera. En el Capítulo \ref{cha:Marco} introducimos el marco teórico general. Comenzamos con una descripción de las soluciones de agujeros negros, relevantes para los mecanismos de lanzamiento de \textit{jets} relativistas. Definimos que son los \jets, su estructura y emisi\'on. A continuación presentamos una descripción cualitativa de los núcleos galácticos activos, haciendo hincapié en las radiogalaxias y en los criterios utilizados para su clasificación. Finalmente, introducimos la fuente Centaurus A, la radiogalaxia más cercana a la Vía Láctea y el objeto cuya emisión buscamos reproducir con el modelo desarrollado.
 
-Adicionalmente, dentro de este trabajo se contempla:
-\begin{itemize}
-    \itemsep0em
-    \item Caracterizar X cosa.
-    \item Estimar Y parámetro.
-    \item Estudiar el posible efecto de Z en coso.
-\end{itemize}
+En el Capítulo \ref{cha:modelo} presentamos el modelo desarrollado para describir la emisión de \textit{jets} con estructura multizona. Detallamos la geometría adoptada para el \textit{jet} y el tratamiento del transporte de electrones relativistas a lo largo del flujo, incluyendo los procesos de pérdida y la convección. A continuación, derivamos la luminosidad sincrotrón producida por la población de electrones y resolvemos la ecuación de transporte radiativo para un \textit{jet} inhomogéneo, discutiendo los diferentes regímenes ópticos relevantes según la distancia al eje del flujo.
 
-%=====================================================
-%
-\section{Metodología}
-%
-%=====================================================
+En el Capítulo \ref{cha:resultados} presentamos los resultados obtenidos para la distribución espectral de energía, los mapas sintéticos de emisión proyectados en el cielo y otros observables derivados del modelo. Además, realizamos una exploración de parámetros para evaluar su impacto en las propiedades radiativas del \textit{jet} y obtenemos un ajuste a las observaciones de Centaurus A.
 
-En este trabajo se llevó a cabo un análisis detallado de un conjunto de más de un centenar de observaciones realizadas con...
-Exploramos los efectos físicos... 
+Finalmente, en el Capitulo \ref{cha:conclusiones} presentamos las conclusiones de nuestro trabajo y discutimos brevemente extensiones para este modelo y trabajo a futuro.
 
-La metodología de trabajo consistió en estudiar ... 
-
-De esta manera también pondremos a prueba hipótesis tales como la existencia de...
-
-%Para ello, utilizamos códigos públicos desarrollados por miembros de la comunidad internacional, tales como \texttt{PRESTO} \citep{Ransom2011} y otros de elaboración propia (\url{https://github.com/lalala/sarasa}).
-
-\bigskip
-\bigskip
-
-\noindent La tesis está organizada de la siguiente manera:
-%
-\begin{itemize}
-    \item En el Cap.~\ref{cha:radio} se introducen las principales definiciones y conceptos elementales de...
-    Detallamos las características técnicas del instrumental utilizado...
-    \item En el Cap.~\ref{cha:ondas} presentamos los resultados obtenidos mediante un análisis de... 
-    \item Finalmente, en el Cap.~\ref{cha:conclusiones} presentamos las conclusiones y las perspectivas a futuro de esta línea de investigación.
-\end{itemize}
