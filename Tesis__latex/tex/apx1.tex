@@ -1,6 +1,6 @@
 \chapter{Radiaci\'on sincrotrón}\label{cha:apx1}
 
-\section{Potencia sincrotr\'on.}
+\section{Potencia sincrotr\'on}
 
 Una partícula cargada inmersa en un campo magnético uniforme \textbf{B} emitirá radiación linealmente polarizada denominada radiación sincrotrón. En ambientes astrofísicos, la radiación sincrotrón puede contribuir al flujo de energía
 en radio, en el óptico o incluso rayos X blandos. 
@@ -15,16 +15,16 @@ donde
 \end{equation}
 aquí $\alpha$ es el ángulo formado entre la velocidad de la partícula y el campo magnético, $E_\gamma$ es la energía del fotón radiado y $K_{5/3}$ es la función modificada de Bessel \citep{Blumenthal1970}. El espectro de la radiación sincrotrón alcanza un máximo agudo para $E_\gamma\approx0.29E_c$.
 
-\cite{Aharonian2010} presenta una aproximacion para el valor de esta integral. Para ello proponemos $x={E_\gamma}/{E_c}$, luego redefinimos la integral anterior como
+\cite{Aharonian2010} presenta una aproximación para el valor de esta integral. Para ello $x={E_\gamma}/{E_c}$, luego redefinimos la integral anterior como
 
 \begin{equation}\label{eq:mod-28}
     F(x)=x\int_x^\infty K_{5/3}(\tau)d\tau.
 \end{equation}
 
-Si tomamos la componente del campo magnético perpendicular a la velocidad del electrón $B_\perp=B\sin(\theta)$ con $\theta$ el \'angulo entre $\textbf{v}$ y $\textbf{B}$ definimos
+Si tomamos la componente del campo magnético perpendicular a la velocidad del electrón $B_\perp=B\sin(\alpha)$ definimos
 
 \begin{equation}\label{eq:mod-29}
-    G(x)=\int\sin(\theta)F\left(\frac{x}{\sin(\theta)}\right)\frac{d\Omega}{4\pi}=\frac{1}{2}\int_0^\pi F\left(\frac{x}{\sin(\theta)}\right)\sin^2(\theta)d\theta.
+    G(x)=\int\sin(\alpha)F\left(\frac{x}{\sin(\alpha)}\right)\frac{d\Omega}{4\pi}=\frac{1}{2}\int_0^\pi F\left(\frac{x}{\sin(\alpha)}\right)\sin^2(\alpha)d\alpha.
 \end{equation}
 Luego proponemos la siguiente aproximación para $G(x)$, con una precisión mejor del $0.2\%$ en todo el rango de $x$.
 
