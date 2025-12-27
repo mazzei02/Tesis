@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Tesis_Apellido.aux
-The style file: biblio/mnras2.bst
+The style file: biblio/aasjournal.bst
 A level-1 auxiliary file: tex/portada.aux
 A level-1 auxiliary file: tex/acronimos.aux
 A level-1 auxiliary file: tex/introduccion.aux
@@ -12,48 +12,46 @@ A level-1 auxiliary file: tex/conclusiones.aux
 A level-1 auxiliary file: tex/apx1.aux
 Database file #1: biblio/biblio.bib
 Warning--I didn't find a database entry for ""
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty publisher in Rybicki1979
-You've used 54 entries,
-            2881 wiz_defined-function locations,
-            1170 strings with 20823 characters,
-and the built_in function-call counts, 24270 in all, are:
-= -- 2041
-> -- 1678
-< -- 141
-+ -- 783
-- -- 206
-* -- 2880
-:= -- 3826
-add.period$ -- 0
-call.type$ -- 54
-change.case$ -- 108
-chr.to.int$ -- 54
-cite$ -- 55
-duplicate$ -- 1208
-empty$ -- 1222
-format.name$ -- 380
-if$ -- 4180
-int.to.chr$ -- 1
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 66 entries,
+            3166 wiz_defined-function locations,
+            1180 strings with 20525 characters,
+and the built_in function-call counts, 29585 in all, are:
+= -- 2370
+> -- 2263
+< -- 35
++ -- 752
+- -- 789
+* -- 2598
+:= -- 5513
+add.period$ -- 66
+call.type$ -- 66
+change.case$ -- 345
+chr.to.int$ -- 65
+cite$ -- 66
+duplicate$ -- 1102
+empty$ -- 1824
+format.name$ -- 880
+if$ -- 5949
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 55
-newline$ -- 176
-num.names$ -- 360
-pop$ -- 265
+missing$ -- 63
+newline$ -- 206
+num.names$ -- 265
+pop$ -- 386
 preamble$ -- 1
-purify$ -- 216
+purify$ -- 345
 quote$ -- 0
-skip$ -- 729
+skip$ -- 943
 stack$ -- 0
-substring$ -- 1427
-swap$ -- 573
-text.length$ -- 217
+substring$ -- 1130
+swap$ -- 20
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 480
-warning$ -- 1
-while$ -- 402
+type$ -- 588
+warning$ -- 0
+while$ -- 252
 width$ -- 0
-write$ -- 551
-(There were 2 warnings)
+write$ -- 699
+(There was 1 warning)
