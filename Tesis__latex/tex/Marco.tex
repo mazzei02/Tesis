@@ -11,7 +11,12 @@
 \section{Agujeros Negros}
 
 	En el contexto de la teoría de la relatividad general formulada por Einstein, la gravedad resulta de la manifestación geométrica de un espaciotiempo curvado \citep{Einstein1916}.
-	A su vez, dicha curvatura del espaciotiempo queda determinada por el contenido de energía e impulso de la materia en el mismo a través de la relación dada por las ecuaciones de campo de Einstein.
+	A su vez, dicha curvatura del espaciotiempo queda determinada por el contenido de energía e impulso de la materia en el mismo a través de la relación dada por las ecuaciones de campo de Einstein,
+	
+	\begin{equation}
+	R_{\mu~\nu}-\frac{1}{2}g_{\mu~\nu}R=\frac{8\pi G}{c^4}T_{\mu~\nu}.
+	\end{equation}
+	Aquí $R_{\mu~\nu}$ es el tensor de Ricci, $g_{\mu~\nu}$ el tensor métrico y $R$ el escalar de Ricci, mientras que $G$ es la constante de gravitaci\'on universal, $c$ la velocidad de la luz y $T_{\mu~\nu}$ el tensor energía momento. El lado izquierdo de esta ecuación describe la curvatura del espaciotiempo, mientras que el término del lado derecho representa el contenido de materia y energía responsable de dicha curvatura.
 	Formalmente, un agujero negro es una región del espaciotiempo causalmente desconectada del resto.
 	Esta región está encerrada por una hipersuperficie nula llamada horizonte de eventos; cualquier partícula que cruce el horizonte en dirección al agujero negro no puede volver a cruzarlo hacia el exterior \citep{Carroll2004}.
 
@@ -33,7 +38,7 @@ donde $r_s = 2GM/c^2$ define el \textit{radio de Schwarzschild}, correspondiente
 
 	La solución de Kerr \citep{Kerr1963} constituye la generalización de la métrica de Schwarzschild para el caso de un agujero negro en rotación.
 	Fue hallada por Roy P. Kerr en 1963 y describe un espaciotiempo estacionario, axisimétrico y asintóticamente plano en torno a un cuerpo con momento angular distinto de cero.
-	En este caso el elemento de l\'inea en coordenadas de Boyer-Lindquist se escribe como
+	En este caso, el elemento de l\'inea en coordenadas de Boyer-Lindquist se escribe como
 \begin{equation*}
 	ds^2 = -\left(1-\frac{2GMr}{\Sigma c^2}\right)c^2dt^2 - \frac{4GMar\sin^2\theta}{\Sigma c^3}c\,dt\,d\phi + \frac{\Sigma}{\Delta}dr^2 
 \end{equation*}
@@ -57,7 +62,7 @@ donde $a = J/Mc$ es el parámetro de rotación o momento angular normalizado, $-
 
 	En los AGNs, los \jets son impulsados por el SMBH central, poseen ángulos de apertura de unos pocos grados y, dependiendo de su potencia y de las propiedades del medio que atraviesan, pueden propagarse hasta escalas de kiloparsecs o incluso megaparsecs \citep{Boccardi2017}.
 	El plasma que conforma el \jet, a su vez, arrastra campos magnéticos en su interior, así como partículas cargadas relativistas.
-	la interacción entre estas partículas y campos magnéticos, de materia o de fotones da lugar a radiación en distintas bandas del espectro electromagnético.
+	La interacción entre estas partículas y campos magnéticos, de materia o de fotones da lugar a radiación en distintas bandas del espectro electromagnético.
 
 
 \subsection{Estructura del \jet}\label{ssec:estructura}%(Boccardi et al. 2017)
@@ -124,14 +129,15 @@ donde $\Gamma$ es el factor de Lorentz asociado al movimiento relativista del \j
 	En estos modelos, tanto los electrones primarios como los protones son acelerados hasta energías ultrarrelativistas.
 	Los protones, en particular, pueden alcanzar el umbral energético necesario para la producción de piones mediante interacciones con el campo de fotones blandos (p$\gamma$) \citep[e.g.][]{Mucke2000} o campos de materia (pp) \citep[e.g.][]{Kelner2006}.
 	En este marco, la emisión sincrotrón de los electrones primarios domina el espectro en las bajas frecuencias, mientras que en las altas frecuencias la emisión está gobernada por una combinación de procesos: sincrotrón de protones, decaimiento de piones neutros, emisión Compton y sincrotrón de los productos secundarios del decaimiento de piones cargados.
-	Adicionalmente, los fotones de alta energía generados pueden ser absorbidos por interacciones fotón-fotón, dando origen a cascadas electromagnéticas que contribuyen de manera compleja al espectro total observado \citep{Böttcher2013}.
+	Adicionalmente, los fotones de alta energía generados pueden ser absorbidos por interacciones fotón-fotón, dando origen a cascadas electromagnéticas que contribuyen de manera compleja al espectro total observado \citep{Bottcher2013}.
 
-Las particulas en el \jet pueden ser aceleradas por diversos mecanismos. Un ejemplo es la aceleración difusiva por shocks (DSA, por sus siglas en ingl\'es), en la cual consideramos que particulas de prueba que cruzan una onda de choque \textit{shock} no relativista que separa dos medios. La presencia del \textit{shock} permite considerar que las partículas ganan continuamente energ\'ia como resultado de 'colisiones' de frontales con turbulencias generadas por el mismo choque \citep{Bell1978,Matthews2020}. Este mecanismo posee la ventaja de que no requiere un ajuste fino de las condiciones iniciales para reproducir el espectro en forma de ley de potencias observado \citep{Matthews2020}.
+Las particulas en el \jet pueden ser aceleradas por diversos mecanismos. Un ejemplo es la aceleración difusiva por shocks (DSA, por sus siglas en ingl\'es), en la cual consideramos que particulas de prueba que cruzan repetidamente la discontinuidad de choque \textit{shock} no relativista entre dos medios. La presencia del \textit{shock} permite considerar que las partículas ganan continuamente energ\'ia como resultado de 'colisiones' frontales con turbulencias generadas por el mismo choque \citep{Bell1978,Matthews2020}. 
+Este mecanismo posee la ventaja de que no requiere un ajuste fino de las condiciones iniciales para reproducir el espectro en forma de ley de potencias observado \citep{Matthews2020}. Sin embargo, en un modelo magnetizado el plasma tiende a ser menos compresible, lo que reduce la eficiencia de la aceleración por choques \citep{Romero2018}.
 \begin{comment}
 \textcolor{red}{Existen múltiples modelos para la aceleración de partículas en un \textit{jet}.
 	Un ejemplo es la aceleración difusiva por shocks: en distintas regiones del \jet pueden desarrollarse inestabilidades hidrodinámicas y magnetohidrodinámicas que generan choques internos.
 	En estos choques, las partículas relativistas pueden ser aceleradas mediante procesos de aceleración Fermi tipo I (\textit{Diffusive Shock Acceleration} o DSA), al cruzar repetidamente la discontinuidad de choque \citep[e.g.,][]{Drury1983}.
-	En un modelo magnetizado el plasma tiende a ser menos compresible, lo que reduce la eficiencia de la aceleración por choques \citep{Romero2018}.}
+	}
 \end{comment}
 	Alternativamente, puede considerarse la reconexión  magnética, donde dos regiones de distinta polaridad magnetica se acercan entre si a velocidad $U_\mathrm{m}$, producto de inestabilidades (e.g., \citealt{Begelman1998}, \citealt{Barniol2017}), dando lugar a reconfiguraciones de las líneas de campo magnético liberan energía que puede transferirse a las partículas.
 	Si una partícula cruza entre las regiones, esta adquiere energía de forma similar al mecanismo DSA, permitiendo reproducir el espectro en forma de ley de potencias observado por la radiaci\'on sincrotr\'on de ciertas fuentes \citep{Matthews2020}. 
@@ -176,7 +182,7 @@ donde $\Gamma = (1 - \beta^2)^{-1/2}$ el factor de Lorentz del flujo, con $\beta
 	De este modo, el disco de acreción actúa como un mecanismo disipativo extremadamente eficiente, capaz de convertir hasta $\sim 10\%$ de la energía en reposo de la materia en radiación observable.
 
 
-	Si bien la primera observación de núcleos galácticos con espectros inusuales se atribuye a \cite{Fath1909}, la idea de un “motor central” (es decir, la fuente de energía en de este tipo de fuentes es acreción de materia hacia un objeto compacto de gran masa) fue anticipada por Carl Seyfert (\citeyear{Seyfert1943}), quien identificó un conjunto de galaxias con núcleos que presentaban líneas de emisión muy anchas, interpretadas como gas ionizado orbitando a gran velocidad en la vecindad del pozo gravitatorio central. 
+	Si bien la primera observación de núcleos galácticos con espectros inusuales se atribuye a \cite{Fath1909}, la idea de un “motor central” (es decir, la origen de la energía en de este tipo de fuentes es acreción de materia hacia un objeto compacto de gran masa) fue anticipada por Carl Seyfert (\citeyear{Seyfert1943}), quien identificó un conjunto de galaxias con núcleos que presentaban líneas de emisión muy anchas, interpretadas como gas ionizado orbitando a gran velocidad en la vecindad del pozo gravitatorio central. 
 	Otro de los hallazgos clave fue la detección de \jets relativistas: chorros colimados de plasma que se extienden a escalas de kiloparsecs o incluso megaparsecs.
 	Una de las primeras observaciones de \jets corresponde a la galaxia M87, una galaxia elíptica gigante que se encuentra en la zona norte del cúmulo de Virgo, a una distancia de $\sim16.1$ Mpc de la Vía Láctea; dicha observación fue realizada por \cite{Curtis1918}.
 	Un ejemplo histórico es Cygnus A, una de las primeras radiogalaxias identificadas, cuya intensa emisión en radio reveló una estructura de doble lóbulo asociada a la eyección de plasma desde el núcleo \citep{Jennison1953}.
