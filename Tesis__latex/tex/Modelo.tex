@@ -1,6 +1,10 @@
 \chapter{Modelo}\label{cha:modelo}
 
-En este capítulo presentamos un modelo semianalítico de emisión para \jets con estructura multizona (ver Fig.\ref{fig:mod-1}), desarrollado a partir de \textcolor{red}{cita}. En primer lugar, describimos la estructura general del modelo, incluyendo las escalas adoptadas para caracterizar la inyección de partículas. A continuación, analizamos la evolución de los parámetros geométricos y dinámicos del \textit{jet}, así como su impacto en la potencia total y en la redistribución de energía asociada a la inyección. Posteriormente, se introduce la ecuación de transporte relativista utilizada para describir la evolución de la distribución de electrones relativistas. Finalmente, se detalla la emisión sincrotrón y la expresión empleada para la profundidad óptica en función de los radios interno y externo del modelo.  
+	En este capítulo presentamos un modelo semianalítico de emisión para \jets con estructura multizona (ver Fig.\ref{fig:mod-1}), desarrollado a partir de \textcolor{red}{cita}.
+	En primer lugar, describimos la estructura general del modelo, incluyendo las escalas adoptadas para caracterizar la inyección de partículas.
+	\eg{\sout{A continuación} Luego,} analizamos la evolución de los parámetros geométricos y dinámicos del \textit{jet}, así como su impacto en la potencia total y en la redistribución de energía asociada a la inyección.
+	Posteriormente, \eg{\sout{se introduce} introducimos} la ecuación de transporte relativista utilizada para describir la evolución de la distribución de electrones relativistas.
+	Finalmente, \eg{mantener los tiempos verbales} se detalla la emisión sincrotrón y la expresión empleada para la profundidad óptica en función de los radios interno y externo del modelo.  
 
 \begin{comment}
 Para la comparación con datos observacionales se consideran todas las restricciones disponibles en la literatura sobre las condiciones físicas de Centaurus A (Cen~A).  
@@ -9,13 +13,17 @@ Para la comparación con datos observacionales se consideran todas las restricci
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{graphics/Modelo/conceptual_program_flow.png}
-    \caption{Diagrama del flujo del código para modelo de \jet con estructura}
+    \caption{Diagrama del flujo del código para modelo de \jet con estructura. \eg{Eliminar SSC que no lo consideramos, asi como Compton inverso, o mencionar que si bien pueden ser parte del modelo, no los tomamos en cuenta en este trabajo porque nos interesa la emision en radio.} \eg{Que es K, $v_\perp$?} \eg{Eliminar los nombres de los archivos que devuelve el código, eso no es relevante. Sólo mantener la descripción de la física que modela.}}
     \label{fig:mod-1}
 \end{figure}
 
 \section{Estructura general del \jet}
 
-En nuestro modelo, postulamos un \jet relativista con estructura diferenciada en funci\'on del radio, distinguiendo dos regiones: la espina interna (\textit{spine}) para $r < R_\mathrm{in}$ de baja densidad o vacı́a y una vaina o envoltura externa (\textit{sheath}) para $R_\mathrm{in} < r < R_\mathrm{out}$, donde se produce la emisión (ver Fig. \ref{fig:mod-1.5}). El \jet se extiende desde una altura base $z_0$ hasta una distancia máxima $z_{\mathrm{max}} \gg z_0$. En las cercanías de la base, el \jet posee un radio externo inicial $R_0^{\mathrm{out}}$ y un radio interno $R_0^{\mathrm{in}}$. La inyección de partículas relativistas se implementa como un mecanismo continuo y consistente, por ejemplo, con procesos de reconexión magnética, y se lleva a cabo en la región $z_0 < z < z_{\mathrm{max,inj}}$. Para calcular la evolución de los distintos parámetros físicos, incluyendo la inyección de partículas, dividimos el \jet en segmentos sucesivos. En cada segmento se inyectan electrones, que luego son transportados a lo largo del flujo hacia segmentos más lejanos a medida que se enfrían.
+	En nuestro modelo, postulamos un \jet relativista con estructura diferenciada en funci\'on del radio, distinguiendo dos regiones: la espina interna (\textit{spine}) para $r < R_\mathrm{in}$ de baja densidad o vacı́a y una vaina o envoltura externa (\textit{sheath}) para $R_\mathrm{in} < r < R_\mathrm{out}$, donde se produce la emisión (ver Fig. \ref{fig:mod-1.5}).
+	El \jet se extiende desde una altura base $z_0$ hasta una distancia máxima $z_{\mathrm{max}} \gg z_0$. En las cercanías de la base, el \jet posee un radio externo inicial $R_0^{\mathrm{out}}$ y un radio interno $R_0^{\mathrm{in}}$.
+	La inyección de partículas relativistas se implementa como un mecanismo \eg{proceso} continuo, consistente, por ejemplo, con procesos de reconexión magnética, y se lleva a cabo en la región $z_0 < z < z_{\mathrm{max,inj}}$.
+	Para calcular la evolución de los distintos parámetros físicos, incluyendo la inyección de partículas, dividimos el \jet en segmentos \eg{\sout{sucesivos} continuos espaciados geométricamente}.
+	En cada segmento se inyectan electrones, que luego son transportados a lo largo del flujo hacia segmentos más lejanos a medida que se enfrían.
 
 \begin{figure}[h!]
     \centering
@@ -25,7 +33,10 @@ En nuestro modelo, postulamos un \jet relativista con estructura diferenciada en
 \end{figure}
 
 \subsection{Pérdidas radiativas}
-Los electrones relativistas pierden energía a través de diferentes procesos, como radiación sincrotrón y pérdidas adiabáticas, asociadas al trabajo realizado por el plasma durante la expansión lateral del \textit{jet}. En el caso de la radiación sincrotrón, la p\'erdida de energía por unidad de tiempo se obtiene directamente a partir de \citep{Rybicki1979}
+\eg{Esta subsección tiene que ir en la sección de la ecuación de transporte}
+
+	Los electrones relativistas pierden energía a través de diferentes procesos, como radiación sincrotrón y pérdidas adiabáticas, asociadas al trabajo realizado por el plasma durante la expansión lateral del \textit{jet}.
+	En el caso de la radiación sincrotrón, la p\'erdida de energía por unidad de tiempo se obtiene directamente a partir de \citep{Rybicki1979}
 
 \begin{equation}\label{eq:mod-1}
     -\frac{dE}{dt}\Bigg|_{\mathrm{syn}} = \frac{4}{3}\,c\,\sigma_{\mathrm{Th}}\,U_{\mathrm{mag}}\,\beta^2 \gamma^2,
@@ -40,24 +51,31 @@ Sustituyendo $U_{\mathrm{mag}}$ y $\sigma_{\mathrm{Th}}$, y considerando $\beta 
 
 \subsection{P\'erdidas adiab\'aticas}
 
-Las pérdidas adiabáticas se refieren a la disminución de la energía interna de un sistema de plasma o gas cuando este se expande sin intercambio de calor con el entorno. Desde un punto de vista hidrodinámico, el término adiabático aparece naturalmente en la ecuación de energía del fluido y actúa incluso en ausencia de un medio externo. En un flujo en expansión, la energía interna se convierte parcialmente en energía cinética del movimiento colectivo del plasma, lo que produce una aceleración del flujo. En contraste, en un flujo de acreción, el proceso inverso conduce a un aumento de la energía interna a expensas del movimiento en masa, generando calentamiento compresional.
+	Las pérdidas adiabáticas se refieren a la disminución de la energía interna de un sistema de plasma o gas cuando este se expande sin intercambio de calor con el entorno.
+	Desde un punto de vista hidrodinámico, el término adiabático aparece naturalmente en la ecuación de energía del fluido y actúa incluso en ausencia de un medio externo.
+	En un flujo en expansión, la energía interna se convierte parcialmente en energía cinética del movimiento colectivo del plasma, lo que produce una aceleración del flujo.
+	En contraste, en un flujo de acreción, el proceso inverso conduce a un aumento de la energía interna a expensas del movimiento en masa, generando calentamiento compresional.
 
-El flujo de energía de un \jet consiste predominantemente en la energía interna de los electrones y el movimiento de grupo dominado por iones. A estos componentes se suma una fracción significativa asociada al campo magnético, que puede transportar una parte no despreciable del flujo de energía total en forma de energía Poynting \citep{Blandford1977, Meier2001}. Al moverse en la dirección del \jet, los electrones pierden la parte isotrópica de su energía y ganan velocidad en dicha dirección. Los electrones forman un fluido magnetohidrodinámico junto con protones presentes y campos magnéticos. La energía perdida por procesos adiabáticos es convertida en energía cinética del \textit{jet}, es decir, la velocidad del \jet en estado estacionario aumenta con la distancia al n\'ucleo \citep{Zdziarski2014}. En nuestro modelo, este efecto se considera despreciable, dado que las variaciones en la energía cinética del \jet son pequeñas en comparación con las pérdidas radiativas locales.
+	El flujo de energía de un \jet consiste predominantemente en la energía interna de los electrones y el movimiento de grupo dominado por iones.
+	A estos componentes se suma una fracción significativa asociada al campo magnético, que puede transportar una parte no despreciable del flujo de energía total en forma de energía Poynting \citep{Blandford1977, Meier2001}.
+	Al moverse en la dirección del \jet, los electrones pierden la parte isotrópica de su energía y ganan velocidad en dicha dirección.
+	Los electrones forman un fluido magnetohidrodinámico junto con protones presentes y campos magnéticos.
+	La energía perdida por procesos adiabáticos es convertida en energía cinética del \textit{jet}, es decir, la velocidad del \jet en estado estacionario aumenta con la distancia al n\'ucleo \citep{Zdziarski2014}.
+	En nuestro modelo, este efecto se considera despreciable, dado que las variaciones en la energía cinética del \jet son pequeñas en comparación con las pérdidas radiativas locales.
+	\eg{Sin embargo, esta variación puede ser significativa para la energía interna de los electrones relativistas.}
 
-La tasa de p\'erdidas adiab\'aticas esta dada por
+	La tasa de p\'erdidas adiab\'aticas está dada por
 
 \begin{equation}\label{eq:mod-3}
  \frac{dE}{dt}\Bigg|_{\mathrm{Ad}}=-\frac{2}{3}\frac{d\ln(R_\mathrm{out}(z))}{dz}\frac{c\Gamma_\mathrm{j}\beta_\mathrm{j}(z)}{z}\left(E-\frac{(mc^2)^2}{E}\right), 
 \end{equation}
-con E la energía en el marco de referencia del fluido.
-
-
-
+con $E$ la energía en el marco de referencia del fluido. \eg{Revisar que todos los términos estén definidos anteriormente.}
 
 
 \section{Geometría y dinámica del \jet}\label{sec:Geometria}
 
-Presentamos un \jet con geometría cuasi-parabólica multizona, cuya sección transversal está restringida por dos radios definidos como función de la altura $z$:
+\eg{Chequear que todas las figuras estén referenciadas en el texto!}
+	Presentamos un \jet con geometría cuasi-parabólica multizona, cuya sección transversal está restringida por dos radios definidos como función de la altura $z$:
 
 \begin{equation}\label{eq:mod-4}
     R^{\mathrm{out/in}}(z) = R^{\mathrm{out/in}}_0 \left(\frac{z}{z_0}\right)^w,
@@ -68,15 +86,18 @@ donde $R^{\mathrm{out/in}}_0$ son los radios en la base del \jet y $w$ es el par
 
 \end{comment}
 
-Se espera que, al menos hasta las alturas máximas consideradas en nuestro modelo, el factor de Lorentz del \jet $\Gamma_\mathrm{j}$ siga una ley de potencias respecto de la distancia $z$:
+	Se espera que, al menos hasta las alturas máximas consideradas en nuestro modelo, el factor de Lorentz del \jet $\Gamma_\mathrm{j}$ siga una ley de potencias respecto de la distancia $z$:
 
 \begin{equation}\label{eq:mod-5}
     \Gamma_\mathrm{j}(z) = \Gamma_{\mathrm{j},0} \left(\frac{z}{z_0}\right)^g,
 \end{equation}
-con $\Gamma_{\mathrm{j},0} \approx 1$, de modo que el \jet es casi no relativista en su base y se acelera progresivamente a medida que $z$ aumenta. El parámetro $g$ controla la tasa de aceleración: valores mayores implican una aceleración más rápida del flujo relativista cerca de la base del \jet.
+con $\Gamma_{\mathrm{j},0} \approx 1$, de modo que el \jet es casi no relativista en su base y se acelera progresivamente a medida que $z$ aumenta.
+	El parámetro $g$ controla la tasa de aceleración: valores mayores implican una aceleración más rápida del flujo relativista \sout{cerca de la base del \jet}.
 
 \subsection{Ecuaciones de conservación y magnetizaci\'on}
-Debido a la ecuación de continuidad relativista, $\nabla_{\alpha}(\rho' u^\alpha)=0$, con $\rho'$ la densidad en el marco comóvil y $u^\alpha$ la tetra velocidad del fluido, el caudal de masa del \textit{jet} $\dot{M}_{\mathrm{j}}$ es constante con $z$. De forma análoga, si consideramos la conservación del tensor de energía–impulso, $\nabla_\mu T^{\mu\nu}=0$, y despreciamos la radiación emitida localmente, la potencia total del \textit{jet} se conserva y puede escribirse como
+
+	Debido a la ecuación de continuidad relativista, $\nabla_{\alpha}(\rho' u^\alpha)=0$, con $\rho'$ la densidad en el marco comóvil y $u^\alpha$ la tetravelocidad del fluido, el caudal de masa del \textit{jet} $\dot{M}_{\mathrm{j}}$ es constante con $z$.
+	De forma análoga, si consideramos la conservación del tensor de energía–impulso, $\nabla_\mu T^{\mu\nu}=0$, y despreciamos la radiación emitida localmente, la potencia total del \textit{jet} se conserva y puede escribirse como
 \begin{equation}\label{eq:mod-6}
     L_{\mathrm{j}}=\int_\Sigma T^{0z}\, d\Sigma_z
     = \Gamma_{\mathrm{j}}\,\dot{M}_{\mathrm{j}}\,c^2\,h'\,(1+\sigma') \equiv \dot{M}_{\mathrm{j}} c^2\,\mu ,
@@ -91,7 +112,7 @@ y $h'$ la entalpía específica (adimensional),
 \end{equation}
 con $u_e'$ y $p_e'$ la energía interna y la presión (en el marco comóvil) respectivamente.
 
-Igualando $\dot{M}_{\mathrm{j}} = \pi\,R(z)^2\,\Gamma_{\mathrm{j}}(z)\,\beta_{\mathrm{j}}(z)\,\rho' c$, se obtiene que la intensidad del campo magnético en el marco del fluido que resulta
+	Igualando $\dot{M}_{\mathrm{j}} = \pi\,R(z)^2\,\Gamma_{\mathrm{j}}(z)\,\beta_{\mathrm{j}}(z)\,\rho' c$, se obtiene que la intensidad del campo magnético en el marco del fluido que resulta
 \begin{equation}\label{eq:mod-9}
     B'(z)=\frac{2}{\Gamma_{\mathrm{j}}(z)\,R(z)}\,
     \sqrt{\frac{L_{\mathrm{j}}}{c\,\beta_{\mathrm{j}}(z)}\left(\frac{\sigma'}{1+\sigma'}\right)},
@@ -102,52 +123,62 @@ con
 \end{equation}
 el radio efectivo de la sección anular transversal a $z$.
 
-De aquí se sigue qu\'e $B'(z)\propto [\Gamma_{\mathrm{j}}(z)\,R(z)]^{-1}$. Al expandirse y acelerarse el \textit{jet}, el campo se debilita por dilución y conversión de energía magnética en energía cinética.
+	De aquí se sigue qu\'e $B'(z)\propto [\Gamma_{\mathrm{j}}(z)\,R(z)]^{-1}$.
+	Al expandirse y acelerarse el \textit{jet}, el campo se debilita por dilución y conversión de energía magnética en energía cinética.
 
-De la Ec. \eqref{eq:mod-6} se deduce que la energía por unidad de flujo de masa, $\mu=L_{\mathrm{j}}/(\dot{M}_{\mathrm{j}} c^2)$, es constante. Cerca de la base, donde el plasma es aproximadamente frío ($h'_0 \approx 1$) y el flujo aún no ha adquirido velocidades relativistas, se tiene entonces
+	De la Ec. \eqref{eq:mod-6} se deduce que la energía por unidad de flujo de masa, $\mu=L_{\mathrm{j}}/(\dot{M}_{\mathrm{j}} c^2)$, es constante.
+	Cerca de la base, donde el plasma es aproximadamente frío ($h'_0 \approx 1$) y el flujo aún no ha adquirido velocidades relativistas, se tiene entonces
 \[
     \mu \;\approx\; (1+\sigma'_0) \quad \Rightarrow\quad \sigma'_0 \;\approx\; \mu-1 .
 \]
-Si el \jet alcanza factores de Lorentz apreciables más adelante (y/o transporta gran potencia con un caudal de masa moderado), necesariamente $\mu\gg1$ y, por tanto, $\sigma'_0\gg1$: al inicio la energía está mayormente en el campo. La aceleración consiste precisamente en convertir energía magnética en cinética, haciendo que $\sigma'$ decrezca mientras $\Gamma_{\mathrm{j}}$ aumenta, manteniendo $\mu=\Gamma_{\mathrm{j}} h' (1+\sigma')$ constante.
+	Si el \jet alcanza factores de Lorentz apreciables más adelante (y/o transporta gran potencia con un caudal de masa moderado), necesariamente $\mu\gg1$ y, por tanto, $\sigma'_0\gg1$: al inicio la energía está mayormente en el campo \eg{magnético}.
+	La aceleración consiste precisamente en convertir energía magnética en cinética, haciendo que $\sigma'$ decrezca mientras $\Gamma_{\mathrm{j}}$ aumenta, manteniendo $\mu=\Gamma_{\mathrm{j}} h' (1+\sigma')$ constante.
 
 
 
 \section{Potencia del \jet e inyección de partículas}
 
-En esta sección exploramos en detalle los distintos componentes que contribuyen a la potencia total de un \jet relativista, así como los mecanismos responsables de la inyección y aceleración de partículas dentro del flujo. La potencia del \jet constituye un parámetro fundamental para caracterizar la eficiencia del proceso de extracción de energía desde el entorno del agujero negro y su posterior transporte a escalas macroscópicas. Dependiendo de la composición del plasma, la fracción de energía cinética, magnética y radiativa puede variar significativamente, afectando tanto la evolución dinámica del \jet como su emisión observada en distintas bandas del espectro electromagnético.
+	En esta sección exploramos en detalle los distintos componentes que contribuyen a la potencia total de un \jet relativista, así como los mecanismos responsables de la inyección y aceleración de partículas dentro del flujo.
+	La potencia del \jet constituye un parámetro fundamental para caracterizar la eficiencia del proceso de extracción de energía desde el entorno del agujero negro y su posterior transporte a escalas macroscópicas.
+	Dependiendo de la composición del plasma, la fracción de energía cinética, magnética y radiativa puede variar significativamente, afectando tanto la evolución dinámica del \jet como su emisión observada en distintas bandas del espectro electromagnético.
 
 \subsection{Potencia total del \jet}
 
-Los \jets pueden estar compuestos por un plasma frío de protones y electrones, sumado a una pequeña contribución de partículas relativistas, o por un plasma puramente leptónico de electrones y positrones relativistas \citep{Romero2017}. En general, la potencia de un \jet a una cierta altura desde su base puede separarse en sus distintas componentes: la potencia transportada por "materia fría", que corresponde al plasma no relativista, $L_\text{p}$; la potencia asociada a electrones relativistas, $L_\text{e}$; y la potencia en el campo magnético, $L_\text{B}$. Luego
+	Los \jets pueden estar compuestos por un plasma frío de protones y electrones, sumado a una pequeña contribución de partículas relativistas, o por un plasma puramente leptónico de electrones y positrones relativistas \citep{Romero2017}.
+	En general, la potencia de un \jet a una cierta altura desde su base puede separarse en sus distintas componentes: la potencia transportada por ``materia fría'', que corresponde al plasma no relativista, $L_\text{p}$; la potencia asociada a electrones relativistas, $L_\text{e}$; y la potencia en el campo magnético, $L_\text{B}$.
+	Luego,
 
 
 \begin{equation}\label{eq:mod-11}
     L_\text{j}=L_\text{p}+L_\text{e}+L_\text{B}.
 \end{equation}
 
-Podemos desarrollar las expresiones de estas potencias en función de las variables anteriores. Para la potencia asociada a la masa no relativista $L_p$
+	Podemos desarrollar las expresiones de estas potencias en función de las variables anteriores.
+	\sout{Para la potencia asociada a la masa no relativista $L_p$} \eg{La potencia asociada a la materia no relativista puede expresarse como}
 
 \begin{equation}\label{eq:mod-12}
     L_p=\pi R^2\Gamma_\text{j}^2\beta_\text{j}c^3\rho'=\Gamma_\text{j}\dot{M}c^2,
 \end{equation}
-para la potencia transportada electrones relativistas $L_e$
+para la potencia transportada electrones relativistas $L_e$ \eg{repetir el formato anterior}
 \begin{equation}\label{eq:mod-13}
     L_e = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_e + p'_e),
 \end{equation}
-con $U'_e$ la densidad de energía y $p'_e=U'_e/3$ la presi\'on de los electrones relativistas; notamos que podemos escribir la entalpía $h'$ en función de $L_e$ y $L_p$ como $h'=1+L_e/L_p$; finalmente la potencia transportada por el campo magnético $L_B$
+\eg{usá u minúscula para las densidades de energía}
+con $U'_e$ la densidad de energía y $p'_e=U'_e/3$ la presi\'on de los electrones relativistas; notamos que podemos escribir la entalpía $h'$ en función de $L_e$ y $L_p$ como $h'=1+L_e/L_p$.
+	Finalmente, la potencia transportada por el campo magnético es
 \begin{equation}\label{eq:mod-14}
     L_B = \pi R^2 \Gamma_j^2 \beta_j c \, (U'_B + p'_B),
 \end{equation}
 donde $U'_B = B'^2 / 8\pi$ es la densidad de energía magnética y $p'_B$ la presión magnética; $\sigma'=L_\text{B}/(L_\text{e}+L_\text{p}).$
 
-Dado que en la base la magnetizaci\'on es alta, tenemos que $L_\text{B}$ domina la distribuci\'on de potencia total cerca de la base y disminuye a medida que $z$ aumenta, convirtiendo gradualmente la energ\'ia magnética en aceleración del flujo y energ\'ia de partículas relativistas, y aumentando $L_\text{e}$ y $L_\text{p}.$
+	Dado que en la base \eg{del jet} la magnetizaci\'on es alta, tenemos que $L_B$ domina la distribuci\'on de potencia total cerca de la base y disminuye a medida que $z$ aumenta, convirtiendo gradualmente la energ\'ia magnética en aceleración del flujo y energ\'ia de partículas relativistas, y aumentando $L_\text{e}$ y $L_\text{p}.$ \eg{Referir explícitamente a las figuras y describirlas en el texto!}
 
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.49\textwidth}
 \centering
     \includegraphics[width=\linewidth]{graphics/Modelo/Jet_Power.jpeg}
-    \caption[Balance en la potencia a lo largo del \jet]{Figura ilustrativa del balance en las componentes de la potencia a lo largo del \jet}
+    \caption[Balance en la potencia a lo largo del \jet]{Figura ilustrativa del balance en las componentes de la potencia a lo largo del \jet. \eg{Mencionar los parámetros utilizados.}}
     \end{subfigure}
     \begin{subfigure}[b]{0.49\textwidth}
 \centering
@@ -158,13 +189,16 @@ Dado que en la base la magnetizaci\'on es alta, tenemos que $L_\text{B}$ domina 
 \end{figure}
 
 \subsection{Potencia inyectada}\label{ssec:P_iny}
-Para caracterizar la inyección en partículas relativistas suponemos que una fracción fija $\varepsilon_\text{e}$ de la potencia total del \jet se transfiere a electrones no térmicos en el rango comprendido entre $z_0$ y $z_\text{max,iny}$. La potencia disponible para inyección resulta entonces  $L_\text{iny} = \varepsilon_\text{e} L_\text{j}$.
+
+	Para caracterizar la inyección en partículas relativistas suponemos que una fracción fija $\varepsilon_\text{e}$ de la potencia total del \jet se transfiere a electrones no térmicos en el rango comprendido entre $z_0$ y $z_\text{max,iny}$.
+	La potencia disponible para inyección resulta entonces  $L_\text{iny} = \varepsilon_\text{e} L_\text{j}$.
 
 Parametrizamos la dependencia espacial de la tasa de inyección mediante
 \begin{equation}\label{eq:mod-15}
     \frac{dL_\text{iny}(z)}{dz}=\frac{L_0}{z_0}\left(\frac{z}{z_0}\right)^{-(1+a_\text{iny})}
 \end{equation}
-donde $a_\text{iny}$ controla la distribución longitudinal de la inyección y $L_0$ es una constante de normalización. La condición de conservación de la potencia inyectada en el intervalo $[z_0, z_\text{max,iny}]$,
+donde $a_\text{iny}$ controla la distribución longitudinal de la inyección y $L_0$ es una constante de normalización.
+La condición de conservación de la potencia inyectada en el intervalo $[z_0, z_\text{max,iny}]$,
 \[
     \int_{z_0}^{z_\text{max,iny}} \frac{dL_\text{iny}(z)}{dz}\,dz = L_\text{iny},
 \]
@@ -173,23 +207,25 @@ permite obtener
     L_0=\frac{a_\text{iny}L_\text{iny}}{1-(z_0/z_\text{max,iny})^{a_\text{iny}}},
     \qquad a_\text{iny} \neq 0.
 \end{equation}
-En el caso particular $a_\text{iny}=0$, la inyección es constante por unidad de $\log(z)$ a lo largo del \jet.  
+	En el caso particular $a_\text{iny}=0$, la inyección es constante por unidad de $\log(z)$ a lo largo del \jet.  
 
-La potencia total acumulada en electrones no térmicos hasta una distancia $z$ se obtiene integrando la expresión \eqref{eq:mod-16} entre $z_0$ y $z$, lo que conduce a  
+	La potencia total \eg{\sout{acumulada} inyectada} en electrones no térmicos hasta una distancia $z$ se obtiene integrando la expresión \eqref{eq:mod-16} entre $z_0$ y $z$, lo que conduce a  
 
 \begin{equation}\label{eq:mod-17}
     L_\text{e}(z_0,z)=L_\text{iny}\frac{1-(z_0/z)^{a_\text{iny}}}
     {1-(z_0/z_\text{max,iny})^{a_\text{iny}}}.
 \end{equation}
 
-\section{Distribución de partículas relativistas.}
+\section{Distribución de partículas relativistas}
+\eg{pasar todos los capítulos por algún corrector, o chatgpt, para corregir typos, errorres menores de sintaxis, etc.}
 
-En cada segmento del \jet se inyecta una población de electrones relativistas con una distribución de tipo ley de potencias y un corte exponencial en altas energías. En el sistema comovil,
+	En cada segmento del \jet se inyecta una población de electrones relativistas con una distribución de tipo ley de potencias y un corte exponencial en altas energías. En el sistema comóvil,
 
 \begin{equation}\label{eq:mod-18}
     q'(\gamma', z) = q'_0(z)\, \gamma'^{-p} \exp\left[-\frac{\gamma'}{\gamma'_{\max}(z)}\right]
 \end{equation}
-donde $p$ es el índice espectral (típicamente $2 \lesssim p \lesssim 3$, considerado constante a lo largo del \jet), $\gamma'_{\max}(z)$ es la energía máxima alcanzada por los electrones en la posición $z$, determinada por el balance local entre aceleración y pérdidas, y $q'_0(z)$ es un factor de normalización. Este último se ajusta de manera que la potencia inyectada satisfaga la ecuación de inyección \eqref{eq:mod-16}
+donde $p$ es el índice espectral (típicamente $2 \lesssim p \lesssim 3$, considerado constante a lo largo del \jet), $\gamma'_{\max}(z)$ es la energía máxima alcanzada por los electrones en la posición $z$, determinada por el balance local entre aceleración y pérdidas, y $q'_0(z)$ es un factor de normalización.
+	Este último se ajusta de manera que la potencia inyectada satisfaga la ecuación de inyección \eqref{eq:mod-16}
 
 \begin{equation}\label{eq:mod-19}
     \frac{dL_{\text{inj}}(z)}{dz} 
@@ -197,7 +233,8 @@ donde $p$ es el índice espectral (típicamente $2 \lesssim p \lesssim 3$, consi
 \int_{\gamma'_{\min}}^{\gamma'_{\max}(z)} 
 \gamma'^{-p} e^{-\gamma'/\gamma'_{\max}(z)} d\gamma'.
 \end{equation}
-Una vez inyectados, los electrones evolucionan en energía y altura a lo largo del \jet. Su distribución estacionaria $n'(\gamma', z)$ obedece la ecuación de transporte relativista,  
+	Una vez inyectados, los electrones evolucionan en energía y altura a lo largo del \jet.
+	Su distribución estacionaria $n'(\gamma', z)$ obedece la ecuación de transporte relativista,  
 
 \begin{comment}
 \begin{equation}\label{eq:mod-20}
@@ -215,7 +252,8 @@ Una vez inyectados, los electrones evolucionan en energía y altura a lo largo d
 \end{equation}
 donde $\dot{\gamma}'$ representa la tasa de variación de energía de las partículas.  
 
-Para simplificar la notación, introducimos $\tilde{N}'(\gamma',z) = \pi R^2(z)\Gamma_j(z)\beta_j(z)c \, n'(\gamma',z)$ como la densidad espectral de partículas transportada por unidad de altura, $\dot{\gamma}'_z = [\Gamma_j(z)\beta_j(z)c]^{-1}\dot{\gamma}'$ como la tasa de pérdidas por unidad de distancia, y $dQ'/dz=\pi R^2(z)q'(\gamma',z)$ como la tasa de inyección de partículas por unidad de altura. Con estas definiciones, la Ec.~\eqref{eq:mod-20} se puede reescribir como
+	Para simplificar la notación, introducimos $\tilde{N}'(\gamma',z) = \pi R^2(z)\Gamma_j(z)\beta_j(z)c \, n'(\gamma',z)$ como la densidad espectral de partículas transportada por unidad de altura, $\dot{\gamma}'_z = [\Gamma_j(z)\beta_j(z)c]^{-1}\dot{\gamma}'$ como la tasa de pérdidas por unidad de distancia, y $dQ'/dz=\pi R^2(z)q'(\gamma',z)$ como la tasa de inyección de partículas por unidad de altura.
+	Con estas definiciones, la Ec.~\eqref{eq:mod-20} se puede reescribir como
 
 \begin{equation}\label{eq:mod-21}
     \frac{\partial \tilde{N}'(\gamma',z)}{\partial z} 
@@ -223,23 +261,27 @@ Para simplificar la notación, introducimos $\tilde{N}'(\gamma',z) = \pi R^2(z)\
 = \frac{dQ'(\gamma',z)}{dz}.
 \end{equation}
 
-La ecuación de transporte no admite en general una solución analítica cerrada. En este trabajo empleamos un esquema numérico de diferencias finitas siguiendo el método de \cite{Park1996}.
+La ecuación de transporte no admite en general una solución analítica cerrada.
+En este trabajo empleamos un esquema numérico de diferencias finitas siguiendo el método de \cite{Park1996}.
 
 
-\section{Radiación emitida.}
+\section{Radiación emitida}
 
-En este trabajo enfocamos el estudio de la emisión en radio producida en \jets relativistas. Dado que en estas longitudes de onda la emisión se encuentra dominada por radiación sincrotrón, nuestro modelo se enfoca en este proceso.
+	En este trabajo enfocamos el estudio de la emisión en radio producida en \jets relativistas.
+	Dado que en estas longitudes de onda la emisión se encuentra dominada por radiación sincrotrón, nuestro modelo se enfoca en este proceso.
 
 
 \subsection{Flujo observado}\label{subsec:flujo}
 
-El flujo observado representa la cantidad de energía que alcanza al observador por unidad de tiempo, área en una dada frecuencia. Matematicamente, el flujo observado se vincula con la intensidad especifica como la integral sobre el \'angulo s\'olido subtendido por la fuente
+	El flujo observado representa la cantidad de energía que alcanza al observador por unidad de tiempo, área en una dada frecuencia.
+	Matemáticamente, el flujo observado se vincula con la intensidad específica como la integral sobre el \'angulo s\'olido subtendido por la fuente
 
 \begin{equation}\label{eq:mod-22}
 F_\nu=\int_\Omega I_\nu \cos(\theta)d\Omega \approx\int_\Omega I_\nu d\Omega.
 \end{equation}
 
-Dado que el ángulo proyectado en el cielo es muy pequeño, aproximamos $\cos(\theta)\approx 1$. El \'angulo s\'olido $\Omega$ puede vincularse con el \'area proyectada en el cielo ocupada por la fuente seg\'un
+	Dado que el ángulo proyectado en el cielo es muy pequeño, aproximamos $\cos(\theta)\approx 1$.
+	El \'angulo s\'olido $\Omega$ puede vincularse con el \'area proyectada en el cielo ocupada por la fuente seg\'un
 
 \begin{equation*}
 \Omega=\frac{A}{d^2} \qquad d\Omega=\frac{dA}{d^2},
@@ -249,7 +291,7 @@ luego
 \begin{equation}\label{eq:mod-23}
 F_\nu\approx\int_\Omega I_\nu d\Omega.=\int_A I_\nu \frac{dA}{d^2} =\frac{1}{d^2}\int_A I_\nu dxdy,
 \end{equation}
-donde consideramos $y=z\sin(i)$ la dirección de propagación del \jet proyectada y $x$ perpendicular a esta. En consecuencia, tendremos que
+donde consideramos $y=z\sin(i)$ \eg{revisar si $i$ fue definido antes} la dirección de propagación del \jet proyectada y $x$ perpendicular a esta. En consecuencia, tendremos que
 
 \begin{equation}\label{eq:mod-24}
 F_\nu=\frac{\sin(i)}{d^2}\int\int I(x,z)dxdz.
@@ -260,7 +302,8 @@ La intensidad específica $I_\nu$ puede calcularse a partir de la ecuación de t
 \begin{equation}\label{eq:mod-25}
     \frac{dI_\nu}{ds}=-\alpha_\nu I_\nu+j_\nu,
 \end{equation}
-donde $s$ es la distancia a lo largo del rayo de propagación, $\alpha_\nu$ es el coeficiente de absorción, que permite calcular la atenuación en la intensidad, y $j_\nu$ es el coeficiente de emisión, que representa la cantidad de intensidad especifica añadida al haz por unidad de longitud. Bajo el supuesto de que tanto $j_\nu$ como $\alpha_\nu$ permanecen aproximadamente constantes a lo largo de la trayectoria, la integración de la Ec.~\eqref{eq:mod-25} conduce a
+donde $s$ es la distancia a lo largo del rayo de propagación, $\alpha_\nu$ es el coeficiente de absorción, que permite calcular la atenuación en la intensidad, y $j_\nu$ es el coeficiente de emisión, que representa la cantidad de intensidad especifica añadida al haz por unidad de longitud.
+	Bajo el supuesto de que tanto $j_\nu$ como $\alpha_\nu$ permanecen aproximadamente constantes a lo largo de la trayectoria, la integración de la Ec.~\eqref{eq:mod-25} conduce a
 
 \begin{equation}\label{eq:mod-26}
     I_\nu(x,z)=\frac{j_\nu}{\alpha_\nu}(1-e^{-\tau_\nu(x,z)}),
@@ -275,7 +318,7 @@ con $\tau_\nu(x,z)$ la profundidad óptica.
     \caption{Diagrama del cruce de un rayo de luz por el espesor del \jet.}
 \end{wrapfigure}
 
-En el modelo adoptado, la distribución de partículas se encuentra confinada entre los radios interno y externo definidos en cada altura $z$. Para un rayo que atraviesa un espesor $s(x, z)$ del \jet, la cantidad de materia interceptada depende de la distancia transversal $x$ al eje de simetría.
+	En el modelo adoptado, la distribución de partículas se encuentra confinada entre los radios interno y externo definidos en cada altura $z$. Para un rayo que atraviesa un espesor $s(x, z)$ del \jet, la cantidad de materia interceptada depende de la distancia transversal $x$ al eje de simetría.
 \begin{wrapfigure}{h}{0.4\textwidth}
     \centering
     \includegraphics[width=0.35\textwidth]{graphics/Modelo/schematic.png}
@@ -284,7 +327,9 @@ En el modelo adoptado, la distribución de partículas se encuentra confinada en
 \end{wrapfigure}
 
 \vspace{0.3cm}
-Asumimos que, dentro de la región comprendida entre los bordes interno y externo, el coeficiente de absorción $\alpha_\nu$ es constante, y que fuera de esta zona la absorción es despreciable. La longitud efectiva recorrida dentro del medio absorbente depende de la posición transversal $x$, ya que algunos rayos atraviesan solo la envoltura externa, mientras que otros cruzan ambas regiones. En este caso,
+	Asumimos que, dentro de la región comprendida entre los bordes interno y externo, el coeficiente de absorción $\alpha_\nu$ es constante, y que fuera de esta zona la absorción es despreciable.
+	La longitud efectiva recorrida dentro del medio absorbente depende de la posición transversal $x$, ya que algunos rayos atraviesan solo la envoltura externa, mientras que otros cruzan ambas regiones.
+	En este caso, \eg{nuevamente, todas las figuras tienen que estar referenciadas en el texto con al menos una breve descripción!}
 
 \begin{equation}\label{eq:mod-39}
     s(x, z) = \frac{l(x, z)}{\sin i},
@@ -311,7 +356,9 @@ Con esto podemos resolver la Ec.~\eqref{eq:mod-26} para la {intensidad espectral
     I_\nu(x, z) = \frac{j_\nu(z)}{\alpha_\nu(z)}
     \left[ 1 - e^{-\alpha_\nu(z)\, l(x, z)} \right].
 \end{equation}
-Aqui presentamos $j_\nu$ y $\alpha_\nu$ en el sistema del observador. Podemos transformarlos al sistema com\'ovil utilizando las invariantes relativistas $j_\nu/\nu^2$, $\alpha_\nu~\nu$. Dado que la frecuencia transforma entre sistemas de referencia seg\'un el factor de Doppler (Ec. \eqref{eq:marco-9} y \eqref{eq:marco-10}). Luego el coeficiente de emisi\'on transforma seg\'un
+	Aquí, \sout{presentamos} $j_\nu$ y $\alpha_\nu$ \eg{están expresadas} en el sistema del observador.
+	Podemos transformarlos al sistema com\'ovil utilizando las invariantes relativistas $j_\nu/\nu^2$, $\alpha_\nu~\nu$.
+	Dado que la frecuencia transforma entre sistemas de referencia seg\'un el factor de Doppler (Ec. \eqref{eq:marco-9} y \eqref{eq:marco-10}), el coeficiente de emisi\'on transforma seg\'un
 
 \begin{equation*}
 \frac{j'_{\nu'}}{\nu'^2} =\frac{j_\nu}{\nu^2} ,
@@ -332,25 +379,24 @@ mientras que el coeficiente de absorci\'on resulta
 \begin{equation*}
 \alpha'_\nu = \delta\, \alpha_\nu.
 \end{equation*}
-De estos resultados la expresi\'on de la intensidad en el sistema comóvil resulta
-
-
-
+	De estos resultados, la expresi\'on de la intensidad en el sistema comóvil resulta
 \begin{equation}
-     I'_\nu'(x, z) = \frac{j'_{\nu'}(z)}{\alpha'_{\nu'}(z)}\, \delta^3
+     I'_{\nu'}(x, z) = \frac{j'_{\nu'}(z)}{\alpha'_{\nu'}(z)}\, \delta^3
     \left[ 1 - e^{-\frac{\alpha'_{\nu'}(z)}{\delta}\, l(x, z)} \right].
     \label{eq:mod-38}
 \end{equation}
 
-
 \subsection{Coeficientes de emisividad y absorci\'on}
-La {emisividad sincrotrón} $j_\nu$ describe la potencia radiada por unidad de volumen, frecuencia y ángulo sólido:
+
+	La emisividad sincrotrón $j_\nu$ describe la potencia radiada por unidad de volumen, frecuencia y ángulo sólido:
 
 \begin{equation}\label{eq:mod-32}
     j_\nu = \frac{dE}{dt\, d\nu\, dV\, d\Omega}.
 \end{equation}
 
-En el sistema comóvil, para un valor fijo de $z$ y energía de fotón $E_\gamma=h~\nu'$, la potencia emitida por un único electrón de energía $E'$ en un campo magnético $B'(z)$ puede calcularse como se detalla por la Ec.~\eqref{eq:mod-31} en el Anexo \ref{cha:apx1}. La emisividad total se obtiene multiplicando dicha potencia por la distribución de electrones $N'(E', z)$ e integrando sobre todas las energías disponibles. La importancia de utilizar el sistema comóvil reside en que nos permite asumir razonablemente que la emisividad resulta isotrópica en este, por lo cual resulta
+	En el sistema comóvil, para un valor fijo de $z$ y energía de fotón $E_\gamma=h~\nu'$, la potencia emitida por un único electrón de energía $E'$ en un campo magnético $B'(z)$ puede calcularse como se detalla por la Ec.~\eqref{eq:mod-31} en el Anexo \ref{cha:apx1}.
+	La emisividad total se obtiene multiplicando dicha potencia por la distribución de electrones $N'(E', z)$ e integrando sobre todas las energías disponibles.
+	La importancia de utilizar el sistema comóvil reside en que nos permite asumir razonablemente que la emisividad resulta isotrópica en este, por lo cual resulta
 
 \begin{equation}
     j'_{\nu'}(z) = \frac{1}{4\pi} 
@@ -358,7 +404,8 @@ En el sistema comóvil, para un valor fijo de $z$ y energía de fotón $E_\gamma
     \label{eq:mod-33}
 \end{equation}
 
-La {absorción sincrotrón} se caracteriza mediante el coeficiente $\alpha_\nu$, que cuantifica la atenuación de la radiación al propagarse a través del plasma. Su cálculo en el sistema comóvil se basa en la derivada espectral de la distribución de electrones en espacio logarítmico,
+	La {absorción sincrotrón} se caracteriza mediante el coeficiente $\alpha_\nu$, que cuantifica la atenuación de la radiación al propagarse a través del plasma.
+	Su cálculo en el sistema comóvil se basa en la derivada espectral de la distribución de electrones en espacio logarítmico,
 
 \begin{equation}\label{eq:mod-34}
     \frac{d \ln N'}{d \ln E'},
@@ -369,7 +416,7 @@ a partir de la cual, en combinaci\'on con la potencia sincrotron (Ec. \eqref{eq:
     P_{\nu'}(\nu', E', B'(z))\, N'(E', z)\, 
     \left( \frac{d \ln N'}{d \ln E'} - 2 \right).
 \end{equation}
-Asumiendo isotropía (nuevamente, razonable en el sistema comóvil) la integración sobre energía, multiplicada por el factor físico $-h^3 c^2 / (8\pi E_\gamma^2)$, conduce a la expresión del coeficiente de absorción en el sistema comóvil:
+	Asumiendo isotropía (nuevamente, razonable en el sistema comóvil) la integración sobre energía, multiplicada por el factor físico $-h^3 c^2 / (8\pi E_\gamma^2)$, conduce a la expresión del coeficiente de absorción en el sistema comóvil:
 
 \begin{equation}
     \alpha'_{\nu'}(z) = 
@@ -379,13 +426,14 @@ Asumiendo isotropía (nuevamente, razonable en el sistema comóvil) la integraci
     \label{eq:mod-36}
 \end{equation}
 
-\subsection{Regímenes ópticos}
+\subsection{Regímenes \sout{ópticos} \eg{de absorción}}
 
-Para calcular el flujo total, integramos la intensidad sobre la coordenada $x$ (Ec.~\ref{eq:mod-24}). En cada segmento del \jet, el tratamiento depende del régimen óptico: delgado, grueso o intermedio (tratamiento general).
+	Para calcular el flujo total, integramos la intensidad sobre la coordenada $x$ (Ec.~\ref{eq:mod-24}).
+	En cada segmento del \jet, el tratamiento depende del régimen óptico \eg{de absorción}: delgado, grueso o intermedio (tratamiento general).
 
 \subsubsection*{Tratamiento general}
 
-En el caso general, fuera de los límites de los regímenes ópticamente delgado y grueso, integramos numéricamente para obtener el valor del flujo
+	En el caso general, fuera de los límites de los regímenes ópticamente delgado y grueso, integramos numéricamente para obtener el valor del flujo
 
 \begin{equation*}\label{eq:mod-44}
     \frac{dF_{\nu'}}{dz}
@@ -398,11 +446,13 @@ En el caso general, fuera de los límites de los regímenes ópticamente delgado
       \frac{j'_{\nu'}(z)}{\alpha'_{\nu'}(z)}\, \delta^3
       \int_{-R_\mathrm{out}}^{R_\mathrm{out}} \left[ 1 - e^{-\frac{\alpha'_{\nu'}(z)}{\delta \sin(i)}\, l(x, z)} \right] dx,
 \end{equation}
+\eg{es la misma expresión dos veces}
 
 
 \subsubsection*{Caso ópticamente delgado}
 
-La profundidad óptica máxima corresponde al segmento de mayor longitud dentro de la región absorbente, es decir, para $x = R_\mathrm{in}$. En tal caso:
+	La profundidad óptica máxima corresponde al segmento de mayor longitud dentro de la región absorbente, es decir, para $x = R_\mathrm{in}$.
+	En tal caso,
 
 \begin{equation}\label{eq:mod-41}
     \tau_{\nu,\mathrm{max}}(z)
@@ -410,7 +460,8 @@ La profundidad óptica máxima corresponde al segmento de mayor longitud dentro 
       \, 2\sqrt{R_{\mathrm{out}}^2(z) - R_{\mathrm{in}}^2(z)}.
 \end{equation}
 
-Consideramos que el medio es ópticamente delgado si $\tau_{\nu,\mathrm{max}} < 0.1$. En este régimen, $(1 - e^{-\tau_\nu}) \approx \tau_\nu(x, z)$, y sustituyendo en la Ec.~\ref{eq:mod-24} obtenemos:
+	Consideramos que el medio es ópticamente delgado si $\tau_{\nu,\mathrm{max}} < 0.1$.
+	En este régimen, $(1 - e^{-\tau_\nu}) \approx \tau_\nu(x, z)$, y sustituyendo en la Ec.~\ref{eq:mod-24} obtenemos
 
 \[\]
 \begin{equation*}\label{eq:mod-42}
@@ -432,7 +483,7 @@ Consideramos que el medio es ópticamente delgado si $\tau_{\nu,\mathrm{max}} < 
 
 \subsubsection*{Caso ópticamente grueso}
 
-Para un valor medio $x_\mathrm{av} = (R_\mathrm{in} + R_\mathrm{out})/2$, definimos una profundidad óptica promedio
+	Para un valor medio $x_\mathrm{av} = (R_\mathrm{in} + R_\mathrm{out})/2$, definimos una profundidad óptica promedio
 
 \[
 \tau_{\nu,\mathrm{av}}(z) = \frac{\alpha'_{\nu'}\, l_\mathrm{av}}{\delta \sin i},
@@ -441,7 +492,8 @@ con
 \[
 l_\mathrm{av}=l(x_\mathrm{av},z)
 \]
-Si $\tau'_{{\nu'},\mathrm{av}}(z) > 10$, el medio se considera ópticamente grueso y $(1 - e^{-\tau_\nu}) \approx 1$. En este régimen, la contribución al flujo es:
+	Si $\tau'_{{\nu'},\mathrm{av}}(z) > 10$, el medio se considera ópticamente grueso y $(1 - e^{-\tau_\nu}) \approx 1$.
+	En este régimen, la contribución al flujo es
 
 \begin{equation}\label{eq:mod-43}
     \frac{dF_\nu}{dz}
@@ -458,45 +510,52 @@ Si $\tau'_{{\nu'},\mathrm{av}}(z) > 10$, el medio se considera ópticamente grue
 
 \section{Convoluci\'on}\label{Sec:Convolucion}
 
-En radioastronomía, un mapa $F(x,y)$ representa una distribución de brillo superficial, en este caso expresada en unidades de flujo por unidad de ángulo sólido. Sin embargo, la resolución finita de los telescopios introduce limitaciones que impiden observar fuentes puntuales de manera perfecta.
+	En radioastronomía, un mapa $F(x,y)$ representa una distribución de brillo superficial, en este caso expresada en unidades de flujo por unidad de ángulo sólido.
+	Sin embargo, la resolución finita de los telescopios introduce limitaciones que impiden observar fuentes puntuales de manera perfecta.
 
-La función de dispersión de punto (PSF, por sus siglas en inglés) describe la respuesta de un sistema de imagen ante una fuente u objeto puntual. Esta función se modela comúnmente mediante un haz gaussiano de la forma
+	La función de dispersión de punto (PSF, por sus siglas en inglés) describe la respuesta de un sistema de imagen ante una fuente u objeto puntual.
+	Esta función se modela comúnmente mediante un haz gaussiano de la forma
 
 \begin{equation}\label{eq:mod-45}
 B(x,y) = \exp{\left[-\frac{x^2}{2\sigma_x^2} - \frac{y^2}{2\sigma_y^2}\right]},
 \end{equation}
 donde $\sigma_x$ y $\sigma_y$ caracterizan la extensión del haz en las direcciones $x$ e $y$, respectivamente.
-El mapa observado se obtiene entonces como la convolución del mapa modelado con el haz instrumental.
+	El mapa observado se obtiene entonces como la convolución del mapa modelado con el haz instrumental.
 
-\subsection{Convolucion discreta.}
+\subsection{Convolucion discreta}
 
-Para reproducir las condiciones de observación interferométrica, tomamos el mapa de flujo obtenido (ver Subsec. \ref{subsec:flujo}) y realizamos una convolución discreta sobre las celdas espaciales, dada por
+	Para reproducir las condiciones de observación interferométrica, tomamos el mapa de flujo obtenido (ver Subsec. \ref{subsec:flujo}) y realizamos una convolución discreta sobre las celdas espaciales, dada por
 
 \begin{equation}\label{eq:mod-46}
 F_\mathrm{conv}(x',y') \approx \sum_{x,y} F(x,y) B(x-x',y-y')\Delta x \Delta y,
 \end{equation}
-donde $\Delta x$ y $\Delta y$ representan el tamaño de las celdas. Estos valores se definen como $\Delta x, \Delta y = f_\mathrm{Ny}, \sigma_{x,y}$, siendo $f_\mathrm{Ny}$ la frecuencia de muestreo de Nyquist. De esta forma, el flujo observado convolucionado resulta
+donde $\Delta x$ y $\Delta y$ representan el tamaño de las celdas.
+	Estos valores se definen como $\Delta x, \Delta y = f_\mathrm{Ny}, \sigma_{x,y}$, siendo $f_\mathrm{Ny}$ la frecuencia de muestreo de Nyquist.
+	De esta forma, el flujo observado convolucionado resulta
 
 \begin{equation}\label{eq:mod-47}
 F_\mathrm{conv}(x',y') \approx \sum_{x,y} F(x,y)
 \exp \left[-\frac{(x-x')^2}{2\sigma_x^2} - \frac{(y-y')^2}{2\sigma_y^2}\right] \Delta x\Delta y.
 \end{equation}
 
-Finalmente, es posible calcular el cociente entre el flujo total modelado y el flujo total observado. Dado el flujo modelado por celda $F(x,y)$, el flujo total se obtiene como
+	Finalmente, es posible calcular el cociente entre el flujo total modelado y el flujo total observado.
+	Dado el flujo modelado por celda $F(x,y)$, el flujo total se obtiene como
 
 \begin{equation}\label{eq:mod-48}
 S = \sum_{x,y} F(x,y)\Delta x \Delta y.
 \end{equation}
-Por su parte, el flujo total tras la convolución está dado por
+	Por su parte, el flujo total tras la convolución está dado por
 
 \begin{equation}\label{eq:mod-49}
 S_\mathrm{conv} = \sum_{x,y} F(x,y) \frac{\Delta x \Delta y}{A_\mathrm{haz}},
 \end{equation}
-donde $A_\mathrm{haz} = 2\pi, \sigma_x, \sigma_y$ corresponde al área del haz gaussiano. El término ${\Delta x, \Delta y}/{A_\mathrm{haz}}$ representa el cociente entre el área de una celda y el área efectiva del haz de observación.
+donde $A_\mathrm{haz} = 2\pi, \sigma_x, \sigma_y$ corresponde al área del haz gaussiano.
+	El término ${\Delta x, \Delta y}/{A_\mathrm{haz}}$ representa el cociente entre el área de una celda y el área efectiva del haz de observación.
 
-\subsection{Prueba de convolución sobre dos fuentes puntuales.}
+\subsection{Prueba de convolución sobre dos fuentes puntuales}
 
-Consideramos dos fuentes puntuales que emiten un flujo de $1~\mathrm{mJy}$ cada una. Se realizó una convolución con un haz gaussiano, suponiendo una anchura a media altura (FWHM, por sus siglas en inglés) de $0.1~\mathrm{mas}$ en el plano del cielo.
+	Consideramos dos fuentes puntuales que emiten un flujo de $1~\mathrm{mJy}$ cada una.
+	Se realizó \eg{respetar primera persona} una convolución con un haz gaussiano, suponiendo una anchura a media altura (FWHM, por sus siglas en inglés) de $0.1~\mathrm{mas}$ en el plano del cielo.
 
 \begin{figure}[h]
 \centering
@@ -517,5 +576,8 @@ Consideramos dos fuentes puntuales que emiten un flujo de $1~\mathrm{mJy}$ cada 
 \label{fig:conv-dos-puntos}
 \end{figure}
 
-El flujo total previo a la convolución corresponde naturalmente a la suma de los flujos de ambas fuentes, es decir $S = S_1 + S_2 = 2~\mathrm{mJy}$. Tras la convolución, el flujo total obtenido es $S_\mathrm{conv} \approx 1.941~\mathrm{mJy}$, lo que implica un cociente $S_\mathrm{conv}/S \approx 0.9705$. Dicha ligera disminución resulta consistente con el efecto de suavizado introducido por el haz gaussiano, que redistribuye el flujo sobre un área más extensa del plano del cielo, reproduciendo así las limitaciones impuestas por la resolución del instrumento.
+	El flujo total previo a la convolución corresponde naturalmente a la suma de los flujos de ambas fuentes, es decir $S = S_1 + S_2 = 2~\mathrm{mJy}$.
+	Tras la convolución, el flujo total obtenido es $S_\mathrm{conv} \approx 1.941~\mathrm{mJy}$, lo que implica un cociente $S_\mathrm{conv}/S \approx 0.9705$.
+	Dicha ligera disminución resulta consistente con el efecto de suavizado introducido por el haz gaussiano, que redistribuye el flujo sobre un área más extensa del plano del cielo, reproduciendo así las limitaciones impuestas por la resolución del instrumento.
+	\eg{referir la figura en el texto!} \eg{agregar más casos del haz gaussiano, desde que ambas fuentes están perfectamente separadas hasta que ambas aparecen como una fuente puntual} \eg{respetar la posición del haz en la figura. \eg{en lo posible, eliminar las partes blancas de la figura}
 
