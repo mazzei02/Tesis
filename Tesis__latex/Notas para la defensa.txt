@@ -1,0 +1,4 @@
+Notas para la defensa
+
+Modelos one zone y modelos complejos
+Quizás no hace falta escribirlo, pero al menos para tenerlo presente cuando defiendas: en modo general, yo diría que hay modelos one-zone hipersimplificados que son inadecuados para interpretar las observaciones VLBI en radio, y luego hay modelos hipercomplejos que salen de simulaciones magneto-hidrodinámicas que no dependen de tantas suposiciones y son muy realistas, pero que son muy costosas y no permiten explorar un espacio de parámetros amplio. Acá apuntamos a un compromiso entre un modelo que sea lo suficientemente realista como para poder comparar con los datos, pero a su vez lo suficientemente sencillo como para poder explorar dependencias con parámetros de forma eficiente. Yo veo este modelo como un puente entre las observaciones y las simulaciones más complejas.

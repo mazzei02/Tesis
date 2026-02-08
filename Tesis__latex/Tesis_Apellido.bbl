@@ -20,7 +20,8 @@ Barniol~Duran, R., Tchekhovskoy, A., \& Giannios, D. 2017, Monthly Notices of
   the Royal Astronomical Society, 469, 4957
 
 \bibitem[{Begelman(1998)}]{Begelman1998}
-Begelman, M.~C. 1998, The Astrophysical Journal, 493, 291
+Begelman, M.~C. 1998, The Astrophysical Journal, 493, 291,
+  \dodoi{10.1086/305119}
 
 \bibitem[{Begelman {et~al.}(1984)Begelman, Blandford, \&
   Rees}]{begelman1984theory}
@@ -60,14 +61,10 @@ Boccardi, B., Krichbaum, T.~P., Bach, U., {et~al.} 2015, arXiv: High Energy
 Boccardi, B., Krichbaum, T.~P., Ros, E., \& Zensus, J.~A. 2017, The Astronomy
   and Astrophysics Review, 25, 4
 
-\bibitem[{{B{\"o}ttcher} {et~al.}(2013{\natexlab{a}}){B{\"o}ttcher}, {Reimer},
-  {Sweeney}, \& {Prakash}}]{Bottcher2013}
-{B{\"o}ttcher}, M., {Reimer}, A., {Sweeney}, K., \& {Prakash}, A.
-  2013{\natexlab{a}}, \apj, 768, 54, \dodoi{10.1088/0004-637X/768/1/54}
-
-\bibitem[{{B{\"o}ttcher} {et~al.}(2013{\natexlab{b}}){B{\"o}ttcher}, {Reimer},
-  {Sweeney}, \& {Prakash}}]{Böttcher2013}
----. 2013{\natexlab{b}}, \apj, 768, 54, \dodoi{10.1088/0004-637X/768/1/54}
+\bibitem[{{B{\"o}ttcher} {et~al.}(2013){B{\"o}ttcher}, {Reimer}, {Sweeney}, \&
+  {Prakash}}]{Bottcher2013}
+{B{\"o}ttcher}, M., {Reimer}, A., {Sweeney}, K., \& {Prakash}, A. 2013, \apj,
+  768, 54, \dodoi{10.1088/0004-637X/768/1/54}
 
 \bibitem[{{Bruni, G.} {et~al.}(2021){Bruni, G.}, {Gómez, J. L.},
   {Vega-García, L.}, {Lobanov, A. P.}, {Fuentes, A.}, {Savolainen, T.},
@@ -102,11 +99,9 @@ Clarke, D.~A., Burns, J.~O., \& Norman, M.~L. 1992, The Astrophysical Journal,
 \bibitem[{Curtis(1918)}]{Curtis1918}
 Curtis, H.~D. 1918, Publications of the Lick Observatory, 13, 9
 
-\bibitem[{{EHT MWL Science Working Group} {et~al.}(2021){EHT MWL Science
-  Working Group}, {Algaba}, {Anczarski}, {Asada}, {Balokovi{\'c}}, {Chandra},
-  {Cui}, {Falcone}, {Giroletti}, {Goddi}, \& et~al.}]{EHT_MW_2021}
-{EHT MWL Science Working Group}, {Algaba}, J.~C., {Anczarski}, J., {et~al.}
-  2021, \apjl, 911, L11, \dodoi{10.3847/2041-8213/abef71}
+\bibitem[{Drury(1983)}]{Drury1983}
+Drury, L.~O. 1983, Reports on Progress in Physics, 46, 973,
+  \dodoi{10.1088/0034-4885/46/8/002}
 
 \bibitem[{{Einstein}(1916)}]{Einstein1916}
 {Einstein}, A. 1916, Annalen der Physik, 354, 769,
@@ -117,6 +112,14 @@ Curtis, H.~D. 1918, Publications of the Lick Observatory, 13, 9
   {Baczko}, {Ball}, {Balokovi{\'c}}, {Barrett}, \& et~al.}]{EHT_2019_M87_I}
 {Event Horizon Telescope Collaboration}, {Akiyama}, K., {Alberdi}, A., {et~al.}
   2019, \apjl, 875, L1, \dodoi{10.3847/2041-8213/ab0ec7}
+
+\bibitem[{{Event Horizon Telescope Multi-wavelength Science Working Group}
+  {et~al.}(2021){Event Horizon Telescope Multi-wavelength Science Working
+  Group}, {Algaba}, {Anczarski}, {Asada}, {Balokovi{\'c}}, {Chandra}, {Cui},
+  {Falcone}, {Giroletti}, {Goddi}, \& et~al.}]{EHT_MW_2021}
+{Event Horizon Telescope Multi-wavelength Science Working Group}, {Algaba},
+  J.~C., {Anczarski}, J., {et~al.} 2021, \apjl, 911, L11,
+  \dodoi{10.3847/2041-8213/abef71}
 
 \bibitem[{{Fabian}(2012)}]{Fabian2012}
 {Fabian}, A.~C. 2012, \araa, 50, 455,
@@ -209,7 +212,10 @@ Laing, R.~A., {et~al.} 2007, Monthly Notices of the Royal Astronomical Society,
   Astronomy, 6, 109, \dodoi{10.1038/s41550-021-01553-3}
 
 \bibitem[{Meier(2001)}]{Meier2001}
-Meier, D.~L. 2001, ApJ, 548, L9
+Meier, D.~L. 2001, The Astrophysical Journal, 548, L9, \dodoi{10.1086/318921}
+
+\bibitem[{{Meier}(2012)}]{Meier2012}
+{Meier}, D.~L. 2012, Black Hole Astrophysics: The Engine Paradigm (Springer)
 
 \bibitem[{{Mertens} {et~al.}(2016){Mertens}, {Lobanov}, {Walker}, \&
   {Hardee}}]{Mertens2016}
@@ -222,18 +228,18 @@ Meier, D.~L. 2001, ApJ, 548, L9
   T. 2000, Nuclear Physics B Proceedings Supplements, 80, 08/10,
   \dodoi{10.48550/arXiv.astro-ph/9905153}
 
-\bibitem[{{Muller} {et~al.}(2014){Muller}, {Kadler}, {Ojha}, {Perucho},
+\bibitem[{Müller {et~al.}(2011)}]{Mueller2011}
+Müller, C., {et~al.} 2011, Astronomy and Astrophysics, 530, L11
+
+\bibitem[{{Müller} {et~al.}(2014){Müller}, {Kadler}, {Ojha}, {Perucho},
   {Grossberger}, {Ros}, {Wilms}, {Blanchard}, {Bock}, {Carpenter}, {Dutka},
   {Edwards}, {Hase}, {Horiuchi}, {Kreikenbohm}, {Lovell}, {Markowitz},
   {Phillips}, {Plotz}, {Pursimo}, {Quick}, {Rothschild}, {Schulz},
   {Steinbring}, {Stevens}, {Trustedt}, \& {Tzioumis}}]{Muller2014}
-{Muller}, C., {Kadler}, M., {Ojha}, R., {et~al.} 2014, {VizieR Online Data
+{Müller}, C., {Kadler}, M., {Ojha}, R., {et~al.} 2014, {VizieR Online Data
   Catalog: TANAMI monitoring of Centaurus A. (Muller+, 2014)}, VizieR On-line
   Data Catalog: J/A+A/569/A115. Originally published in: 2014A\&A...569A.115M,
   \dodoi{10.26093/cds/vizier.35690115}
-
-\bibitem[{Müller {et~al.}(2011)}]{Mueller2011}
-Müller, C., {et~al.} 2011, Astronomy and Astrophysics, 530, L11
 
 \bibitem[{Nagai(2019)}]{Nagai2019}
 Nagai, H. e.~a. 2019, ApJ, 883, 193
@@ -266,6 +272,10 @@ Neumayer, N. 2010, Publications of the Astronomical Society of Australia, 27,
 {Romero}, G.~E., {Boettcher}, M., {Markoff}, S., \& {Tavecchio}, F. 2017, \ssr,
   207, 5, \dodoi{10.1007/s11214-016-0328-2}
 
+\bibitem[{{Romero} {et~al.}(2018){Romero}, {Müller}, \& {Roth}}]{Romero2018}
+{Romero}, G.~E., {Müller}, A.~L., \& {Roth}, M. 2018, A&A, 616, A57,
+  \dodoi{10.1051/0004-6361/201832666}
+
 \bibitem[{Rybicki \& Lightman(1991)}]{Rybicki1979}
 Rybicki, G., \& Lightman, A. 1991, Radiative Processes in Astrophysics, A
   Wiley-Interscience publication (Wiley)
@@ -294,6 +304,9 @@ Seyfert, C.~K. 1943, The Astrophysical Journal, 97, 28
   Lobanov}]{Walker2016}
 Walker, R.~C., Hardee, P.~E., Davies, F., {et~al.} 2016, Galaxies, 4,
   \dodoi{10.3390/galaxies4040046}
+
+\bibitem[{{Webster} \& {Murdin}(1972)}]{Webster1972}
+{Webster}, B.~L., \& {Murdin}, P. 1972, \nat, 235, 37, \dodoi{10.1038/235037a0}
 
 \bibitem[{Yang {et~al.}(2024)Yang, Yuan, Li, Mizuno, Guo, Lu, Ho, Lin,
   Zdziarski, \& Wang}]{Yang2024}
