@@ -14,11 +14,11 @@
 \usepackage[square,numbers]{natbib}
 \usepackage{wrapfig}
 
-\usepackage{natbib}
-\bibliographystyle{biblio/aasjournal}
+%\usepackage{natbib}
+\bibliographystyle{biblio/mnras2}
 \setcitestyle{authoryear,open={(},close={)}} %Citation-related commands
 
-\usepackage{ulem}
+\usepackage[normalem]{ulem}
 \usepackage{textcomp}
 \usepackage{lmodern}
 \usepackage{amsmath}
@@ -35,10 +35,11 @@
 \usepackage{subcaption} % para subfiguras
 \usepackage{fancyhdr} % Generar cabeceras con estilo propio
 
+\usepackage[shortlabels]{enumitem}
 \usepackage{titlesec}                                 % Espacio antes de los section
 \titlespacing*{\section}
 {0pt}{3.5ex plus 1ex minus .2ex}{2.5ex plus .2ex}
-\usepackage[shortlabels]{enumitem}
+
 
 %\usepackage{enumerate}
 \usepackage{siunitx}
@@ -56,8 +57,8 @@
 
 \usepackage{afterpage}
 \usepackage{graphbox}
-\usepackage{float}
-\usepackage{ulem}    % Para poder tachar texto horizontalmente
+%\usepackage{float}
+%\usepackage{ulem}    % Para poder tachar texto horizontalmente
 
 %\hypersetup{
 %    colorlinks,
@@ -157,10 +158,10 @@
 \clearemptydoublepage
 %\include{tex/prefacio}     % Prefacio
 %\clearemptydoublepage
-%\include{tex/resumen}      % Resumen
-%\clearemptydoublepage
-%\include{tex/dedicatoria}  % Dedicatoria
-%\clearemptydoublepage
+\include{tex/resumen}      % Resumen
+\clearemptydoublepage
+\include{tex/dedicatoria}  % Dedicatoria
+\clearemptydoublepage
 %\include{tex/agradecimientos}  %Agradecimientos
 %\clearemptydoublepage
 \tableofcontents

@@ -1,7 +1,7 @@
 \chapter{Resultados}\label{cha:resultados}
 
 	En este capítulo, presentamos los resultados obtenidos a partir del modelo de emisión desarrollado en el capítulo anterior.
-	En particular, mostramos distribuciones espectrales de energía (SED, por sus siglas en ingl\'es) y distribuciones de partículas, as\'i como los mapas de emisión sintéticos y el ajuste de los parámetros del modelo para el caso de Cen A, basado en los datos observacionales disponibles.
+	En particular, mostramos las SED y distribuciones de partículas, as\'i como los mapas de emisión sintéticos y el ajuste de los parámetros del modelo para el caso de Cen A, basado en los datos observacionales disponibles.
 
 	En primer lugar, presentamos los resultados del modelo general, junto con un estudio de variación de parámetros.
 	Graficamos la SED, tanto para la emisión por celda como para la emisión integrada a lo largo del \textit{jet}, y realizamos un análisis de la forma espectral resultante variando parámetros. 
@@ -11,24 +11,18 @@
 	Analizamos la influencia de los parámetros en la forma y posición del perfil.
 
 	Finalmente, presentamos los valores adoptados para las condiciones iniciales del \textit{jet} de Cen A, determinados a partir de restricciones observacionales reportadas en la literatura.
-	Presentamos los gráficos anteriormente mencionados junto con las observaciones correspondientes y discutamos el grado de acuerdo entre ellos.
+	Presentamos los gráficos anteriormente mencionados junto con las observaciones correspondientes y discutimos el grado de acuerdo entre ellos.
 
-
-\begin{comment}
-En primer lugar, mostramos la distribución espectral de energía correspondiente a la emisión en radio del \jet. 
-Posteriormente, a partir de los datos observacionales reportados por Janssen et al. (2021), ajustamos un mapa de calor de la temperatura de brillo proyectada en el cielo, junto con un perfil de temperatura de brillo en función de la altura. 
-Finalmente, comparamos estas distribuciones con los resultados del modelo, variando los parámetros libres hasta obtener un ajuste consistente con las observaciones.
-\end{comment}
 
 \section{Exploración de parámetros}
 
-	En esta secci\'on realizamos una exploraci\'on en el espacio de parámetros, tales como los radios iniciales, la altura de lanzamiento del \textit{jet}, los valores de $z_\mathrm{max}$ y $z_\mathrm{max,inj}$, entre otros.
+	En esta secci\'on realizamos una exploraci\'on en el espacio de parámetros, tales como los radios iniciales, la altura de lanzamiento del \textit{jet}, los valores de $z_\mathrm{max}$ y $z_\mathrm{max,iny}$, entre otros.
 	Estudiamos como varían los resultados del modelo en respuesta a estos parámetros.
 
 \subsection{Distribución espectral de energía}
 
 	Para caracterizar la emisión del \jet modelado calculamos el flujo en función de la altura para cada frecuencia, según lo descrito en la Sección \ref{subsec:flujo}.
-	Luego, integrando las Ecuaciones \eqref{eq:mod-42},\eqref{eq:mod-43}, \eqref{eq:mod-44} en la altura del \jet podemos calcular el flujo total en función de la frecuencia.
+	Luego, integrando las Ecuaciones \eqref{eq:mod-44}, \eqref{eq:mod-42}, \eqref{eq:mod-43} en la altura del \jet podemos calcular el flujo total en función de la frecuencia.
 
 
 \begin{figure}[h!]
@@ -36,17 +30,17 @@ Finalmente, comparamos estas distribuciones con los resultados del modelo, varia
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/Resultados/SEDs_a_injs.pdf}
-        \caption{SED para distintas tasas de potencia inyectada, regulado por el parámetro $a_\mathrm{inj}$.}
+        \caption{SED para distintas tasas de potencia inyectada, regulado por el parámetro $a_\mathrm{iny}$.}
         \label{fig:SED1}
     \end{subfigure}
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/Resultados/SEDs_Ljs.pdf}
-        \caption{SED para distintos valores de luminosidad total del \jet.}
+        \caption{SED para distintos valores de luminosidad total del \textit{jet}.}
         \label{fig:SED2}
     \end{subfigure}
     
-    \caption[Exploraci\'on de parámetros para los gráficos de distribución espectral de energía.]{Exploraci\'on de parámetros $a_\mathrm{inj}$ y $L_\mathrm{j}$ para los gráficos de distribución espectral de energía en un amplio rango de energias.}
+    \caption[Exploraci\'on de parámetros para los gráficos de SED.]{Exploraci\'on de parámetros $a_\mathrm{iny}$ y $L_\mathrm{j}$ para los gráficos de SED en un amplio rango de energias.}
     \label{fig:result-1b}
 \end{figure} 
 
@@ -61,7 +55,7 @@ Finalmente, comparamos estas distribuciones con los resultados del modelo, varia
          \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/Resultados/SEDs_a_injs_Fnu.pdf}
-        \caption{$a_\mathrm{inj}$}
+        \caption{$a_\mathrm{iny}$}
         	\label{fig:SED_radio2}
         \end{subfigure}
          \begin{subfigure}[b]{0.49\textwidth}
@@ -70,13 +64,13 @@ Finalmente, comparamos estas distribuciones con los resultados del modelo, varia
         \caption{$L_\mathrm{j}$}
         	\label{fig:SED_radio3}
         \end{subfigure}
-         \caption[Distribuci\'on espectral de energ\'ia el radio]{Graficos de la distribuci\'on espectral de energ\'ia en el rango de longitud de onda de radio. Presentamos la exploraci\'on de parametros de $sigma_0$, $a_\mathrm{inj}$ y $L_\mathrm{j}$.}
+         \caption[Distribuci\'on espectral de energ\'ia el radio]{Graficos de la distribuci\'on espectral de energ\'ia en el rango de longitud de onda de radio. Presentamos la exploraci\'on de parametros de $\sigma_0$, $a_\mathrm{iny}$ y $L_\mathrm{j}$.}
     \label{fig:result-1c}
 \end{figure} 
 
 
 	En la Figura \ref{fig:result-1b} mostramos las SED para distintas combinaciones de parámetros del modelo, variando un parámetro a la vez.
-	En particular, en la Figura \ref{fig:SED1} observamos que, a medida que el parámetro $a_\mathrm{inj}$ aumenta, la tasa de potencia inyectada decrece más rápidamente con la altura (ver Ec. \eqref{eq:mod-15}).
+	En particular, en la Figura \ref{fig:SED1} observamos que, a medida que el parámetro $a_\mathrm{iny}$ aumenta, la tasa de potencia inyectada decrece más rápidamente con la altura (ver Ecuación \eqref{eq:mod-15}).
 	Como consecuencia, el pico espectral se incrementa ligeramente y se desplaza hacia frecuencias más altas, lo que indica un aumento del flujo total del \textit{jet}.
 	Por otro lado, en la Figura \ref{fig:SED2} se aprecia que mayores valores de la potencia total del \jet producen un incremento significativo de la emisión en todo el rango de frecuencias.
 
@@ -91,17 +85,7 @@ Finalmente, comparamos estas distribuciones con los resultados del modelo, varia
 \subsection{Mapa de temperatura de brillo en el cielo}
 
 	Adicionalmente realizamos un mapa de temperatura de brillo en función de las coordenadas en el plano del cielo $(x,y)$ para nuestro modelo.
-	\begin{comment}
-	La temperatura de brillo, $T_b$, es una forma alternativa de expresar la intensidad específica de la radiación en unidades de temperatura. 
-	En el caso de fuentes resueltas, como Cen A, este tipo de mapas sintéticos constituye una herramienta complementaria para contrastar los resultados del modelo con los mapas de flujo observados y evaluar la validez de los parámetros físicos adoptados.
 
-	Se define como la temperatura que debería tener un cuerpo negro para producir la misma intensidad observada en el régimen de Rayleigh--Jeans, y está dada por (e.g, \citealp{Rybicki1979})
-
-\begin{equation}\label{eq:result-1}
-    T_\mathrm{b}=\frac{\lambda^2 I_\nu}{2k_\mathrm{B}}
-\end{equation}
-con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltzmann.
-	\end{comment}
 \begin{figure}[h!]
     \centering
     % --- Row 1 ---
@@ -115,7 +99,7 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{graphics/Resultados/Mapa_Tb_75-150.jpeg}
-        \caption{$R_\mathrm{out,0}=150R_g~R_\mathrm{in,0}=75R_g$}
+        \caption{$R_\mathrm{out,0}=150R_\mathrm{g}~R_\mathrm{in,0}=75R_\mathrm{g}$}
         \label{fig:map2}
     \end{subfigure}
 
@@ -125,18 +109,18 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth, height=0.2\textheight]{graphics/Resultados/Mapa_Tb_100-150.jpeg}
-        \caption{$R_\mathrm{out,0}=150R_g~R_\mathrm{in,0}=100R_g$}
+        \caption{$R_\mathrm{out,0}=150R_\mathrm{g}~R_\mathrm{in,0}=100R_\mathrm{g}$}
         \label{fig:map3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth, height=0.2\textheight]{graphics/Resultados/Mapa_Tb_120-150.jpeg}
-        \caption{$R_\mathrm{out,0}=150R_g~R_\mathrm{in,0}=120R_g$}
+        \caption{$R_\mathrm{out,0}=150R_\mathrm{g}~R_\mathrm{in,0}=120R_\mathrm{g}$}
         \label{fig:map4}
     \end{subfigure}
 
-    \caption[Mapas de temperatura de brillo para diversos valores de $R_\mathrm{out,0}$, $R_\mathrm{in,0}$.]{Mapas de temperatura de brillo para diversos valores de $R_\mathrm{out,0}$, $R_\mathrm{in,0}$. Los contornos graficados corresponden a valores constantes de temperatura de brillo: $\sqrt{T_\mathrm{b} [10^9\mathrm{K}]}=$0.5,1.5,2,2.5,3,4}
+    \caption[Mapas de temperatura de brillo para diversos valores de $R_\mathrm{out,0}$, $R_\mathrm{in,0}$.]{Mapas de temperatura de brillo para diversos valores de $R_\mathrm{out,0}$, $R_\mathrm{in,0}$. Los contornos graficados corresponden a valores constantes de temperatura de brillo: $\sqrt{T_\mathrm{b} [10^9\mathrm{K}]}=0.5\cdot n$ con $n=1,...,40$.}
     \label{fig:result-8}
 \end{figure}
 
@@ -152,8 +136,8 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
 
 
 
-	Es importante considerar el tamaño del haz gaussiano utilizado para el modelado de la observación, ya que este puede modificar fuertemente el mapa resultante (ver Fig. \ref{fig:result-9}).
-	Al utilizar un haz gaussiano con mayores valores de FWHM podemos observar que el mapa se suaviza, ocultando estructura de menor temperatura de brillo hacia la región central del \jet.
+	Es importante considerar el tamaño del haz gaussiano utilizado para el modelado de la observación, ya que este puede modificar fuertemente el mapa resultante (ver Figura \ref{fig:result-9}).
+	Al utilizar un haz gaussiano con mayores valores de FWHM podemos observar que el mapa se suaviza, ocultando estructura de menor temperatura de brillo hacia la región central del \textit{jet}.
 
 
 \begin{figure}[H]
@@ -186,18 +170,17 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
     \end{minipage}
     \begin{minipage}{0.32\textwidth}
         \caption[Mapas de temperatura de brillo para diversos haces gaussianos de convolución.]
-        {Mapas de temperatura de brillo \\para diversos haces gaussianos de convolución. \\
-        El haz utilizado para la convolución se \\encuentra representado por la elipse gris  en la \\
+        {Mapas de temperatura de brillo \\
+        para diversos haces gaussianos de convolución. \\
+        El haz utilizado para la convolución se \\
+        encuentra representado por la elipse gris  en la \\
         esquina superior izquierda de cada mapa. \\
         
-        \textbf{Figura superior:} Se utiliza un haz gaussiano \\con valores de FWHM 
-        $16.8$ $\mu$as y $25.9$ $\mu$as para \\x,y respectivamente. \\
-        
-        \textbf{Figura central:} Se utiliza un haz gaussiano \\con valores 
-        de FWHM 2 veces los de la figura \\superior. \\
-        
-        \textbf{Figura inferior:} Se utiliza un haz gaussiano \\con valores 
-        de FWHM 4 veces los de la figura \\superior.}
+        En el mapa superior utilizamos un haz\\
+        gaussiano con valores de FWHM de \\
+        $16.8\times25.9$ $\mu$as$^2$, en el del medio el doble\\
+        ($33.6\times51.8$ $\mu$as$^2$), y en el inferior el doble\\
+        del anterior ($67.2\times103.6$ $\mu$as$^2$).}
         \label{fig:result-9}
     \end{minipage}
 
@@ -208,16 +191,16 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
 \subsection{Perfil de temperatura de brillo}
 
 
-	Finalmente, a partir de los valores de temperatura de brillo proyectados en el plano del cielo, construimos un perfil de temperatura de brillo máxima en función de la altura del \jet.
+	Finalmente, a partir de los valores de temperatura de brillo proyectados en el plano del cielo, construimos un perfil de temperatura de brillo máxima en función de la altura del \textit{jet}.
 	En la Figura \ref{fig:result-7} podemos ver diversos perfiles correspondientes a distintos ajustes de los parámetros del modelo.
-	Dicha figura incluye ajustes para el cociente entre el radio interno y externo (Fig. \ref{fig:sub1}), pruebas en variación del parámetro $z_0$ (Fig. \ref{fig:sub2}), variaciones en la altura máxima de inyecci\'on  (Fig. \ref{fig:sub3}) y pruebas del parámetro $a_\mathrm{inj}$ de la Ecuaci\'on  \eqref{eq:mod-15} (Fig. \ref{fig:sub4}).
+	Dicha figura incluye ajustes para el cociente entre el radio interno y externo (Figura \ref{fig:sub1}), pruebas en variación del parámetro $z_0$ (Figura \ref{fig:sub2}), variaciones en la altura máxima de inyecci\'on  (Figura \ref{fig:sub3}) y pruebas del parámetro $a_\mathrm{iny}$ de la Ecuaci\'on  \eqref{eq:mod-15} (Figura \ref{fig:sub4}).
 \begin{figure}[h!]
     \centering
     % --- Row 1 ---
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth, height=0.2\textheight]{graphics/Resultados/Tb_vs_Z_(prueba1).jpeg}
-        \caption{$R_\mathrm{in,0}/R_\mathrm{out,0}$. Fijamos el valor de $R_\mathrm{out,0}=150~R_g$.}
+        \caption{$R_\mathrm{in,0}/R_\mathrm{out,0}$. Fijamos el valor de $R_\mathrm{out,0}=150~R_\mathrm{g}$.}
         \label{fig:sub1}
     \end{subfigure}
     \hfill
@@ -234,42 +217,42 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth, height=0.2\textheight]{graphics/Resultados/Tb_vs_Z_(prueba3).jpeg}
-        \caption{$z_\mathrm{max,inj}$. Fijamos el valor de $z_0=250~R_g$.}
+        \caption{$z_\mathrm{max,iny}$. Fijamos el valor de $z_0=250~R_\mathrm{g}$.}
         \label{fig:sub3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth, height=0.2\textheight]{graphics/Resultados/Tb_vs_Z_(prueba4).jpeg}
-        \caption{$a_\mathrm{inj}$.}
+        \caption{$a_\mathrm{iny}$.}
         \label{fig:sub4}
     \end{subfigure}
 
-    \caption[Pruebas de exploración de parámetros sobre el perfil de temperatura de brillo en función de la altura.]{Pruebas de exploración de parámetros sobre el perfil de temperatura de brillo en función de la altura. Variamos el cociente $R_{in,0}/R_{out,0}$, $z_0$, $z_{max,inj}$ y el parámetro $a_{inj}$. Los parámetros de referencia alrededor de los cuales se estudia la variaci\'on son $R_{in,0}/R_{out,0}=2/3$, $z_0=150~R_\mathrm{g}$, $z_{max,inj}=5\times10^3$, $a_{inj}=0.5$.}
+    \caption[Pruebas de exploración de parámetros sobre el perfil de temperatura de brillo en función de la altura.]{Pruebas de exploración de parámetros sobre el perfil de temperatura de brillo en función de la altura. Variamos el cociente $R_\mathrm{in,0}/R_\mathrm{out,0}$, $z_0$, $z_\mathrm{max,iny}$ y el parámetro $a_\mathrm{iny}$. Los parámetros de referencia alrededor de los cuales se estudia la variaci\'on son $R_\mathrm{in,0}/R_{out,0}=2/3$, $z_0=150~R_\mathrm{g}$, $z_\mathrm{max,iny}=5\times10^3$, $a_\mathrm{iny}=0.5$.}
     \label{fig:result-7}
 \end{figure}
 
 	El cociente $R_\mathrm{in,0}/R_\mathrm{out,0}$ determina el grosor de la envoltura del \jet a lo largo de $z$.
-	Dado que adoptamos un mismo parámetro de apertura $w$ para $R_\mathrm{out}$ y $R_\mathrm{in}$ en la Ec.~\eqref{eq:mod-4}, este cociente permanece constante en toda la extensión del \jet.
-	Como se muestra en la Fig.~\ref{fig:sub1}, los modelos con valores altos de $R_\mathrm{in,0}/R_\mathrm{out,0}$ producen un \jet más estrecho, con un pico de emisión más compacto e intenso, ya que la radiación se concentra en una región central más densa y caliente.
+	Dado que adoptamos un mismo parámetro de apertura $w$ para $R_\mathrm{out}$ y $R_\mathrm{in}$ en la Ecuación~\eqref{eq:mod-4}, este cociente permanece constante en toda la extensión del \textit{jet}.
+	Como se muestra en la Figura \ref{fig:sub1}, los modelos con valores altos de $R_\mathrm{in,0}/R_\mathrm{out,0}$ producen un \jet más estrecho, con un pico de emisión más compacto e intenso, ya que la radiación se concentra en una región central más densa y caliente.
 	Por el contrario, al disminuir $R_\mathrm{in,0}/R_\mathrm{out,0}$ el \jet se ensancha y la emisión se distribuye sobre un área mayor, lo que disminuye el brillo máximo y suaviza el perfil transversal.
 	Vale la pena mencionar que para valores extremos del cociente $R_\mathrm{in,0}/R_\mathrm{out,0}$ se observa una leve inversión de esta tendencia: para valores muy cercanos a $0$ el pico de emisión aumenta ligeramente, mientras que para valores próximos a $1$ el pico disminuye.
 	Asimismo, en modelos con cocientes de radios cercanos a la unidad se aprecia la aparición de picos secundarios de emisión, los cuales están asociados al proceso de suavizado de la imagen inducido por la convolución con el haz gaussiano.
 
 	La Figura~\ref{fig:sub2} muestra el perfil de temperatura de brillo en función de la altura para distintos valores de la posición correspondiente a la base del \textit{jet}.
-	Observamos que este parámetros ejerce una influencia significativa sobre la ubicación del máximo en el perfil de temperatura de brillo.
+	Observamos que este parámetro ejerce una influencia significativa sobre la ubicación del máximo en el perfil de temperatura de brillo.
 	En particular, la altura $z$ del máximo coincide aproximadamente con el valor $z_0$ adoptado en el modelo.
-	Asimismo, para \jets lanzados desde alturas mas cercanas a su base podemos ver que la caída de brillo en la dirección del núcleo resulta mucho menos abrupta. Por último, vemos que la temperatura de brillo correspondiente máximo se reduce para valores mayores de $z_0$.
+	Asimismo, para \jets lanzados desde alturas m\'as cercanas a su base podemos ver que la caída de brillo en la dirección del núcleo resulta mucho menos abrupta. Por último, vemos que la temperatura de brillo correspondiente máximo se reduce para valores mayores de $z_0$.
 
-	En la Figura \ref{fig:sub3} podemos ver las diferencias en el perfil para distintos valores de $z_\mathrm{max,inj}$.
-	Observamos como, para un menor valor de $z_\mathrm{max,inj}$ se produce un pico mas alto, con una caída mas pronunciada de la temperatura de brillo a mayores alturas.
-	Inversamente, a mayor $z_\mathrm{max,inj}$ vemos que el perfil alcanza una menor temperatura de brillo máxima, con una caída mas lenta hacia mayor $z$.
+	En la Figura \ref{fig:sub3} podemos ver las diferencias en el perfil para distintos valores de $z_\mathrm{max,iny}$.
+	Observamos como, para un menor valor de $z_\mathrm{max,iny}$ se produce un pico mas alto, con una caída más pronunciada de la temperatura de brillo a mayores alturas.
+	Inversamente, a mayor $z_\mathrm{max,iny}$ vemos que el perfil alcanza una menor temperatura de brillo máxima, con una caída mas lenta hacia mayor $z$.
 
-	El parámetro $a_\mathrm{inj}$, a su vez, presenta una relación con la temperatura de brillo correspondiente al pico del perfil.
-	En la Figura \ref{fig:sub4}, vemos que a mayores valores de $a_\mathrm{inj}$ tenemos un aumento considerable en la temperatura de brillo máxima.
-	Esto posiblemente resulta una consecuencia de que, para valores mayores de $a_\mathrm{inj}$, la tasa de inyección de energía por unidad de altura, $dL_\mathrm{inj}/dz$, decrece más rápidamente con $z$.
-	En consecuencia, la mayor parte de la energía se deposita en regiones más próximas a la base del \jet, concentrando la emisión en zonas bajas y resultando en una caída mas abrupta del perfil a mayores alturas, como se observa en la figura.
-	Por el contrario, valores más pequeños de $a_\mathrm{inj}$ implican una inyección más extendida a lo largo del \jet, lo que da lugar a un perfil de emisión más amplio, con un menor pico y con una caída mas suave.
+	El parámetro $a_\mathrm{iny}$, a su vez, presenta una relación con la temperatura de brillo correspondiente al pico del perfil.
+	En la Figura \ref{fig:sub4}, vemos que a mayores valores de $a_\mathrm{iny}$ tenemos un aumento considerable en la temperatura de brillo máxima.
+	Esto posiblemente se deba a que, para valores mayores de $a_\mathrm{iny}$, la tasa de inyección de energía por unidad de altura, $dL_\mathrm{iny}/dz$, decrece más rápidamente con $z$.
+	En consecuencia, la mayor parte de la energía se deposita en regiones más próximas a la base del \textit{jet}, concentrando la emisión en zonas bajas y resultando en una caída mas abrupta del perfil a mayores alturas, como se observa en la figura.
+	Por el contrario, valores menores de $a_\mathrm{iny}$ implican una inyección más extendida a lo largo del \textit{jet}, lo que da lugar a un perfil de emisión más amplio, con un menor pico y con una caída mas suave.
 
 
 \section{Ajuste de parámetros a observaciones de Cen A}
@@ -293,13 +276,13 @@ con $\lambda$ la longitud de onda emitida y $k_\mathrm{B}$ la constante de Boltz
 
 
 	Para Cen A consideramos que la fuente se encuentra a una distancia de $d=3.8$ Mpc \citep{Harris2010} de la Vía Láctea, el núcleo de la galaxia contiene un SMBH de $M_\mathrm{BH} = 5.5\times10^7~M_\odot$ \citep{Neumayer2010} y posee una inclinaci\'on entre el eje del \jet y la visual al observador de $\theta=48\degree$ \citep{Mueller2011}.
-	La emisión suponemos que es radiación sincrotrón, considerando SSC despreciable.
-	Integramos la emisión del \jet hasta $z < z_\mathrm{max} \sim 10^4 R_g$.
+	Suponemos que la emisión es radiación sincrotrón, considerando SSC despreciable.
+	Integramos la emisión del \jet hasta $z < z_\mathrm{max} \sim 10^7 R_\mathrm{g}$.
 
 
-	Para el ajuste de radios, así como el parámetro de apertura que determina la estructura parabólica del \jet, utilizamos las observaciones de \cite{2021NatAs...5.1017J}.
-	Por medio del perfil de colimación obtenido en dicho trabajo, fijamos el parámetro de apertura $w=0.33$ en la Ec. \eqref{eq:mod-3}, tanto para el radio interno como para el externo, lo que resulta en la curva azul que se muestra en la Fig. \ref{fig:result-1}.
-	La velocidad del flujo está mediada por el factor de Lorentz en función de la altura, Ec. \eqref{eq:mod-5}, donde consideramos que el \jet es no relativista en su base y luego se acelera gradualmente como $\Gamma \propto z^g$ con $g=0.13$ (ver Sec. \ref{sec:Geometria}).
+	Para el ajuste de radios, así como el parámetro de apertura que determina la estructura parabólica del \textit{jet}, utilizamos las observaciones de \cite{2021NatAs...5.1017J}.
+	Por medio del perfil de colimación obtenido en dicho trabajo, fijamos el parámetro de apertura $w=0.33$ en la Ecuación \eqref{eq:mod-3}, tanto para el radio interno como para el externo, lo que resulta en la curva azul que se muestra en la Figura \ref{fig:result-1}.
+	La velocidad del flujo está mediada por el factor de Lorentz en función de la altura (ver Ecuación \eqref{eq:mod-5}) donde consideramos que el \jet es no relativista en su base y luego se acelera gradualmente como $\Gamma \propto z^g$ con $g=0.13$ (ver Sección \ref{sec:Geometria}).
 
 
 \begin{table}[h!]
@@ -315,26 +298,26 @@ $d$ & Distancia a la fuente & $3.8~\mathrm{Mpc}$ \\
 \hline
 $p$ & Indice de potencias de la inyecci\'on & 2.3 \\
 \hline
-$z_{\max}$ & Altura máxima del \textit{jet} & $1 \times 10^{7} \, R_{g}$\\
-$z_{\max, \text{inj}}$ & Altura m\'axima de inyección & $1.5 \times 10^{4} \, R_{g}$\\
+$z_{\max}$ & Altura máxima del \textit{jet} & $10^{7} \, R_{g}$\\
+$z_{\max, \text{iny}}$ & Altura m\'axima de inyección & $1.5 \times 10^{4} \, R_{g}$\\
 $z_0$ & Altura de lanzamiento  del \textit{jet}& $250 \, R_{g}$ \\
 \hline
 $r_{\text{out},0}$ & Radio de lanzamiento del \textit{jet} (ext.)& $170 \, R_{g}$ \\
 $r_{\text{in},0}$ & Radio de lanzamiento del \textit{jet} (int.) & $95 \, R_{g}$ \\
 $w_{\text{out, in}}$ & Parámetro de apertura del \textit{jet}  & 0.33 \\
 \hline
-$a_{\text{inj}}$ & Indice de potencias de la tasa de inyecci\'on& 0.2 \\
+$a_{\text{iny}}$ & \'Indice de potencias de la tasa de inyecci\'on& 0.2 \\
 \hline
 $\Gamma_{0}$ & Factor de Lorentz en la base del \textit{jet} & 1.01\\
 
 $g$ & Indice de potencias del factor de Lorentz & 0.13 \\
 \hline
-$L_{j}$ & Potencia total del \textit{jet} & $1.1 \times 10^{42} \mathrm{erg ~s^{-1}}$ \\
+$L_\mathrm{j}$ & Potencia total del \textit{jet} & $1.1 \times 10^{42} \mathrm{erg ~s^{-1}}$ \\
 \hline
 $\sigma_{0}$ & Magnetizaci\'on inicial & 10 \\
 \hline
 \end{tabular}
-\caption{Ajuste de parámetros del modelo para Cen A.}
+\caption{\textcolor{red}{Ajuste de parámetros del modelo para Cen A.}}
 \end{table}
 
 \newpage
@@ -343,7 +326,7 @@ $\sigma_{0}$ & Magnetizaci\'on inicial & 10 \\
 \subsection{Distribuci\'on espectral de energía de Cen A}
 
 	En las Figuras \ref{fig:result-2} y \ref{fig:result-3} se muestra la SED para cada celda del \textit{jet}, así como el flujo total integrado a lo largo de su eje, respectivamente.
-	Esta emisión se origina a partir de la distribución de partículas en función de la energía y la altura en el \jet, $N(E,z)$, la cual se calcula a partir de la Ecuación \ref{eq:mod-20}.
+	Esta emisión se origina a partir de la distribución de partículas en función de la energía y la altura en el \textit{jet}, $N(E,z)$, la cual se calcula a partir de la Ecuación \eqref{eq:mod-20}.
 	Para ello, se adopta una función de inyección de partículas según la Ecuación \ref{eq:mod-17}, con un índice espectral $p = 2.3$.
 	Podemos ver en la Figura \ref{fig:result-3} que, a frecuencias más altas, el flujo presenta una caída con pendiente de $\sim -1.15$.
 	Este valor de pendiente es consistente con el esperado para una población de partículas con un índice de energía $p \simeq 2.3$, en concordancia con la función de inyección adoptada en el modelo.
@@ -351,24 +334,24 @@ $\sigma_{0}$ & Magnetizaci\'on inicial & 10 \\
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{graphics/Resultados/dFdz.png}
-    \caption[Flujo emitido por cada una de las celdas en las que se subdivide el \textit{jet}.]{Flujo emitido por cada una de las 1293 celdas en las que se subdivide el \textit{jet}. El \jet se divide en celdas de altura $\Delta z$. Modelamos individualmente la emisi\'on en cada una de estas.}
+    \caption[Flujo emitido por cada una de las celdas en las que se subdivide el \textit{jet}.]{Flujo emitido por cada una de las 1293 celdas de altura $\Delta z$ en las que se subdivide el \textit{jet}. Modelamos individualmente la emisi\'on en cada una de estas.}
     \label{fig:result-2}
 \end{figure}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{graphics/Resultados/fluxTot.pdf}
-    \caption[Flujo integrado hasta distintas alturas a lo largo del \textit{jet}, en funci\'on de la frecuencia, junto con observaciones de Cen A.]{Flujo integrado hasta distintas alturas a lo largo del \textit{jet}, en funci\'on de la frecuencia. La curva negra ilustra la emisi\'on integrada sobre toda la altura del \textit{jet}. En verde se muestran las observaciones compiladas por \cite{Kim2018}; en azul las observaciones por \cite{Muller2014}. \textcolor{red}{Todavia tengo que ver el tema de EHT}}
+    \caption[Flujo integrado hasta distintas alturas a lo largo del \textit{jet}, en funci\'on de la frecuencia, junto con observaciones de Cen A.]{Flujo integrado hasta distintas alturas a lo largo del \textit{jet}, en funci\'on de la frecuencia. La curva negra ilustra la emisi\'on integrada sobre toda la altura del \textit{jet}. En azul se muestran las observaciones compiladas de \cite{Muller2014}; en verde las observaciones de \cite{Kim2018}. }
     \label{fig:result-3}
 \end{figure}
 
 
-En la Figura \ref{fig:result-2} se observa que el pico de emisión se desplaza hacia frecuencias progresivamente más bajas al aumentar la altura en el \jet, lo que puede observarse también en la Figura \ref{fig:result-3b}. Esta \'ultima figura muestra el valor correspondiente a la frecuencia del pico de emisi\'on para cada celda del \textit{jet}, identificadas por su valor de $z$ en $\mathrm{mas}$. Este comportamiento resulta acorde con el hecho de que al expandirse el fluido la densidad disminuye, y el flujo se vuelve \'opticamente delgado a frecuencias cada vez mas bajas. 
-Notamos que nuestro modelo reproduce adecuadamente las observaciones de \cite{Kim2018,Muller2014} en un rango de frecuencias $\nu$ entre 1 GHz y 1000 GHz, como se ve representado en la Figura \ref{fig:result-3}.
+En la Figura \ref{fig:result-2} se observa que el pico de emisión se desplaza hacia frecuencias progresivamente más bajas al aumentar la altura en el \textit{jet}, lo que puede observarse también en la Figura \ref{fig:result-3b}. Esta \'ultima figura muestra el valor correspondiente a la frecuencia del pico de emisi\'on para cada celda del \textit{jet}, identificadas por su valor de $z$ en $\mathrm{mas}$. Este comportamiento resulta acorde con el hecho de que al expandirse el fluido la densidad disminuye, y el flujo se vuelve \'opticamente delgado a frecuencias cada vez mas bajas. 
+Notamos que nuestro modelo reproduce adecuadamente las observaciones de \cite{Muller2014,Kim2018} en un rango de frecuencias $\nu$ entre 1 GHz y 1000 GHz, como se ve representado en la Figura \ref{fig:result-3}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.65\linewidth]{graphics/Resultados/Core_shift.pdf}
-    \caption[Desplazamiento de la frecuencia correspondiente al máximo de emisión a distintas alturas del \jet para el modelado de Cen A.]{Desplazamiento de la frecuencia correspondiente al máximo de emisión a distintas alturas del \jet. La figura muestra como la frecuencia correspondiente al máximo de emisión resulta menor a medida que integramos hasta alturas mayores respecto de la base del \textit{jet}. En rojo presentamos una ley de potencias ajustada a los puntos.}
+    \caption[Desplazamiento de la frecuencia correspondiente al máximo de emisión a distintas alturas del \jet para el modelado de Cen A.]{Desplazamiento de la frecuencia correspondiente al máximo de emisión a distintas alturas del \textit{jet}. La figura muestra c\'omo la frecuencia correspondiente al máximo de emisión resulta menor a medida que integramos hasta alturas mayores respecto de la base del \textit{jet}. En rojo presentamos una ley de potencias ajustada a los puntos.}
     \label{fig:result-3b}
 \end{figure}
 
@@ -377,29 +360,29 @@ Notamos que nuestro modelo reproduce adecuadamente las observaciones de \cite{Ki
 
 \subsection{Mapa de temperatura de brillo en el cielo de Cen A}
 
-En la Figura \ref{fig:result-5} se presenta un mapa sintético de la emisión del \jet resultante del ajuste obtenido para Cen A. La frecuencia de la emisi\'on es  a $230~\mathrm{GHz}$, en concordancia con las observaciones reportadas por \cite{2021NatAs...5.1017J}. Para obtener dicho mapa, integramos la emisión del \jet proyectada en el plano del cielo y posteriormente convolucionamos con un haz gaussiano (ver Sec. \ref{Sec:Convolucion}), reproduciendo así las condiciones de observación interferométrica. El haz utilizado posee valores de ancho a media altura (FWHM) de $16.8$ $\mu$as en la dirección $x$ y $25.9$ $\mu$as en la dirección $y$, aproximados por las observaciones de \cite{2021NatAs...5.1017J}.
+En la Figura \ref{fig:result-5} se presenta un mapa sintético de la emisión del \jet resultante del ajuste obtenido para Cen A. La frecuencia de la emisi\'on es  a $230~\mathrm{GHz}$, en concordancia con las observaciones reportadas por \cite{2021NatAs...5.1017J}. Para obtener dicho mapa, integramos la emisión del \jet proyectada en el plano del cielo y posteriormente convolucionamos con un haz gaussiano (ver Sección \ref{Sec:Convolucion}), reproduciendo así las condiciones de observación interferométrica. El haz utilizado posee valores de FWHM de $16.8$ $\mu$as en la dirección $x$ y $25.9$ $\mu$as en la dirección $y$, aproximados por las observaciones de \cite{2021NatAs...5.1017J}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\linewidth]{graphics/Resultados/Mapa_Tb.jpeg}
-    \caption[Mapa de temperatura de brillo modelado para Cen A proyectado en coordenadas $x,~z$ en el plano del cielo.]{Mapa de temperatura de brillo proyectado en coordenadas $x$ y $z$ en el plano del cielo, obtenido a partir del ajuste al modelo para las observaciones de Cen A. El suavizado se realizó mediante un haz gaussiano con anchos a media altura (FWHM) de $16.8$ $\mu$as en la dirección $x$ y $25.9$ $\mu$as en la dirección $y$. Los contornos graficados corresponden a valores constantes de temperatura de brillo: $\sqrt{T_\mathrm{b} [10^9\mathrm{K}]}=$0.5,1.5,2,2.5,3,4}
+    \includegraphics[width=0.65\linewidth]{graphics/Resultados/Mapa_Tb(1).jpeg}
+    \caption[Mapa de temperatura de brillo modelado para Cen A proyectado en coordenadas $x,~z$ en el plano del cielo.]{Mapa de temperatura de brillo proyectado en coordenadas $x$ y $z$ en el plano del cielo, obtenido a partir del ajuste al modelo para las observaciones de Cen A. El suavizado se realizó mediante un haz gaussiano con FWHM de $16.8$ $\mu$as en la dirección $x$ y $25.9$ $\mu$as en la dirección $y$. Los contornos graficados corresponden a valores constantes de temperatura de brillo: $\sqrt{T_\mathrm{b} [10^9\mathrm{K}]}=0.5\cdot n$ con $n=1,...,40$.}
     \label{fig:result-5}
 \end{figure}
 
-El resultado obtenido se corresponde con las observaciones anteriormente mencionadas. Se observa en la figura que el fenómeno de bordes brillantes mencionado en la Sec. \ref{ssec:estructura}. Los bordes del \jet presentan una temperatura de brillo distinta a la de la región interior, con un incremento notable en el límite del borde interno. 
+El resultado obtenido se corresponde con las observaciones anteriormente mencionadas. Se observa en la figura que el fenómeno de bordes brillantes mencionado en la Sección \ref{ssec:estructura}. Los bordes del \jet presentan una temperatura de brillo distinta a la de la región interior, con un incremento notable en el límite del borde interno. 
 
 
 \subsection{Perfil de temperatura de brillo ajustado para Cen A}
 
 	En la Figura \ref{fig:result-6}, se muestra el perfil de temperatura de brillo máxima en función de la altura obtenido para Cen A.
-	En la figura también se presentan las observaciones de ambos brazos del \textit{jet}.
-	Se observa un buen acuerdo con las observaciones hasta $z \sim 250~R_g$, a partir de lo cual la temperatura de brillo observada para el brazo mas brillante del \jet (brazo sur, ilustrado en rojo en la Figura) disminuye rápidamente con la altura.
-	Este comportamiento se condice con la caida de brillo que se observa en la Figura \ref{fig:marco-2}. 
+	También se presentan las observaciones de ambos brazos del \textit{jet}.
+	Se observa un buen acuerdo con las observaciones hasta $z \sim 250~R_\mathrm{g}$, a partir de lo cual la temperatura de brillo observada para el brazo mas brillante del \jet (brazo sur, ilustrado en rojo en la Figura) disminuye rápidamente con la altura.
+	Este comportamiento se condice con la ca\'ida de brillo que se observa en la Figura \ref{fig:marco-2}. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{graphics/Resultados/TvZ.pdf}
-    \caption[Perfil de temperatura de brillo $T_\mathrm{b}$ en función de la altura del \jet modelado para Cen A.]{Perfil de temperatura de brillo $T_\mathrm{b}$ en función de la altura del \jet ajustado a las observaciones de Cen A. En rojo los datos de las observaciones del brazo inferior (orientación sur) ilustrado en la Fig. \ref{fig:marco-2} realizadas por \cite{2021NatAs...5.1017J}. En verde los datos del brazo superior (norte) de la misma imagen.}
+    \caption[Perfil de temperatura de brillo $T_\mathrm{b}$ en función de la altura del \jet modelado para Cen A.]{Perfil de temperatura de brillo $T_\mathrm{b}$ en función de la altura del \jet ajustado a las observaciones de Cen A. En rojo los datos de las observaciones del brazo inferior (orientación sur) ilustrado en la Figura \ref{fig:marco-2} realizadas por \cite{2021NatAs...5.1017J}. En verde los datos del brazo superior (norte) de la misma imagen.}
     \label{fig:result-6}
 \end{figure}
 
